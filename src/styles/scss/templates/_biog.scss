@@ -1,11 +1,6 @@
-.biog {
+.article-biog {
     @extend %standard-box;
     @include box-block($color-blue);
     @include dotted-bg(rgba($color-blue, 0.8), white);
-    //@include dotted-bg();
     position:relative;
-}
-
-.biog .wrapper-inner {
-	//
 }

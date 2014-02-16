@@ -26,7 +26,7 @@ define(['jquery', 'debug'], function($, debug){
             return this.each(function () {
 
                 var wrapper = $(this);
-                var navclass = 'nav-tabs';
+                var navclass = 'tabs-nav';
                 var navclassSelector = '.' + navclass;
                 var nav = $(this).find(navclassSelector);
                 var content = wrapper.find('.tabs-content');

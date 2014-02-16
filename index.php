@@ -45,7 +45,7 @@
         <!-- end main header -->
 
         <!-- start homepage news -->
-        <article class="article news">
+        <article class="article article-news">
             <div class="wrapper-inner">
                 <h2 class="article-heading">
                     <span class="lesser">Fourth Album </span>
@@ -68,7 +68,7 @@
         <!-- end homepage news -->
 
         <!-- start biog -->
-        <article class="article biog biog-short">
+        <article class="article article-biog biog-short">
             <div class="wrapper-inner">
                 <h2 class="article-heading">A little about .B</h2>
                 <p class="article-text">Point B has been producing deep, melodic, electronic music for over a decade. By sewing together ideas ranging from 70s sci-fi films to traditional middle eastern music he has woven a unique sonic fabric and found a profound tonal consistency.</p>

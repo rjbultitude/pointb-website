@@ -10,8 +10,11 @@
 				<a href="index.php" id="home-link">Home</a>
 			</li>
 			<li class="list-item">
-				<a href="toys.php" id="toys-link">Toys</a>
+				<a href="music.php" id="music-link">Music</a>
 			</li>
+			<!-- li class="list-item">
+				<a href="toys.php" id="toys-link">Toys</a>
+			</li -->
 			<li class="list-item">
 				<a href="discog.php" id="discog-link">Discog</a>
 			</li>

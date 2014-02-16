@@ -12,6 +12,18 @@
     border-color:$color-orange;
 }
 
+%white-block {
+    background-color: white;
+    color:$color-red;
+    border-color:$color-red;
+}
+
+%white-trans-block {
+    background-color: rgba(white, 0.65);
+    color:$color-red;
+    border-color:$color-red;
+}
+
 %blue-block {
     background-color: $color-blue;
     color:white;

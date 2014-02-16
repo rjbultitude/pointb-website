@@ -57,112 +57,16 @@
                 </form>
                 <div class="filter-results">
                     <h3 class="section-heading">Results</h3>
+                    <h4 class="item-heading">Tonality</h4>
+                    <dl>
+                        <dt>Type</dt><dd>Combinator</dd>
+                        <dt>Size</dt><dd>200k</dd>
+                    </dl>
+
                 </div>
             </div>
         </section>
         <!-- end filter form -->
-
-        <!-- start tabs -->
-        <section class="section section-tabs tabs">
-            <div class="wrapper-inner">
-                <div class="tabs-nav" role="navigation">
-                    <ul class="tabs-nav-list" role="list">
-                        <li class="list-item">
-                            <a href="#pads">Pads</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#rythmic">Rythmic</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#fx">FX</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tabs-content active" id="pads">
-                    <ul class="item-list" role="list">
-                        <li class="list-item">
-                            <h4 class="item-heading">Tonality</h4>
-                            <dl>
-                                <dt>Type</dt><dd>Combinator</dd>
-                                <dt>Size</dt><dd>200k</dd>
-                            </dl>
-                        </li>
-                        <li class="list-item">
-                            <h4 class="item-heading">Warm pad</h4>
-                            <dl>
-                                <dt>Type</dt><dd>Thor</dd>
-                                <dt>Size</dt><dd>200k</dd>
-                            </dl>
-                        </li>
-                        <li class="list-item">
-                            <h4 class="item-heading">Warm pad</h4>
-                            <dl>
-                                <dt>Type</dt><dd>Thor</dd>
-                                <dt>Size</dt><dd>200k</dd>
-                            </dl>
-                        </li>
-                        <li class="list-item">
-                            <h4 class="item-heading">Warm pad</h4>
-                            <dl>
-                                <dt>Type</dt><dd>Thor</dd>
-                                <dt>Size</dt><dd>200k</dd>
-                            </dl>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tabs-content" id="rythmic">
-                    <ul class="item-list" role="list">
-                        <li class="list-item">
-                            <h4 class="item-heading">Random Drums</h4>
-                            <dl>
-                                <dt>Type</dt><dd>Combinator</dd>
-                                <dt>Size</dt><dd>200k</dd>
-                            </dl>
-                        </li>
-                        <li class="list-item">
-                            <h4 class="item-heading">Ticker</h4>
-                            <dl>
-                                <dt>Type</dt><dd>Thor</dd>
-                                <dt>Size</dt><dd>200k</dd>
-                            </dl>
-                        </li>
-                        <li class="list-item">
-                            <h4 class="item-heading">Ticker</h4>
-                            <dl>
-                                <dt>Type</dt><dd>Thor</dd>
-                                <dt>Size</dt><dd>200k</dd>
-                            </dl>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tabs-content" id="fx">
-                    <ul class="item-list" role="list">
-                        <li class="list-item">
-                            <h4 class="item-heading">Digital Grater</h4>
-                            <dl>
-                                <dt>Type</dt><dd>Combinator</dd>
-                                <dt>Size</dt><dd>200k</dd>
-                            </dl>
-                        </li>
-                        <li class="list-item">
-                            <h4 class="item-heading">Wild Snares</h4>
-                            <dl>
-                                <dt>Type</dt><dd>Combinator</dd>
-                                <dt>Size</dt><dd>200k</dd>
-                            </dl>
-                        </li>
-                        <li class="list-item">
-                            <h4 class="item-heading">Wild Snares</h4>
-                            <dl>
-                                <dt>Type</dt><dd>Combinator</dd>
-                                <dt>Size</dt><dd>200k</dd>
-                            </dl>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- end tabs -->
 
     </div>
     <!-- end main -->

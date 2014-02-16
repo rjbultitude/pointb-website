@@ -1,4 +1,4 @@
-.news {
+.article-news {
     @include box-block(darken($color-red,$shift-amount));
     @include dotted-bg(rgba($color-red, 0.8), white, 8px);
     border:0 none;
