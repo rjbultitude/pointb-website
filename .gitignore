@@ -1,0 +1,15 @@
+# Global
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# Generated
+node_modules/
+.sass-cache/
+
+# CSS
+src/styles/css/
+
+# JavaScript
+dist/
+src/scripts/modernizr-custom.js

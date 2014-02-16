@@ -1,0 +1,14 @@
+.text-link-list .list-item {
+    display: block;
+    margin-bottom: 1.250em;
+    color: white;
+    margin-right: 1em;
+}
+
+.text-link-list .list-item:last-child {
+    margin-bottom: 0;
+}
+
+.text-link-list .list-item a {
+    color: white;
+}

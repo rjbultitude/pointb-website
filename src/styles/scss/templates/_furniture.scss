@@ -1,0 +1,188 @@
+/* -------------------------------------------------------------------------------- */
+/* ---------- Layout -------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    background: lighten($color-orange-pale, 5%);
+    min-width: 20.000em;
+    height:100%;
+}
+
+.wrapper-inner {
+    //max-width: 61em; //976px
+    max-width: 58em;
+    margin:0 auto;
+    @include clearfix;
+}
+
+[role=main] {
+    background:url('/images/bg-texture.jpg') no-repeat top;
+    background-attachment:fixed;
+    background-size:100% 100%;
+}
+
+[role=main] div:first-of-type {
+    border-top:0 none;
+}
+
+[role=banner],
+.article,
+.section {
+    @extend %flow-in-grid;
+    position:relative;
+}
+
+.section .page-heading,
+.section .standfirst {
+    @include column-spread;
+}
+
+.header {
+    @include box-block($color-blue);
+    position:relative;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ---------- Article -------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.article {
+    @extend %standard-box;
+}
+
+.article .article-text {
+    @include column(6);
+    @include push(2);
+
+    @media all and (max-width:37.500em) {
+        @include column-spread;
+        margin-bottom:$spacing;
+    }
+}
+
+.article-heading {
+    @include column-spread;
+}
+
+.article .figure {
+    @include column(8);
+
+    @media all and (max-width:37.500em) {
+        @include column-spread;
+        margin-bottom:$spacing;
+    }
+}
+
+.article .aside {
+    @include column(6);
+    @include pull(2);
+
+    @media all and (max-width:37.500em) {
+        @include column-spread;
+    }
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ---------- Accessibility controls ---------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+.nav-skip {
+    display: block;
+    position: absolute;
+    left: -999em;
+    top: 0;
+    &:focus,
+    &:active {
+        left: $spacing;
+        outline: 0;
+        display: block;
+        padding: $spacing / 2;
+        background: white;
+        z-index: 10;
+    }
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* ---------- Header -------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.section-main-header {
+    border-bottom:$color-nav-active solid 0.3em;
+}
+
+.section-main-header .wrapper-inner{
+    position:relative;
+}
+
+.section-main-header .logo {
+    @include column(6);
+    @include push(2);
+    color:white;
+    font-size:3.2em;
+    line-height:1.8em;
+    text-align:left;
+
+    @media all and (max-width:42.500em) {
+        @include column(24);
+        text-align:center;
+    }
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* ---------- Footer -------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+#footer {
+    background:darken($color-blue, $shift-amount*2);
+    color:white;
+    position:fixed;
+    display:block;
+    z-index:10;
+    bottom:-5.5em;
+    padding:0.750em 0;
+    @include standard-transition-bottom;
+
+    @media all and (max-width:37.500em) {
+        position:static;
+        bottom:0;
+    }
+}
+
+#footer .wrapper-inner {
+    position:relative;
+    overflow:visible;
+}
+
+#footer .btn-open {
+    position:absolute;
+    z-index:10;
+    display:block;
+    top:-3em;
+    height:3em;
+    width:7em;
+    margin-left: -3.5em;
+    background-color:black;
+    padding:0.5em;
+    right:1em;
+    color:white;
+    @include border-top-radius(0.5em);
+}
+
+#footer.active,
+#footer:hover {
+    bottom:0;
+}
+
+#footer nav,
+#footer .sub-footer,
+#footer .sm-links-list {
+    @extend %flow-in-grid;
+}

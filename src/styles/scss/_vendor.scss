@@ -1,0 +1,33 @@
+
+// Vendor mixins
+
+// $author                       R.Bultitude
+// $url                          http://www.point-b.co.uk/
+// $copyright                    Copyright (c) 2014, point-b.co.uk. All rights reserved.
+// $version                      1.0
+
+
+/* Gradient */
+@mixin linear-gradient(
+$start-color :  white,
+$end-color :  black,
+$start-dist :  0%,
+$end-dist :  100%,
+$startpos :  top
+) {
+    background :  $end-color;
+    background :  -moz-linear-gradient($startpos, $start-color $start-dist, $end-color $end-dist);
+    background :  -webkit-linear-gradient($startpos, $start-color $start-dist,$end-color $end-dist);
+    background :  -o-linear-gradient($startpos, $start-color $start-dist,$end-color $end-dist);
+    background :  -ms-linear-gradient($startpos, $start-color $start-dist,$end-color $end-dist);
+    background :  linear-gradient($startpos, $start-color $start-dist,$end-color $end-dist);
+}
+
+/* Non-inheriting cross browser opacity with white bg color */
+@mixin opacity_no_inherit($opacity : 0.35) {
+	$opacity_ie: $opacity * 100;
+	background:rgb(255,255,255);
+	background:rgba(255,255,255,$opacity);
+	-ms-filter:alpha(opacity=$opacity_ie);
+	filter:alpha(opacity=$opacity_ie)
+}

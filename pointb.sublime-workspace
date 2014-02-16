@@ -1,0 +1,499 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"a",
+				"active"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"l",
+				"list"
+			],
+			[
+				"column",
+				"column-width"
+			],
+			[
+				"m",
+				"media"
+			],
+			[
+				"r",
+				"rotate3d	compass"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"light",
+				"lighten	sass_function"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"inl",
+				"include"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"sa",
+				"span	Tag"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"bo",
+				"border-top"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"color",
+				"color-teal"
+			],
+			[
+				"ligh",
+				"lighten	sass_function"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 247.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"Set Syntax: SCSS"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"INST",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package Control: t",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/scripts/plugins/jquery.tabs.plugin.js",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/patches.php",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/templates/_sm-links.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/includes/footer-include.php",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/interfaces/_tabs.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/generic/_lists.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/interfaces/_search-filter.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/generic/_buttons.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/index.php",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/scripts/config.js",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/scripts/base.js",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/scripts/modules/debug.js",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/Gruntfile.js",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/generic/_forms.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/interfaces/_search.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/global.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/templates/_biog.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/design-kit.php",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/_base.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/templates/_header.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/scripts/modules/mobile-nav.js",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/interfaces/_nav-main.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/utilities/_mixins.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/includes/header-include.php",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/scripts/modules/filter-patches.js",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/templates/_furniture.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/utilities/_semantic-fluid-grid.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/211a894583dcd2d5f1ea3e7c1e13285597ab4235/_furniture.scssc",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/7e602c62dabf602d7e6d1b6be0c4e35d27b6bfc4/_mixins.scssc",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/data/patches.json",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/utilities/_functions.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/utilities/functions.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/templates/_sound-toy.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/generic/_typography.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/interactions/_animations.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/interactions/_transitions.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/templates/_news.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/utilities/_placeholders.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/templates/_design-kit.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/interfaces/_nav.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/utilities/_mask.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/README.md",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/generic/_nav.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/images/icons/Icon_Circle.svg",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/_site-icons.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/generic/_tabs.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/utilities/_design-kit.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/generic/_figures.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/_vendor.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/css/global.css",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/e62d80a58d8f3316d26b3f79690abc50d6f2ee92/_furniture.scssc",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/c181f3d5e7ff47b0a38e6b6bebcbb52e2b3f388e/_tabs.scssc",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/c181f3d5e7ff47b0a38e6b6bebcbb52e2b3f388e/_reveal-module.scssc",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/af5ed829716b0e4d8bc6c562676b947eaa7bb851/_tabs.scssc",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/64a9d04f028faa1d0891525f5aaa9c6d27820ab2/_tabs.scssc",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/64a9d04f028faa1d0891525f5aaa9c6d27820ab2/_reveal-module.scssc",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/492d1eeb45a4b650e1d351925c3e58d6a3cf019b/_furniture.scssc",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/templates/_navigation.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/.gitignore",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/generic/_images.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/generic/_figure.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/scripts/plugins/cookie-reveal.js",
+		"/Users/rbultitude/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/scripts/globals.js",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/styles/sass/generic/_typography.scss",
+		"/Users/rbultitude/Documents/web-dev/SoundJS-master/README.md",
+		"/Users/rbultitude/Documents/web-dev/css-animate-height/bower.json",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/scripts/config.js",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/bower_components/toxiclibsjs/README.md",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/bower.json",
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/pointb.sublime-project",
+		"/Users/rbultitude/Documents/web-dev/Point B website/.git/config",
+		"/Users/rbultitude/Documents/web-dev/kinetic/package.json",
+		"/Users/rbultitude/Documents/web-dev/Point B/styles/sass/colony-icons.html",
+		"/Users/rbultitude/Documents/web-dev/Point B/index.html",
+		"/Users/rbultitude/Documents/web-dev/Point B/styles/sass/global.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B/styles/css/global.css",
+		"/Users/rbultitude/Documents/web-dev/Point B/styles/css/min/global.css",
+		"/Users/rbultitude/Documents/web-dev/Point B/styles/sass/templates/_furniture.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B/bower_components/requirejs/require.js",
+		"/Users/rbultitude/Documents/web-dev/Point B/Gruntfile.js",
+		"/Users/rbultitude/Documents/web-dev/Point B/styles/sass/templates/_navigation.scss",
+		"/Users/rbultitude/Documents/web-dev/Point B/README.md",
+		"/Users/rbultitude/Documents/Point B/site-2014/pointb/pointb.sublime-project",
+		"/Users/rbultitude/Documents/Point B/site-2014/pointb/README.md",
+		"/Users/rbultitude/Documents/Point B/site-2014/pointb/index.html",
+		"/Users/rbultitude/Documents/web-dev/jquery-require-sample/webapp/scripts/require-jquery.js",
+		"/Users/rbultitude/Documents/Point B/site-2014/pointb/bower_components/jquery/component.json",
+		"/Users/rbultitude/Documents/R&D/d3-experiments/js/script.js",
+		"/Users/rbultitude/Documents/R&D/d3-experiments/index.html",
+		"/Users/rbultitude/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/rbultitude/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/rbultitude/Documents/R&D/d3-experiments/sass/_semantic-fixed-grid.scss",
+		"/Users/rbultitude/Documents/R&D/d3-experiments/d3-exp.sublime-project"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"debug",
+			"printCTA",
+			"\">\n",
+			"disc",
+			"$nav",
+			"$wrapper",
+			"navclass",
+			"input[type=\"text\"]",
+			";\n",
+			"input[type=\"text\"]",
+			";\n",
+			".section-filter [role=\"search\"]",
+			"4px",
+			"20px",
+			"28px",
+			"navigation",
+			"main-header",
+			"Thor",
+			"thor",
+			"Thor",
+			"thor",
+			"Thor",
+			"thor",
+			"Combinator",
+			"combinator",
+			"Combinator",
+			"combinator",
+			"Type",
+			"type",
+			".section-main-header [role=\"navigation\"]",
+			"showHideMainNav",
+			"29.375em",
+			"48.375em",
+			".section-main-header li a",
+			".header:before",
+			".section-main-header [role=\"navigation\"]",
+			".article .figure",
+			"one-either-side",
+			".section .page-heading",
+			"exampleModule",
+			"article",
+			"fx",
+			"rhythm",
+			"pad",
+			".section-main-header [role=\"navigation\"]",
+			".section-main-header .logo",
+			".section-main-header li a",
+			".section .standfirst",
+			"teal",
+			"section",
+			"page-head",
+			"teal",
+			".section-main-header",
+			"%orange-block",
+			".section-main-header li a",
+			"$color-blue-dark",
+			".section-main-header li a",
+			"0.5",
+			"12px",
+			"#home .page-heading",
+			"text-texture",
+			"texture_81.jpg",
+			"$url",
+			".article-heading",
+			"/img/knockout.png",
+			"transition",
+			"16px",
+			"8px",
+			";\n",
+			"$color-blue",
+			"$color-orange",
+			".sm-links-list .list-item .icon",
+			".2",
+			"$dot-color",
+			"0.5",
+			"2em",
+			"37.500em",
+			"600px",
+			"[role=\"navigation\"] li a",
+			"transistion",
+			"../css",
+			"icon_Peabody",
+			"[role=\"navigation\"] ul",
+			"article",
+			"http-equiv",
+			"id=\"Layer_1\" ",
+			"div",
+			"{\n",
+			"fb",
+			"1em",
+			"html",
+			"9%",
+			"news",
+			"after",
+			"255",
+			"keyframes",
+			"15%",
+			"255,255,255",
+			" 15",
+			"$dot-color",
+			"thereAndBack",
+			"animate",
+			"$color-teal",
+			"thereAndBack",
+			"black",
+			"16",
+			"15",
+			"0",
+			"$start-color",
+			"$start",
+			"linear",
+			"inner-wrapper",
+			".section-main-header .logo",
+			"[role=\"navigation\"] li",
+			"home",
+			"white",
+			"blue",
+			">\n",
+			"//\n",
+			">\n",
+			"easeOutCirc",
+			"role=\"nav\"",
+			"jshint",
+			"jquery"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"column-spread",
+			"wrapper-inner"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "pointb.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 230.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

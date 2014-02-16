@@ -1,0 +1,54 @@
+.section-tabs {
+    margin-top: 2em;
+}
+
+.tabs > .wrapper-inner {
+    text-align: center;
+}
+
+.tabs-menu {
+    text-align:center;
+    vertical-align: bottom;
+    height:3.5em;
+    @include inline-block;
+}
+
+.tabs-menu li {
+    @include inline-block;
+    position:relative;
+    height: 2.5em;
+    //margin-right: 0.125em; //removed due to spacing bug
+}
+
+.tabs-menu li a {
+    @include inline-block;
+    height: 1.5em;
+    width:8.570em;
+    margin-top:1em;
+    @extend %orange-block;
+    padding: 0.5em 0;
+    font-family: $font-heading;
+    font-weight: 500;
+    @include border-top-radius($form-border);
+    @include standard-transistion();
+}
+
+.tabs-menu .special a {
+    background:$color-red;
+}
+
+.tabs-menu li a.active,
+.tabs-menu li a:hover { 
+    background: darken($color-orange,5%);
+    color:$color-grey-light;
+    @include border-top-radius(0.2em);
+    text-decoration: none;
+    @include standard-transistion();
+    padding-bottom: 1.5em;
+    margin-top: 0;
+}
+
+.tab-content {
+    padding:0;
+    text-align: left;
+}

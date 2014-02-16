@@ -1,0 +1,6 @@
+.section-sound-toy {
+    @include box-block($color-blue);
+    @include dotted-bg(rgba($color-blue, 0.8), white);
+    color:white;
+    padding: $spacing 0;
+}

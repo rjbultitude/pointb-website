@@ -1,0 +1,13 @@
+img {
+	display: block;
+}
+
+.figure img {
+    max-width:100%;
+    height:auto;
+}
+
+.image-border {
+	padding:$spacing/4;
+	@include animate(thereAndBack, 10s, ceaser($easeInCirc), infinite, normal);
+}

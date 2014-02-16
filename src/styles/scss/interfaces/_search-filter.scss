@@ -1,0 +1,31 @@
+.section-filter {
+    @include box-block(darken($color-red,$shift-amount));
+    @include dotted-bg(rgba($color-red, 0.8), white, 8px);
+    border:0 none;
+}
+
+.section-filter [role="search"] {
+    padding:$spacing 0;
+    @include column-spread(4,16,4);
+    text-align:center;
+}
+
+.section-filter .form-item {
+    float:left;
+    width:50%;
+}
+
+.section-filter .form-item-sub {
+    display:none;
+}
+
+.section-filter [role="search"] [type="checkbox"]:checked ~ .form-item-sub,
+.section-filter [role="search"] [type="checkbox"]:checked + .form-item-sub {
+    display:block;
+}
+
+.section-results {
+    margin:$spacing*4;
+    //remove
+    display:none;
+}

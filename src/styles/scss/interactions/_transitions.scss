@@ -1,0 +1,27 @@
+// -------------------------------------------------------------------------- */
+// ---------- transitions --------------------------------------------------- */
+// -------------------------------------------------------------------------- */
+
+@mixin standard-transition {
+    @include transition-timing-function(ceaser($easeOutQuint));
+    @include transition-duration(2s);
+    @include transition-property(all);
+}
+
+@mixin standard-transition-bg-color {
+    @include transition-timing-function(ceaser($easeOutQuint));
+    @include transition-duration(2s);
+    @include transition-property(background-color,color);
+}
+
+@mixin standard-transition-opacity {
+    @include transition-timing-function(ceaser($easeOutQuint));
+    @include transition-duration(2s);
+    @include transition-property(opacity);
+}
+
+@mixin standard-transition-bottom {
+    @include transition-timing-function(ceaser($easeOutQuint));
+    @include transition-duration(2s);
+    @include transition-property(bottom);
+}

@@ -1,0 +1,52 @@
+.btn-nav {
+    @include inline-block;
+    width:100%;
+    text-align:center;
+    @extend %orange-block;
+    display:none;
+    @include standard-transition-opacity;
+    @include opacity(0);
+
+    .text {
+        @include el_off_screen;
+    }
+
+    .icon {
+        @extend .icon_site_Icon_3Lines
+    }
+}
+
+[role="navigation"] ul {
+    text-align:center;
+    vertical-align: bottom;
+
+    @media all and (max-width:15em) {
+        display:none;
+        @include standard-transition-opacity;
+        @include opacity(0);
+    }   
+}
+
+[role="navigation"] li {
+    @include inline-block;
+    position:relative;
+    margin-left:-2px;
+}
+
+[role="navigation"] li a {
+    @include inline-block;
+    height: 1.5em;
+    width:6.570em;
+    padding: 0.5em 0;
+    font-family: $font-heading;
+    font-weight: 500;
+    @include standard-transistion();
+}
+
+.tabs-menu li a.active,
+.tabs-menu li a:hover { 
+    text-decoration: none;
+    @include standard-transistion();
+    padding-bottom: 1.5em;
+    margin-top: 0;
+}

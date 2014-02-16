@@ -1,0 +1,82 @@
+//Variables
+
+$nav-main-bp1: 48.375em;
+$nav-main-bp2: 33.500em;
+
+.section-main-header [role="navigation"] {
+    @include column(14);
+    @include pull(2);
+    text-align:right;
+
+    @media all and (max-width:$nav-main-bp1) {
+        @include column-spread(2,20,2);
+        text-align:center;
+        position:static;
+    }
+}
+
+.section-main-header [role="navigation"] [role="list"] {
+    @include inline-block;
+    height:3.5em;
+    overflow:hidden;
+    height:5.9em;
+
+    @media all and (max-width:$nav-main-bp1) {
+        width:100%;
+    }
+
+    @media all and (max-width:$nav-main-bp2) {
+        display:none;
+    }
+}
+
+.section-main-header [role="navigation"] [role="list"].open {
+    display:inline;
+}
+
+.section-main-header [role="navigation"] .list-item {
+    margin:0;
+}
+
+.section-main-header [role="navigation"] .list-item,
+.section-main-header [role="navigation"] a {
+    @media all and (max-width:$nav-main-bp2) {
+        display:block;
+        width:100%;
+    }
+}
+
+.section-main-header .btn-nav {
+    @media all and (max-width:$nav-main-bp2) {
+        @include inline-block();
+        @include standard-transition-opacity;
+        @include opacity(1);
+    }
+}
+
+.section-main-header li a {
+    background: darken($color-orange,1%);
+    border-top: lighten($color-orange,$shift-amount) solid 0.2em;
+    height:2.2em;
+    padding:3.5em 0 0 0;
+    color:white;
+
+    @media all and (max-width:$nav-main-bp1) {
+        padding-top:1.5em;
+    }
+}
+
+#home .section-main-header #home-link,
+#toys .section-main-header #toys-link ,
+#discog .section-main-header #discog-link,
+#patches .section-main-header #patches-link {
+    background: $color-nav-active;
+}
+
+.section-main-header li a:hover,
+.section-main-header li a:focus {
+    background: rgba($color-nav-active, 0.8);
+    //border-top-width:0.3em;
+    //padding-bottom:6.5em; //was 0.3 + 0.5
+    padding:3.5em 0 5.5em 0;
+}

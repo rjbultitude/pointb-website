@@ -1,0 +1,43 @@
+// -------------------------------------------------------------------------------- 
+// ---------- Blocks --------------------------------------------------------------
+// --------------------------------------------------------------------------------
+
+%standard-box {
+	padding: $spacing 0;
+}
+
+%orange-block {
+    background: $color-orange;
+    color:white;
+    border-color:$color-orange;
+}
+
+%blue-block {
+    background: $color-blue;
+    color:white;
+    border-color:$color-blue;
+}
+
+%red-block {
+    background: $color-red;
+    color:white;
+    border-color:$color-red;
+}
+
+%blue-dark-block {
+    background: darken($color-blue,$shift-amount);
+    color:white;
+    border-color: darken($color-blue,$shift-amount);
+}
+
+%flow-in-grid {
+  display: inline;
+  float: left;
+}
+
+%before-after-base {
+    content: " ";
+    position:absolute;
+    display:block;
+    z-index:2;
+}

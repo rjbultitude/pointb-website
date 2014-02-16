@@ -1,0 +1,29 @@
+button[role="button"] {
+    @include inline-block;
+    border:0.2em solid white;
+    background:$color-blue;
+    padding:0.6em 1.8em;
+    color:white;
+    & > .icon {
+        
+    }
+    & > .text {
+        //text styles
+   
+    }
+    &:hover {
+        
+        & > .icon {
+            
+        }
+    }
+}
+
+//Basic control styles
+[role="button"][rel="prev"],
+[role="button"][rel="next"] {
+    //Text
+    & .text {
+       
+    }
+}

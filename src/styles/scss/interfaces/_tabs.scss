@@ -1,0 +1,37 @@
+.section-tabs {
+    @extend %standard-box;
+    @include box-block($color-blue);
+    @include dotted-bg(rgba($color-blue, 0.8), white);
+    position:relative;
+}
+
+.nav-tabs .list-item a {
+	padding:0.8em 2em;
+	display:block;
+	background:white;
+	text-align:center;
+}
+
+.tabs-content {
+	display:none;
+	padding:2em 0;
+}
+
+.no-js .tabs-content,
+.tabs-content.active {
+	display:block;
+}
+
+.tabs-content .item-list .list-item {
+	@include inline-block;
+	margin-right:$spacing/2;
+	position:relative;
+}
+
+.tabs-content .item-list .list-item:after {
+	@extend %before-after-base;
+	height:100%;
+	border-right:1px solid rgba(white, 0.5);
+	top:0;
+	right:-$spacing/4;
+}

@@ -1,0 +1,279 @@
+// --------------------------------------------------------------------------------
+// ---------- Type ----------------------------------------------------------------
+// -------------------------------------------------------------------------------- */
+
+body {
+    font-family: $font-copy;
+    color: $color-text;
+    font-size: $font-size !important;
+    font-weight: 300;
+    font-weight: 500;
+    line-height: 1.250;
+    text-rendering: optimizeLegibility;
+}
+
+%heading {
+    font-family: $font-heading;
+    font-weight: 300;
+}
+
+.page-heading {
+    @extend %heading;
+    font-size: 3.500em;
+    margin: 0 auto 0.533em;
+    text-align:center;
+    @include image_mask;
+
+    @media all and (max-width:28em) {
+        font-size:2.50em;
+    }
+}
+
+.special-character {
+    //display:block;
+    //margin:0 auto;
+}
+
+.article-heading {
+    @extend %heading;
+    font-size: 4.500em;
+    line-height:0.875em;
+    margin-bottom: 0.5em;
+    text-align:center;
+    @include image_mask;
+    //background-image:url(/images/decoration/knockout.png);
+    //@include background-clip(text);
+    //color:rgba(black, 0.5);
+}
+
+.section-heading {
+    @extend %heading;
+    font-size: 1.375em;
+    font-weight: 500;
+    margin-bottom: 0.800em;
+}
+
+.sub-heading,
+.sub-section-heading {
+    @extend %heading;
+    font-size: 1.1188em;
+    font-weight: 500;
+    margin-bottom: 0.800em;
+}
+
+.lesser {
+    font-size:0.5em;
+    display:block;
+}
+
+.regular-heading {
+    @extend %heading;
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 1.571em;
+}
+
+.page-heading + p,
+.section-heading + p {
+    padding-top: 0.5em;
+}
+
+.super-standfirst p,
+p.super-standfirst {
+    font-size: 1.250em;
+}
+
+.standfirst,
+.standfirst p {
+    font-size: 1.125em;
+    margin-bottom: 0;
+    text-align:center;
+}
+
+.article p:last-child,
+.section p:last-child {
+    margin-bottom:0;
+}
+
+p {
+    font-size: 1em;
+    margin: 0 0 1em 0;
+}
+
+p:last-of-type {
+    //margin-bottom: 0;
+}
+
+.article p:last-child,
+.section p:last-child {
+    margin-bottom: 0;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 700;
+    color: $color-text;
+}
+
+.promo-copy p {
+    font-size: 1.125em;
+    margin: 0 0 0.889em 0;
+}
+
+.promo-link {
+    display: block;
+    font-size: 1.125em;
+    margin: 0.889em 0;
+}
+
+// --------------------------------------------------------------------------------
+// ---------- Text & Icons --------------------------------------------------------
+// -------------------------------------------------------------------------------- */
+
+[class^="icon-"] + span,
+[class*=" icon-"] + span {}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    vertical-align: middle !important;
+}
+
+// --------------------------------------------------------------------------------
+// ---------- Links ---------------------------------------------------------------
+// -------------------------------------------------------------------------------- */
+
+a {
+    color: $color-link;
+    text-decoration: none;
+    font-weight: 700;
+    @include transition-timing-function(ceaser($ease-in));
+    &:visited {
+        color: $color-link-visited;
+        @include transition-timing-function(ceaser($ease-in));
+    }
+    &:hover,
+    &:focus {
+        color: $color-link-hover;
+        text-decoration: none;
+        border-color: $color-link;
+    }
+    &:active {
+        color: $color-link-hover;
+        text-decoration: none;
+        border-color: transparent;
+    }
+}
+
+p a,
+p a:visited {
+    line-height: inherit;
+}
+
+a * {
+    cursor: pointer;
+}
+
+a figure,
+a img,
+a.image {
+    border-bottom: none;
+}
+
+// --------------------------------------------------------------------------------
+// ---------- Lists ---------------------------------------------------------------
+// -------------------------------------------------------------------------------- */
+
+dl {
+    //clearfix here
+}
+
+dt,
+dd {
+    display: block;
+    padding: 0.5em 0;
+    float: left;
+    font-family: $font-heading;
+}
+
+dt {
+    clear: left;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.definition-list-stacked dt,
+.definition-list-stacked dd {
+    float: none;
+}
+
+.definition-list-stacked dt {
+    padding-bottom: 0;
+}
+
+.definition-list-stacked dd {
+    padding-bottom: 0.75em;
+    @include inline-block;
+    margin-right: 0.2em;
+}
+
+.unordered-inline-list li {
+    @include inline-block;
+}
+
+// --------------------------------------------------------------------------------
+// ---------- BlockQuotes ---------------------------------------------------------
+// -------------------------------------------------------------------------------- */
+
+blockquote {
+    color: $color-heading;
+    margin-bottom: 1em;
+    position: relative;
+    text-align: center;
+}
+
+blockquote p {
+    font-size: 1.125em;
+    margin-bottom: 0;
+}
+
+blockquote p + p {
+    margin-top: 1em;
+}
+
+blockquote .source {
+    display: block;
+    font-size: 1em;
+    color: $color-text;
+    font-style: normal;
+    text-align: center;
+    font-style: italic;
+}
+
+blockquote .source a,
+blockquote .source a:visited,
+blockquote .source a:visited {
+    color: $color-text;
+}
+
+hr {
+    border: solid $color-text;
+    border-width: 1px 0 0;
+    clear: both;
+    margin: $spacing 0 $spacing * 1.5;
+    height: 0;
+}
+
+br {
+    height: 0;
+}
+
+address br {
+    margin: 0;
+}
+
+address {
+    margin: 0 0 $spacing * 1.5 0;
+}

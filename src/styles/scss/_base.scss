@@ -1,0 +1,87 @@
+
+// Base Variables
+
+// $author                       R.Bultitude
+// $url                          http://www.point-b.co.uk/
+// $copyright                    Copyright (c) 2014, point-b.co.uk. All rights reserved.
+
+
+// -------------------------------------------------------------------------------- 
+// ---------- Colours -------------------------------------------------------------
+// -------------------------------------------------------------------------------- 
+
+$color-shift-amount:            15%;
+
+// Colour palette ----------------------------------------------------------------
+
+$color-orange:                  #FC9A2F;
+$color-orange-pale:				#F8AC4D;
+$color-red:                     #F15944;
+$color-red-pale:                #BD9999;
+$color-blue:                    #05395E;
+
+//greys                         
+$color-grey:                  	#9ea8ac;
+$color-grey-light:              #cedbe0;
+
+// Colour Context ----------------------------------------------------------------
+
+$color-text:                    white;
+$color-heading:                 $color-orange;
+$color-link:                    $color-red;
+$color-link-hover:              darken($color-red, $color-shift-amount);
+$color-link-visited:            $color-link;
+$color-nav-active:				darken($color-orange,7.5%);
+
+.orange {
+	background:$color-orange;
+}
+.red {
+	background:$color-red;
+}
+.teal {
+	background:$color-red-pale;
+}
+.blue {
+	background:$color-blue;
+}
+
+$shift-amount:					9%;
+
+// -------------------------------------------------------------------------------- 
+// ---------- Fonts ---------------------------------------------------------------
+// -------------------------------------------------------------------------------- 
+
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+
+$font-copy:                  	"bitter", 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
+$font-heading:                  "bitter", 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
+
+$font-size:                     16px;
+
+
+// -------------------------------------------------------------------------------- 
+// ---------- Spacing -------------------------------------------------------------
+// -------------------------------------------------------------------------------- 
+
+$spacing:                       3.750em;
+$gutter:						5%;
+$max-width:                     960px;
+$form-border:                   0.313em;
+
+// -------------------------------------------------------------------------- */
+// ---------- Grid ---------------------------------------------------------- */
+// -------------------------------------------------------------------------- */
+
+$grid-num-columns:                      24;
+$grid-width-columns:                    30;
+$grid-width-gutter:                     20;
+$grid-full-width-pixels:				$grid-width-columns * $grid-num-columns + $grid-width-gutter * $grid-num-columns;
+
+// -------------------------------------------------------------------------------- 
+// ---------- Break points --------------------------------------------------------
+// -------------------------------------------------------------------------------- 
+
+$bp-small:                       20.000em; //320px;
+$bp-medium:                      48.000em; //768px;
+$bp-large:                       81.250em; //1300px;
