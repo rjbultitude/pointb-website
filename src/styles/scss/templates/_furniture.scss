@@ -44,6 +44,10 @@ body {
     @include column-spread;
 }
 
+.section .content {
+    @extend %flow-in-grid;
+}
+
 .header {
     @include box-block($color-blue);
     position:relative;

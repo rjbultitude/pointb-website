@@ -66,7 +66,7 @@
         <section class="section section-tabs tabs">
             <div class="wrapper-inner">
                 <div class="tabs-nav" role="navigation">
-                    <ul class="nav-tabs " role="list">
+                    <ul class="tabs-nav-list" role="list">
                         <li class="list-item">
                             <a href="#pads">Pads</a>
                         </li>

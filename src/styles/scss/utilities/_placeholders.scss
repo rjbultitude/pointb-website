@@ -7,25 +7,25 @@
 }
 
 %orange-block {
-    background: $color-orange;
+    background-color: $color-orange;
     color:white;
     border-color:$color-orange;
 }
 
 %blue-block {
-    background: $color-blue;
+    background-color: $color-blue;
     color:white;
     border-color:$color-blue;
 }
 
 %red-block {
-    background: $color-red;
+    background-color: $color-red;
     color:white;
     border-color:$color-red;
 }
 
 %blue-dark-block {
-    background: darken($color-blue,$shift-amount);
+    background-color: darken($color-blue,$shift-amount);
     color:white;
     border-color: darken($color-blue,$shift-amount);
 }

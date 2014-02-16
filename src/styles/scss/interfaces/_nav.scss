@@ -42,11 +42,3 @@
     font-weight: 500;
     @include standard-transistion();
 }
-
-.tabs-menu li a.active,
-.tabs-menu li a:hover { 
-    text-decoration: none;
-    @include standard-transistion();
-    padding-bottom: 1.5em;
-    margin-top: 0;
-}

@@ -5,11 +5,9 @@
     position:relative;
 }
 
-.nav-tabs .list-item a {
-	padding:0.8em 2em;
-	display:block;
-	background:white;
-	text-align:center;
+.tabs-nav,
+.tabs-content {
+	@include column(24);
 }
 
 .tabs-content {
@@ -34,4 +32,45 @@
 	border-right:1px solid rgba(white, 0.5);
 	top:0;
 	right:-$spacing/4;
+}
+
+.tabs > .wrapper-inner {
+    text-align: center;
+}
+
+.tabs-nav-list {
+    text-align:center;
+    vertical-align: bottom;
+    height:3.5em;
+    @include inline-block;
+}
+
+.tabs-nav-list li {
+    @include inline-block;
+    position:relative;
+    height: 2.5em;
+    //margin-right: 0.125em; //removed due to spacing bug
+}
+
+.tabs-nav-list li a {
+    @include inline-block;
+    width:4em;
+    margin-top:1em;
+    @extend %orange-block;
+    padding: 0.5em 0;
+    font-family: $font-heading;
+    @include border-top-radius($form-border);
+    @include standard-transistion();
+}
+
+.tabs-nav-list li a.active,
+.tabs-nav-list li a:hover { 
+    background: darken($color-orange,5%);
+    text-decoration: none;
+    margin-top: 0;
+}
+
+.tab-content {
+    padding:0;
+    text-align: left;
 }
