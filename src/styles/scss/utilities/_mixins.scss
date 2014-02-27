@@ -40,10 +40,10 @@ $browser-context: 16; // Default
 /* ---------- Gradients ----------------------------------------------------------- */
 /* -------------------------------------------------------------------------------- */
 @mixin dotted-bg($bg-color:$color-blue, $dot-color:white, $size:12px) {
-    @include background(radial-gradient(rgba($dot-color,.1) 2px, transparent 3px) 0 0);
-    @include background(radial-gradient(rgba($dot-color,.1) 2px, transparent 3px) 8px 8px);
-    @include background(radial-gradient(rgba($dot-color,.1) 1px, transparent 1px) 0 1px);
-    @include background(radial-gradient(rgba($dot-color,.1) 1px, transparent 1px) 8px 9px);
+    @include background(radial-gradient(rgba($dot-color,.2) 2px, transparent 3px) 0 0);
+    @include background(radial-gradient(rgba($dot-color,.2) 2px, transparent 3px) 8px 8px);
+    @include background(radial-gradient(rgba($dot-color,.2) 1px, transparent 1px) 0 1px);
+    @include background(radial-gradient(rgba($dot-color,.2) 1px, transparent 1px) 8px 9px);
     background-color:$bg-color;
     background-size:$size $size;
 }

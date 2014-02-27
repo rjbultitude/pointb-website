@@ -1,6 +1,6 @@
 .header {
     @include box-block(darken($color-blue,$shift-amount));
-    @include dotted-bg(rgba($color-blue, 0.8), white, 8px);
+    @include dotted-bg(rgba($color-blue, 0.8), white, 14px);
     border:0 none;
     padding:$spacing 0;
 }
