@@ -17,7 +17,8 @@ body {
 
 .wrapper-inner {
     //max-width: 61em; //976px
-    max-width: 58em;
+    //max-width: 58em;
+    max-width:83%;
     margin:0 auto;
     @include clearfix;
 }

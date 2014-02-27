@@ -6,3 +6,7 @@
     @include box-block($color-red);
     @include dotted-bg(rgba($color-red, 0.8), white);
 }
+
+#music .header {
+	padding-bottom:7.5em;
+}

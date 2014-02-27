@@ -126,29 +126,36 @@ $browser-context: 16; // Default
 /* ---------- Boxes --------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------- */
 
-@mixin box-block($bg-color:$color-blue) {
-    @include opacity_no_inherit(0.8);
+@mixin box-block($bg-color:$color-blue, $opacity:0.8, $beforeAfter: true) {
     background-color:$bg-color;
-    //border-top:lighten($bg-color,$shift-amount) solid $spacing/2;
-    //border-bottom:lighten($bg-color,$shift-amount) solid $spacing/2;
-    &:before,
-    &:after {
-        position:absolute;
-        z-index:2;
-        top:0;
-        height:100%;
-        //width:percentage($column-width + ($column-width/2)) / 1000;
-        @include colspan(2);
-        content:" ";
-        background-color:white;
-        @include opacity(0.2);
+    @include opacity_no_inherit($opacity, $bg-color);
+    border-color:$bg-color;
+    @if $beforeAfter {
+        &:before,
+        &:after {
+            position:absolute;
+            z-index:2;
+            top:0;
+            height:100%;
+            @include colspan(2);
+            content:" ";
+            background-color:white;
+            @include opacity(0.2);
+        }
+        &:before {
+            left:0;
+        }
+        &:after {
+            right:0;
+        }
     }
-    &:before {
-        left:0;
+    @else if $beforeAfter == false {
+        &:before,
+        &:after {
+            display:none;
+        }
     }
-    &:after {
-        right:0;
-    }
+
 }
 
 /* -------------------------------------------------------------------------------- */

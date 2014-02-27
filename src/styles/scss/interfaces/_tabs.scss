@@ -1,11 +1,17 @@
 .section-tabs {
-    @extend %standard-box;
     position:relative;
 }
 
 .tabs-nav,
 .tabs-content {
 	@include column(24);
+}
+
+.tabs-nav {
+    position:absolute;
+    left:0;
+    bottom:100%;
+    height:auto;
 }
 
 .tabs > .wrapper-inner {
@@ -16,6 +22,7 @@
     text-align:center;
     vertical-align: bottom;
     @include inline-block;
+    position:relative;
 }
 
 .tabs-nav-list li {
@@ -27,24 +34,25 @@
 .tabs-nav-list li a {
     @include inline-block;
     width:8em;
-    @extend %white-trans-block;
+    @extend %red-block;
     padding: 0.5em 0;
     font-family: $font-heading;
     @include border-top-radius($form-border);
     @include standard-transistion();
+    @include box-block($color-red, 0.8, false);
 }
 
 .tabs-nav-list li.active a,
-.tabs-nav-list li a:hover { 
-    background-color:rgba(white, 0.8);
+.tabs-nav-list li a:hover {
+    @include box-block($color-red, 1, false);
     text-decoration: none;
     margin-top: 0;
 }
 
 .tabs-content {
 	display:none;
+    @include box-block($color-red, 1, false);
 	padding:2em 0;
-    background-color:rgba(white, 0.8);
 }
 
 .no-js .tabs-content,
