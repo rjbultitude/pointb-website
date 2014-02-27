@@ -3,8 +3,7 @@
 /* -------------------------------------------------------------------------------- */
 
 #music .section-tabs {
-    @include box-block($color-red);
-    @include dotted-bg(rgba($color-red, 0.8), white);
+    @include box-block($color-red, 1, true);
 }
 
 #music .header {

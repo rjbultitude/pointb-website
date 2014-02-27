@@ -1,5 +1,6 @@
 .section-tabs {
     position:relative;
+    min-height:12em;
 }
 
 .tabs-nav,
@@ -51,7 +52,6 @@
 
 .tabs-content {
 	display:none;
-    @include box-block($color-red, 1, false);
 	padding:2em 0;
 }
 
