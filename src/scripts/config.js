@@ -5,6 +5,7 @@ require.config({
         requirejs: '/src/scripts/libs/require',
         mobileNav: '/src/scripts/modules/mobile-nav',
         filterPatches: '/src/scripts/modules/filter-patches',
+        scrollBackground: '/src/scripts/modules/scroll-background',
         tabsPlugin: '/src/scripts/plugins/jquery.tabs.plugin',
         exampleJqueryPlugin: '/src/scripts/plugins/example-jquery-plugin',
         easing: '/src/scripts/libs/jquery.easing.1.3'
@@ -12,7 +13,7 @@ require.config({
 });
 
 // Start the main app logic.
-require(['jquery', 'debug', 'base', 'mobileNav', 'filterPatches', 'tabsPlugin', 'easing'], function ($, debug, base, mobileNav, filterPatches) {
+require(['jquery', 'debug', 'base', 'mobileNav', 'filterPatches', 'scrollBackground', 'tabsPlugin', 'easing'], function ($, debug, base, mobileNav, filterPatches, scrollBackground) {
     'use strict';
 
     //App inits
@@ -21,6 +22,7 @@ require(['jquery', 'debug', 'base', 'mobileNav', 'filterPatches', 'tabsPlugin', 
     /* ---------- App modules ----------------------------------------------- */
     mobileNav.init();
     filterPatches.init();
+    scrollBackground.init();
 
     /* ---------- Plugins --------------------------------------------------- */
     if (base.isPatchesPage) {
