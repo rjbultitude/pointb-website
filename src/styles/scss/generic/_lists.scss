@@ -49,3 +49,32 @@ dt {
 .item-heading {
     font-size:1.5em;
 }
+
+//Item List
+
+.item-list .item-heading {
+    text-align:left;
+    margin-bottom:$spacing/4;
+    @include inline-block();
+}
+
+.item-list li {
+    display:block;
+    text-align:left;
+    border-bottom:1px solid rgba(white,0.5);
+    padding-bottom:2em;
+    margin-bottom:2em;
+}
+
+.item-list li:last-child {
+    border-bottom:0 none;
+}
+
+.item-list dl {
+    @include inline-block();
+}
+
+.item-list dd,
+.item-list dt {
+    @include inline-block();
+}

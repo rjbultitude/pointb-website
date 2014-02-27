@@ -3,8 +3,7 @@
     min-height:12em;
 }
 
-.tabs-nav,
-.tabs-content {
+.tabs-nav {
 	@include column(24);
 }
 
@@ -51,29 +50,12 @@
 }
 
 .tabs-content {
+    @extend %standard-box;
+    @include column-spread;
 	display:none;
-	padding:2em 0;
 }
 
 .no-js .tabs-content,
 .tabs-content.active {
-	display:block;
-}
-
-.tabs-content .item-list .list-item {
-	@include inline-block;
-	margin-right:$spacing/2;
-	position:relative;
-}
-
-.tabs-content .item-list .list-item:after {
-	@extend %before-after-base;
-	height:100%;
-	border-right:1px solid rgba(white, 0.5);
-	top:0;
-	right:-$spacing/4;
-}
-
-.tabs-content .item-list .list-item:nth-child(4n):after {
-	display:none;
+	display:inline;
 }
