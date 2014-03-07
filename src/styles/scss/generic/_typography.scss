@@ -183,47 +183,6 @@ a.image {
 }
 
 // --------------------------------------------------------------------------------
-// ---------- Lists ---------------------------------------------------------------
-// -------------------------------------------------------------------------------- */
-
-dl {
-    //clearfix here
-}
-
-dt,
-dd {
-    display: block;
-    padding: 0.5em 0;
-    float: left;
-    font-family: $font-heading;
-}
-
-dt {
-    clear: left;
-    font-weight: bold;
-    margin-right: 0.5em;
-}
-
-.definition-list-stacked dt,
-.definition-list-stacked dd {
-    float: none;
-}
-
-.definition-list-stacked dt {
-    padding-bottom: 0;
-}
-
-.definition-list-stacked dd {
-    padding-bottom: 0.75em;
-    @include inline-block;
-    margin-right: 0.2em;
-}
-
-.unordered-inline-list li {
-    @include inline-block;
-}
-
-// --------------------------------------------------------------------------------
 // ---------- BlockQuotes ---------------------------------------------------------
 // -------------------------------------------------------------------------------- */
 

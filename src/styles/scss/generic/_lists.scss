@@ -31,32 +31,51 @@ li:last-of-type {
 }
 
 dl {
-	display:block;
-    @include clearfix;
+	@include inline-block();
 }
 
 dt,
 dd {
-	float:left;
-	margin-right:1em;
+	@include inline-block();
 }
 
 dt {
-	clear:left;
     font-weight:bold;
+    margin-right:0.5em;
+}
+
+dd {
+    margin-right:1.5em;
+}
+
+dd:last-child {
+    margin-right:0;
 }
 
 .item-heading {
     font-size:1.5em;
 }
 
-//Item List
-
-.item-list .item-heading {
-    text-align:left;
-    margin-bottom:$spacing/4;
-    @include inline-block();
+.definition-list-stacked dt,
+.definition-list-stacked dd {
+    float: none;
 }
+
+.definition-list-stacked dt {
+    padding-bottom: 0;
+}
+
+.definition-list-stacked dd {
+    padding-bottom: 0.75em;
+    @include inline-block;
+    margin-right: 0.2em;
+}
+
+.unordered-inline-list li {
+    @include inline-block;
+}
+
+//Item List
 
 .item-list li {
     display:block;
@@ -70,11 +89,18 @@ dt {
     border-bottom:0 none;
 }
 
-.item-list dl {
-    @include inline-block();
+.item-list .item-header {
+    margin-bottom:0.75em;
+    text-align:left;
 }
 
-.item-list dd,
-.item-list dt {
+.item-list .item-heading {
     @include inline-block();
+    //font-size:1em;
+    text-align:left;
+    margin-right:0.5em;
+}
+
+.item-list dl {
+    float:right;
 }
