@@ -49,12 +49,12 @@
             <div class="wrapper-inner">
                 <form class="form" role="search">
                     <!-- <input id="quick-search" name="quick-search" type="text" /> -->
-                    <label for="selectCategory">Category</label>
+                    <label for="selectCategory">Choose a category</label>
                     <select name="select-category" id="selectCategory">
-                        <option value="pads">pads</option>
-                        <option value="rhythms">rhythms</option>
-                        <option value="fx">fx</option>
-                        <option value="abstract">abstract</option>
+                        <option value="pads">Pads and textures</option>
+                        <option value="rhythms">Rhythmic</option>
+                        <option value="fx">FX</option>
+                        <option value="abstract">Abstract</option>
                     </select>
                     <button role="button">
                         <span class="text">Submit</span>
@@ -62,13 +62,7 @@
                     </button>
                 </form>
                 <div class="filter-results">
-                    <h3 class="section-heading">Results</h3>
-                    <h4 class="item-heading">Tonality</h4>
-                    <dl>
-                        <dt>Type</dt><dd>Combinator</dd>
-                        <dt>Size</dt><dd>200k</dd>
-                    </dl>
-
+                    <p>No results</p>
                 </div>
             </div>
         </section>

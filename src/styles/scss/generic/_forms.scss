@@ -111,14 +111,14 @@ input[type="email"],
 input[type="number"],
 select,
 textarea {
-    -webkit-appearance: none;
+    //-webkit-appearance: none;
     @include box-sizing(border-box);
     border: 0.2em solid white;
     padding: 0.25em 0.75em;
     height: 2.9em;
     line-height: 1.333em;
     outline: none;
-    color: $color-text;
+    color: black;
     margin: 0 $spacing/2 0 0;
     max-width: 100%;
     background: white;

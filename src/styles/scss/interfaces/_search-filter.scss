@@ -6,7 +6,7 @@
 
 .section-filter [role="search"] {
     padding:$spacing 0;
-    @include column-spread(4,16,4);
+    @include column-spread(2,20,2);
     text-align:center;
 }
 
