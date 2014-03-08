@@ -49,14 +49,13 @@
             <div class="wrapper-inner">
                 <form class="form" role="search">
                     <!-- <input id="quick-search" name="quick-search" type="text" /> -->
-                    <label for="pads">Pads</label>
-                    <input type="checkbox" id="pads">
-                    <label for="rhythms">rhythms</label>
-                    <input type="checkbox" id="rhythms">
-                    <label for="fx">fx</label>
-                    <input type="checkbox" id="fx">
-                    <label for="abstract">abstract</label>
-                    <input type="checkbox" id="abstract">
+                    <label for="selectCategory">Category</label>
+                    <select name="select-category" id="selectCategory">
+                        <option value="pads">pads</option>
+                        <option value="rhythms">rhythms</option>
+                        <option value="fx">fx</option>
+                        <option value="abstract">abstract</option>
+                    </select>
                     <button role="button">
                         <span class="text">Submit</span>
                         <span class="icon"></span>

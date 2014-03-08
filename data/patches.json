@@ -25,7 +25,7 @@
 		"link": "/patches/wildrhythm",
 		"description": "description goes here"
 	}],
-	"FX": [{
+	"fx": [{
 		"title": "smoothfx",
 		"link": "/patches/smoothfx",
 		"description": "description goes here"
