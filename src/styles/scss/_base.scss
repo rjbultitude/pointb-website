@@ -16,6 +16,7 @@ $color-shift-amount:            15%;
 
 $color-orange:                  #FC9A2F;
 $color-orange-pale:				#F8AC4D;
+$color-orange-paler:			lighten($color-orange-pale, 5%);
 $color-red:                     #F15944;
 $color-red-pale:                #BD9999;
 $color-blue:                    #05395E;

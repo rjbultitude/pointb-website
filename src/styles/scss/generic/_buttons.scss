@@ -27,3 +27,22 @@ button[role="button"] {
        
     }
 }
+
+.btn-cta {
+    //@include inline-block;
+    display:block;
+    font-weight:normal;
+    padding:0.5em 1em;
+    background-color:$color-blue;
+    color:white;
+    @include standard-transition-padding;
+    &:hover {
+        @include standard-transition-padding;
+        padding-left:2em;
+        color:white;
+    }
+}
+
+.btn-cta + .btn-cta {
+    margin-top:1em;
+}

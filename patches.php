@@ -48,8 +48,15 @@
         <section class="section section-filter search-patches">
             <div class="wrapper-inner">
                 <form class="form" role="search">
-                    <label for="quick-search">Search</label>
-                    <input id="quick-search" name="quick-search" type="text" />
+                    <!-- <input id="quick-search" name="quick-search" type="text" /> -->
+                    <label for="pads">Pads</label>
+                    <input type="checkbox" id="pads">
+                    <label for="rhythms">rhythms</label>
+                    <input type="checkbox" id="rhythms">
+                    <label for="fx">fx</label>
+                    <input type="checkbox" id="fx">
+                    <label for="abstract">abstract</label>
+                    <input type="checkbox" id="abstract">
                     <button role="button">
                         <span class="text">Submit</span>
                         <span class="icon"></span>

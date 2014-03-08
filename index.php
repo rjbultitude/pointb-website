@@ -49,19 +49,27 @@
             <div class="wrapper-inner">
                 <h2 class="article-heading">
                     <span class="lesser">Fourth Album </span>
-                    Exception Rules
-                    <span class="lesser">Out Now</span>
+                    Heart <i class="small">of</i> Matter
+                    <span class="lesser">Out Soon</span>
                 </h2>
                 <div class="article-text">
                     <p>After many months of hard work and sonic endeavour the 4th Point B album is shaping up nicely. Expect it to hit the digital stores in spring 2014</p>
+                    <p>Available on CD/MP3/FLAC</p>
                 </div>
                 <div class="figure article-figure">
                     <div class="image-border">
-                        <img src="/images/exception-rules.jpg" alt="" />
+                        <img src="/images/artwork/Heart-of-matter_digi-cover.jpg" alt="Heart of Matter LP" />
                     </div>
                 </div>
                 <aside class="aside">
-                    <p>More text here</p>
+                    <a href="#" class="btn-cta">
+                        <span class="text">Buy now</span>
+                        <span class="icon"></span>
+                    </a>
+                    <a href="#" class="btn-cta">
+                        <span class="text">Read more</span>
+                        <span class="icon"></span>
+                    </a>
                 </aside>
             </div>
         </article>
@@ -71,14 +79,17 @@
         <article class="article article-biog biog-short">
             <div class="wrapper-inner">
                 <h2 class="article-heading">A little about .B</h2>
-                <p class="article-text">Point B has been producing deep, melodic, electronic music for over a decade. By sewing together ideas ranging from 70s sci-fi films to traditional middle eastern music he has woven a unique sonic fabric and found a profound tonal consistency.</p>
+                <div class="article-text">
+                    <p>Point B has been producing deep, melodic, electronic music for over a decade. By sewing together ideas ranging from 70s sci-fi films to traditional 
+                    middle eastern music he has woven a unique sonic fabric.</p>
+                    <p>Starting out on legendary Electro labels SCSI AV and Orson Records he earned himself a solid reputation via quirky dance floor fillers and intricate electronica.</p>
+                </div>
                 <div class="figure article-figure">
                     <div class="image-border">
                         <img src="/images/rb.jpg" alt="" />
                     </div>
                 </div>
-                <aside class="aside"><p>Starting out on legendary Electro labels SCSI AV and Orson Records he earned himself a solid reputation via quirky dance floor fillers and intricate electronica. 
-                    He then began to absorb the waves of dubstep and post-garage that washed up on the shores of South London. Now his sound has matured into something that is both somehow uplifting and melancholy.</p>
+                <aside class="aside"><p>After absorbing the waves of dubstep and post-garage that washed up on the shores of South London his sound has matured into something that is both somehow uplifting and melancholy.</p>
                 </aside>
             </div>
         </article>

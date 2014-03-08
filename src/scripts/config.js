@@ -21,11 +21,18 @@ require(['jquery', 'debug', 'base', 'mobileNav', 'filterPatches', 'scrollBackgro
 
     /* ---------- App modules ----------------------------------------------- */
     mobileNav.init();
-    filterPatches.init();
     scrollBackground.init();
+    if (base.isPatchesPage()) {
+        filterPatches.init();
+    }
+
+    if (base.isDiscogPage()) {
+        debug.log('discog');
+    }
 
     /* ---------- Plugins --------------------------------------------------- */
-    if (base.isPatchesPage) {
+    if (base.isTabs()) {
+        debug.log('tabs');
         $('.tabs').JQueryTabsPlugin();
     }
 

@@ -99,6 +99,22 @@ define(['jquery'], function($) {
             }
         },
 
+        isDiscogPage: function isDiscogPageFn(){
+            if($('#discog').length > 0){
+                return true;
+            } else {
+                return false;
+            }
+        },
+
+        isTabs: function isTabsFn(){
+            if($('.tabs').length > 0){
+                return true;
+            } else {
+                return false;
+            }
+        }
+
 
     };//end base object
 

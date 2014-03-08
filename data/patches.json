@@ -1,22 +1,54 @@
-var patches = {
-	"pads": [
-		{"title" : "smoothpad", "link": "/patches/smoothpad", "description": "description goes here"},
-		{"title" : "roughpad", "link": "/patches/roughpad", "description": "description goes here"},
-		{"title" : "wildpad", "link": "/patches/wildpad", "description": "description goes here"}
-	],
-	"rhythms": [
-		{"title" : "smoothrhythm", "link": "/patches/smoothrhythm", "description": "description goes here"},
-		{"title" : "roughrhythm", "link": "/patches/roughrhythm", "description": "description goes here"},
-		{"title" : "wildrhythm", "link": "/patches/wildrhythm", "description": "description goes here"}
-	],
-	"FX": [
-		{"title" : "smoothfx", "link": "/patches/smoothfx", "description": "description goes here"},
-		{"title" : "roughfx", "link": "/patches/roughfx", "description": "description goes here"},
-		{"title" : "wildfx", "link": "/patches/wildfx", "description": "description goes here"}
-	],
-	"abstract": [
-		{"title" : "smoothabstract", "link": "/patches/smoothabstract", "description": "description goes here"},
-		{"title" : "roughabstract", "link": "/patches/roughabstract", "description": "description goes here"},
-		{"title" : "wildabstract", "link": "/patches/wildabstract", "description": "description goes here"}
-	]
+{
+	"pads": [{
+		"title": "smoothpad",
+		"link": "/patches/smoothpad",
+		"description": "description goes here"
+	}, {
+		"title": "roughpad",
+		"link": "/patches/roughpad",
+		"description": "description goes here"
+	}, {
+		"title": "wildpad",
+		"link": "/patches/wildpad",
+		"description": "description goes here"
+	}],
+	"rhythms": [{
+		"title": "smoothrhythm",
+		"link": "/patches/smoothrhythm",
+		"description": "description goes here"
+	}, {
+		"title": "roughrhythm",
+		"link": "/patches/roughrhythm",
+		"description": "description goes here"
+	}, {
+		"title": "wildrhythm",
+		"link": "/patches/wildrhythm",
+		"description": "description goes here"
+	}],
+	"FX": [{
+		"title": "smoothfx",
+		"link": "/patches/smoothfx",
+		"description": "description goes here"
+	}, {
+		"title": "roughfx",
+		"link": "/patches/roughfx",
+		"description": "description goes here"
+	}, {
+		"title": "wildfx",
+		"link": "/patches/wildfx",
+		"description": "description goes here"
+	}],
+	"abstract": [{
+		"title": "smoothabstract",
+		"link": "/patches/smoothabstract",
+		"description": "description goes here"
+	}, {
+		"title": "roughabstract",
+		"link": "/patches/roughabstract",
+		"description": "description goes here"
+	}, {
+		"title": "wildabstract",
+		"link": "/patches/wildabstract",
+		"description": "description goes here"
+	}]
 }

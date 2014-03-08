@@ -36,8 +36,8 @@ body {
 
 .article-heading {
     @extend %heading;
-    font-size: 4.500em;
-    line-height:0.875em;
+    font-size: 5.500em;
+    line-height:0.775em;
     margin-bottom: 0.5em;
     text-align:center;
     @include image_mask;
@@ -62,8 +62,15 @@ body {
 }
 
 .lesser {
-    font-size:0.5em;
+    font-size:0.35em;
     display:block;
+}
+
+.small {
+    @include inline-block();
+    font-size:0.25em;
+    font-style:italic;
+    vertical-align:middle;
 }
 
 .regular-heading {

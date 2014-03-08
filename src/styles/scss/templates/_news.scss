@@ -3,3 +3,7 @@
     @include dotted-bg(rgba($color-red, 0.8), white, 8px);
     border:0 none;
 }
+
+.article-news .article-heading {
+	line-height:0.675em;
+}

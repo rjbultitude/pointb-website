@@ -62,9 +62,13 @@ body {
     @extend %standard-box;
 }
 
+.article p {
+    line-height:1.42em;
+}
+
 .article .article-text {
-    @include column(6);
-    @include push(2);
+    @include column(7);
+    @include push(1);
 
     @media all and (max-width:37.500em) {
         @include column-spread;
@@ -86,12 +90,19 @@ body {
 }
 
 .article .aside {
-    @include column(6);
-    @include pull(2);
+    @include column(7);
+    @include pull(1);
 
     @media all and (max-width:37.500em) {
         @include column-spread;
     }
+}
+
+.article .article-text p {
+    padding-right:5%;
+}
+.article .aside p {
+    padding-left:5%;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -120,6 +131,12 @@ body {
 
 .section-main-header {
     border-bottom:$color-nav-active solid 0.3em;
+    @include color-grad-bg();
+
+    @media all and (max-width:45em) {
+        @include color-grad-bg(bottom);
+    }
+
 }
 
 .section-main-header .wrapper-inner{
