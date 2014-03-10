@@ -24,8 +24,27 @@
     display:block;
 }
 
-.section-results {
-    margin:$spacing*4;
-    //remove
-    display:none;
+.search-results {
+    @extend %flow-in-grid;
+    margin-bottom:$spacing;
+}
+
+.search-results .group-heading {
+    @extend .section-heading;
+    text-transform:capitalize;
+    margin-bottom:$spacing/2;
+}
+
+.search-results .group {
+    @include box-sizing(border-box);
+    width:33.3%;
+    float:left;
+}
+
+.results-list {
+    display:block;
+}
+
+.results-list .list-item {
+    border-bottom:1px soild rgba(white, 0.5);
 }

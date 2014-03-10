@@ -49,20 +49,28 @@
             <div class="wrapper-inner">
                 <form class="form" role="search">
                     <!-- <input id="quick-search" name="quick-search" type="text" /> -->
-                    <label for="selectCategory">Choose a category</label>
+                    <!-- <label for="selectCategory">Choose a category</label>
                     <select name="select-category" id="selectCategory">
                         <option value="pads">Pads and textures</option>
                         <option value="rhythms">Rhythmic</option>
                         <option value="fx">FX</option>
                         <option value="abstract">Abstract</option>
-                    </select>
+                    </select> -->
+                    <label for="pads">Pads and textures</label>
+                    <input id="pads" type="checkbox">
+                    <label for="rhythms">Rhythmic</label>
+                    <input id="rhythms" type="checkbox">
+                    <label for="fx">FX</label>
+                    <input id="fx" type="checkbox">
+                    <label for="abstract">Abstract</label>
+                    <input id="abstract" type="checkbox">
                     <button role="button">
                         <span class="text">Submit</span>
                         <span class="icon"></span>
                     </button>
                 </form>
-                <div class="filter-results">
-                    <p>No results</p>
+                <div class="search-results">
+                    <h3 class="heading no-results">No results</h3>
                 </div>
             </div>
         </section>
