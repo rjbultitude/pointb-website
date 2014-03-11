@@ -1,6 +1,8 @@
 button[role="button"] {
     @include inline-block;
-    border:0.2em solid white;
+    @include border-radius(0.5em);
+    text-shadow: inset 1px 1px 0px 0px black;
+    border-bottom:0.2em solid black;
     background:$color-blue;
     padding:0.6em 1.8em;
     color:white;
@@ -12,7 +14,8 @@ button[role="button"] {
    
     }
     &:hover {
-        
+        border-top:0.2em solid transparent;
+        border-bottom:0;
         & > .icon {
             
         }

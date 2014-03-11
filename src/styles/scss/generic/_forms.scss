@@ -26,17 +26,22 @@ legend {
 
 label {
     @include inline-block;
-    margin-right:$spacing/4;
-    font-size:1.5em;
+    font-size:1.125em;
 }
 
-label span,legend span {
-    color: $color-text;
+label + input {
+  margin-left:0.1em;
 }
 
-.no-js .ie7 label,
-.no-js .ie8 label {
-    display: block !important;
+.form-item {
+  @include inline-block();
+  margin-right:$spacing/4;
+}
+
+.form-item:last-child {
+  display:block;
+  text-align:center;
+  margin-top:$spacing/4;
 }
 
 /* -------------------------------------------------------------------------------- */

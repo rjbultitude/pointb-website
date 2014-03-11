@@ -36,7 +36,7 @@
                 <div class="content">
                     <h1 class="page-heading">
                         Patches
-                        <span class="lesser">For Reason</span>
+                        <span class="lesser">Propellerhead Reason</span>
                     </h1>
                     <p class="standfirst">Browse or search below for complete combinator patches, thor synth patches and more.</p>
                 </div>
@@ -48,6 +48,7 @@
         <section class="section section-filter search-patches">
             <div class="wrapper-inner">
                 <form class="form" role="search">
+                    <h2 class="legend">Search</h2>
                     <!-- <input id="quick-search" name="quick-search" type="text" /> -->
                     <!-- <label for="selectCategory">Choose a category</label>
                     <select name="select-category" id="selectCategory">
@@ -56,18 +57,28 @@
                         <option value="fx">FX</option>
                         <option value="abstract">Abstract</option>
                     </select> -->
-                    <label for="pads">Pads and textures</label>
-                    <input id="pads" type="checkbox">
-                    <label for="rhythms">Rhythmic</label>
-                    <input id="rhythms" type="checkbox">
-                    <label for="fx">FX</label>
-                    <input id="fx" type="checkbox">
-                    <label for="abstract">Abstract</label>
-                    <input id="abstract" type="checkbox">
-                    <button role="button">
-                        <span class="text">Submit</span>
-                        <span class="icon"></span>
-                    </button>
+                    <div class="form-item">
+                        <label for="pads">Pads and textures</label>
+                        <input id="pads" type="checkbox">
+                    </div>
+                    <div class="form-item">
+                        <label for="rhythms">Rhythmic</label>
+                        <input id="rhythms" type="checkbox">
+                    </div>
+                    <div class="form-item">
+                        <label for="fx">FX</label>
+                        <input id="fx" type="checkbox">
+                    </div>
+                    <div class="form-item">
+                        <label for="abstract">Abstract</label>
+                        <input id="abstract" type="checkbox">
+                    </div>
+                    <div class="form-item">
+                        <button role="button">
+                            <span class="text">Submit</span>
+                            <span class="icon"></span>
+                        </button>
+                    </div>
                 </form>
                 <div class="search-results">
                     <h3 class="heading no-results">No results</h3>

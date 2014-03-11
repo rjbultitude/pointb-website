@@ -10,22 +10,8 @@
     text-align:center;
 }
 
-.section-filter .form-item {
-    float:left;
-    width:50%;
-}
-
-.section-filter .form-item-sub {
-    display:none;
-}
-
-.section-filter [role="search"] [type="checkbox"]:checked ~ .form-item-sub,
-.section-filter [role="search"] [type="checkbox"]:checked + .form-item-sub {
-    display:block;
-}
-
 .search-results {
-    @extend %flow-in-grid;
+    @include column-spread(2,20,2);
     margin-bottom:$spacing;
 }
 
