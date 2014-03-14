@@ -23,8 +23,11 @@
 
 .search-results .results-group {
     @include box-sizing(border-box);
+    @include border-radius(0.5em);
+    padding:1em;
     width:33.3%;
     float:left;
+    background-color:rgba(darken($color-red, 25%), 0.4);
     border-right:1px soild rgba(white, 0.5);
     margin-bottom:$spacing/2;
 }
