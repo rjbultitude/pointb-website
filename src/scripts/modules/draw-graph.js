@@ -21,7 +21,7 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 	var discogData = [];
 	var uniqueYearsData = [];
 	var uniqueFormatsData = [];
-	var allColours = ['#C16620', '#E8A54E', '#385559', '#202C38', '#A58576'];
+	var allColours = ['#C16620', '#E8A54E', '#385559', '#202C38', '#05395E'];
 	var maxReleases = null;
 	var numberYears = null;
 	var formatxAxis = null;

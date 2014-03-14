@@ -38,7 +38,7 @@
                         Discography
                     </h1>
                     <p class="standfirst">How times have changed.<br />
-                    The graph below illustrates the evolution of formats across Point B's back.</p>
+                    The graph below illustrates the evolution of formats across Point B's catalogue.</p>
                 </div>
             </div>
         </section>
@@ -47,17 +47,21 @@
         <!-- start content -->
         <div id="main" class="section section-infographic" role="main">
             <div class="wrapper-inner">
-                <dl class="release-details-list">
-                    <dt class="">Title:</dt><dd class="release-title"></dd>
-                    <dt class="">Label:</dt><dd class="release-label"></dd>
-                    <dt class="">Cat No.:</dt><dd class="release-cat"></dd>
-                </dl>
-                <figure class="release-figure">
-                    <img class="release-image" src="" alt="" />
-                </figure>
+                <div id="key-list">
+                    <h3 class="sub-heading">Key:</h3>
+                </div>
                 <div id="data-output">
                 </div>
-                <div id="key-list"></div>
+                <div class="sub-section sub-section-release-details">
+                    <dl class="release-details-list">
+                        <dt class="">Title:</dt><dd class="release-title"></dd>
+                        <dt class="">Label:</dt><dd class="release-label"></dd>
+                        <dt class="">Cat No.:</dt><dd class="release-cat"></dd>
+                    </dl>
+                    <figure class="figure release-figure">
+                        <img class="release-image" src="" alt="" />
+                    </figure>
+                </div>
             </div>
         </div>
         <!-- end content -->

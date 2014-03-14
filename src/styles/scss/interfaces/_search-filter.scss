@@ -18,13 +18,23 @@
 .search-results .group-heading {
     @extend .section-heading;
     text-transform:capitalize;
-    margin-bottom:$spacing/2;
+    margin-bottom:$spacing/4;
 }
 
-.search-results .group {
+.search-results .results-group {
     @include box-sizing(border-box);
     width:33.3%;
     float:left;
+    border-right:1px soild rgba(white, 0.5);
+    margin-bottom:$spacing/2;
+}
+
+.search-results .results-group:nth-child(3n) {
+    border-right:0 none;
+}
+
+.search-results .results-group:nth-child(4n) {
+    clear:left;
 }
 
 .results-list {

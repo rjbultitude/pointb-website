@@ -18,6 +18,7 @@ define(['debug', 'jquery'], function(debug, $) {
 
         dataPatches: null,
         results: $('.search-results'),
+        group: null,
         noResults: $('.no-results'),
         checkboxes: [],
         numberCheckboxes: 0,
@@ -43,16 +44,17 @@ define(['debug', 'jquery'], function(debug, $) {
             });
         },
 
-        createList: function createListFn() {
-            filterPatches.results.append('<ul class="results-list"></ul>');
+        setGroup: function setGroupFn(patchesKey) {
+            filterPatches.results.append('<div class="results-group results-group-' + patchesKey + '"></div>');
+            filterPatches.group = $('.results-group-' + patchesKey + '', filterPatches.results);
         },
 
         createHeading: function createHeadingFn(headingText) {
-             $('<h3 class="group-heading">' + headingText + '</h3>').appendTo(filterPatches.results);
+             $('<h3 class="group-heading">' + headingText + '</h3>').appendTo(filterPatches.group);
         },
 
-        createWrapper: function createWrapperFn(innerHtml) {
-            $('<div class="group"></div>');
+        createList: function createListFn() {
+            filterPatches.group.append('<ul class="results-list"></ul>');
         },
 
         formAction: function formActionFn() {
@@ -92,7 +94,7 @@ define(['debug', 'jquery'], function(debug, $) {
                 
                 if (selectValue === patchesKey) {
                     //Sort out basic html
-                    //filterPatches.createWrapper();
+                    filterPatches.setGroup(patchesKey);
                     filterPatches.createHeading(patchesKey);
                     filterPatches.createList();
                     var resultsList = filterPatches.results.find('ul');

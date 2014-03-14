@@ -1,6 +1,21 @@
 .section-infographic {
 	@include box-block($color-red, 1, true);
 	padding:$spacing/2 0;
+	position:relative;
+}
+
+.section-infographic dt, 
+.section-infographic dd {
+	display:block;
+	float:left;
+	min-width:2.8em;
+    min-height:1.2em;
+    text-align:left;
+}
+
+.section-infographic dt {
+	clear:left;
+    margin-bottom:0.2em;
 }
 
 .section-release-details {
@@ -11,6 +26,57 @@
 #data-output {
 	text-align:center;
 }
+
+/* -------------------------------------------------------------------------------- */
+/* ---------- Key ----------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+#key-list {
+	position:absolute;
+	top:12em;
+	left:12em;
+}
+
+#key-list dd,
+#key-list dt {
+	@include inline-block();
+	margin-right:0.5em;
+}
+
+#key-list dt {
+	width:2em;
+	height:2em;
+	border:1px solid white;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ---------- Release Details ----------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.sub-section-release-details {
+	@include column-spread;
+	border-top:1px solid rgba(255, 255, 255, 0.5);
+	padding-top:$spacing/4;
+	min-height:10em;
+}
+
+.sub-section-release-details .release-details-list {
+	width:60%;
+	float:left;
+}
+
+.sub-section-release-details .figure {
+	width:35%;
+	float:right;
+}
+
+.sub-section-release-details .figure img {
+	width:100%;
+	height:auto;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ---------- Graph -------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
 
 .axis .domain {
   fill: none;
