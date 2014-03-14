@@ -1,0 +1,53 @@
+.section-infographic {
+	@include box-block($color-red, 1, true);
+	padding:$spacing/2 0;
+}
+
+.section-release-details {
+	width:100%;
+	float:left;
+}
+
+#data-output {
+	text-align:center;
+}
+
+.axis .domain {
+  fill: none;
+  stroke: none;
+  shape-rendering: crispEdges;
+}
+
+.infobox {
+    color:black;
+    font-size:1.2em;
+}
+
+.column {
+	min-height:10em;
+	background:white;
+}
+
+.column rect {
+	stroke: white;
+	cursor:pointer;
+}
+
+.column rect.active {
+	fill:white;
+}
+
+.release-details-list {
+	float:left;
+	width:60%;
+}
+
+.release-figure {
+	float:right;
+	width:200px;
+}
+
+.release-figure .release-image {
+	max-width:100%;
+	height:auto;
+}
