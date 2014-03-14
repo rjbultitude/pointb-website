@@ -85,30 +85,51 @@ define(['jquery'], function($) {
                         var contents = div.innerHTML;
                         div = null;
                         return contents;
-                    })(this[0])
-                );
+                    })(this[0]));
             };
         },
 
+        /* ---------- Utility for converting hex to rgb --------------------- */
+        colorLuminance: function(hex, lum) {
+
+            // validate hex string
+            hex = String(hex).replace(/[^0-9a-f]/gi, '');
+            if (hex.length < 6) {
+                hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+            }
+            lum = lum || 0;
+
+            // convert to decimal and change luminosity
+            var rgb = '#',
+                c, i;
+            for (i = 0; i < 3; i++) {
+                c = parseInt(hex.substr(i * 2, 2), 16);
+                c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
+                rgb += ('00' + c).substr(c.length);
+            }
+
+            return rgb;
+        },
+
         /* ---------- Feature Identification -------------------------------- */
-        isPatchesPage: function isPatchesPageFn(){
-            if($('#patches').length > 0){
+        isPatchesPage: function isPatchesPageFn() {
+            if ($('#patches').length > 0) {
                 return true;
             } else {
                 return false;
             }
         },
 
-        isDiscogPage: function isDiscogPageFn(){
-            if($('#discog').length > 0){
+        isDiscogPage: function isDiscogPageFn() {
+            if ($('#discog').length > 0) {
                 return true;
             } else {
                 return false;
             }
         },
 
-        isTabs: function isTabsFn(){
-            if($('.tabs').length > 0){
+        isTabs: function isTabsFn() {
+            if ($('.tabs').length > 0) {
                 return true;
             } else {
                 return false;
@@ -116,7 +137,7 @@ define(['jquery'], function($) {
         }
 
 
-    };//end base object
+    }; //end base object
 
     //IE selectivizr polyfill
     $(function() {

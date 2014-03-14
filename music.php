@@ -44,7 +44,7 @@
         <!-- end main header -->
 
         <!-- start tabs -->
-        <section class="section section-tabs tabs">
+        <section class="section section-tabs tabs" role="main">
             <div class="wrapper-inner">
                 <div class="tabs-nav" role="navigation">
                     <ul class="tabs-nav-list" role="list">

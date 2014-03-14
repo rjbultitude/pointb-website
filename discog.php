@@ -38,13 +38,29 @@
                         Discography
                     </h1>
                     <p class="standfirst">How times have changed.<br />
-                    The graph below shows how music formats have changed even within Point B's relatively short lifespan</p>
+                    The graph below illustrates the evolution of formats across Point B's back.</p>
                 </div>
             </div>
         </section>
         <!-- end main header -->
 
-        
+        <!-- start content -->
+        <div id="main" class="section section-infographic" role="main">
+            <div class="wrapper-inner">
+                <dl class="release-details-list">
+                    <dt class="">Title:</dt><dd class="release-title"></dd>
+                    <dt class="">Label:</dt><dd class="release-label"></dd>
+                    <dt class="">Cat No.:</dt><dd class="release-cat"></dd>
+                </dl>
+                <figure class="release-figure">
+                    <img class="release-image" src="" alt="" />
+                </figure>
+                <div id="data-output">
+                </div>
+                <div id="key-list"></div>
+            </div>
+        </div>
+        <!-- end content -->
 
     </div>
     <!-- end main -->
