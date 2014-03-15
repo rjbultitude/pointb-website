@@ -4,7 +4,7 @@
 		"Label": "Point B Music",
 		"Year": 2014,
 		"Format": "Digital, CD",
-		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/125932303&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/125932303&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;visual=true"
 	}, {
 		"Title": "Golden",
 		"Label": "XLR8R exclusive",
@@ -21,34 +21,34 @@
 	"remixes": [{
 		"Title": "Chromaphon",
 		"Label": "Point B Music",
-		"Year": 2014,
-		"Format": "Digital, CD",
+		"Year": 2009,
+		"Format": "Digital",
 		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/93577535&amp;auto_play=false&amp;hide_related=false&amp;visual=true"
 	}, {
 		"Title": "Electro Bitch",
 		"Label": "XLR8R exclusive",
 		"Year": 2013,
-		"Format": "Digital",
+		"Format": "Vinyl, Digital",
 		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/93577535&amp;auto_play=false&amp;hide_related=false&amp;visual=true"
 	}, {
 		"Title": "Arc",
 		"Label": "Orson",
 		"Year": 2012,
-		"Format": "Digital",
+		"Format": "Vinyl, Digital",
 		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/91765208&amp;auto_play=false&amp;hide_related=false&amp;visual=true"
 	}],
 	"archives": [{
-		"Title": "Eye Contact",
-		"Label": "Point B Music",
-		"Year": 2014,
-		"Format": "Digital, CD",
-		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/125932303&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"
+		"Title": "Half Lit",
+		"Label": "Erratica",
+		"Year": 2005,
+		"Format": "Vinyl",
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/75902470&amp;auto_play=false&amp;hide_related=false&amp;visual=true"
 	}, {
-		"Title": "Golden",
-		"Label": "XLR8R exclusive",
-		"Year": 2013,
+		"Title": "The Insider",
+		"Label": "Combat Recordings",
+		"Year": 2005,
 		"Format": "Digital",
-		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/50117102&amp;auto_play=false&amp;hide_related=false&amp;visual=true"
+		"url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/67912003&amp;auto_play=false&amp;hide_related=false&amp;visual=true"
 	}, {
 		"Title": "Fossils",
 		"Label": "Frijsfo Beats",
