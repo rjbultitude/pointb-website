@@ -128,6 +128,14 @@ define(['jquery'], function($) {
             }
         },
 
+        isMusicPage: function isMusicFn() {
+            if ($('#music').length > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        },
+
         isTabs: function isTabsFn() {
             if ($('.tabs').length > 0) {
                 return true;
