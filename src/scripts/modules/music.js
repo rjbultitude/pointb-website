@@ -44,7 +44,7 @@ define(['debug', 'jquery', 'hbs!/Templates/music-list-template'], function(debug
             music.musicList.empty();
             // debug.log('music.musicData', music.musicData);
             for (var i = 0; i < music.musicData.length; i++) {
-                music.musicList.html(musicTmpl(music.musicData[i]));
+                music.musicList.append(musicTmpl(music.musicData[i]));
             }
         }
 
