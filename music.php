@@ -63,6 +63,18 @@
                     <ul class="item-list" role="list">
                         <li class="list-item">
                             <header class="item-header">
+                                <h3 class="item-heading">{Title}</h3>
+                                <dl>
+                                    <dt>Label</dt>
+                                    <dd>{label}</dd>
+                                    <dt>Year</dt>
+                                    <dd>{year}</dd>
+                                </dl>
+                            </header>
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="{url}"></iframe>
+                        </li>
+                        <li class="list-item">
+                            <header class="item-header">
                                 <h3 class="item-heading">Eye Contact</h3>
                                 <dl>
                                     <dt>Label</dt>
