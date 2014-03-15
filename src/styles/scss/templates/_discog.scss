@@ -4,6 +4,14 @@
 	position:relative;
 }
 
+.section-infographic .wrapper-inner {
+	position:relative;
+}
+
+.section-infographic .btn-showHide {
+	color:white;
+}
+
 .section-infographic dt, 
 .section-infographic dd {
 	display:block;
@@ -25,6 +33,10 @@
 
 #data-output {
 	text-align:center;
+
+	@media all and (max-width:40em) {
+		overflow-x:scroll;
+	}
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -32,8 +44,8 @@
 /* -------------------------------------------------------------------------------- */
 #key-list {
 	position:absolute;
-	top:12em;
-	left:12em;
+	top:4em;
+	left:4em;
 }
 
 #key-list dd,

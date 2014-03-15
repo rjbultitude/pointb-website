@@ -47,6 +47,7 @@
         <!-- start content -->
         <div id="main" class="section section-infographic" role="main">
             <div class="wrapper-inner">
+                <a href="#key-list" class="btn-showHide"><span class="instruction">Show</span> key</a>
                 <div id="key-list">
                     <h3 class="sub-heading">Key:</h3>
                 </div>

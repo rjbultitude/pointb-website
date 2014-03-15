@@ -35,6 +35,8 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 	var xaxis = null;
 	var yaxis = null;
 	var svg = null;
+	var keyList = $('#key-list');
+	var showHideKeyBtn = $('.section-infographic .btn-showHide ');
 
 	var createDrawGraph = {
 
@@ -48,6 +50,7 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 			createDrawGraph.getYears();
 			createDrawGraph.setReleaseSize();
 			createDrawGraph.createKey();
+			createDrawGraph.showHideKey();
 
 			debug.log('discogData', discogData);
 
@@ -126,9 +129,21 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 
 		createKey: function createKeyFn() {
 			for (var i = 0; i < allColours.length; i++) {
-				$('#key-list').append('<dt style="background-color:' +  allColours[i] + '">&nbsp</dt>');
-				$('#key-list').append('<dd>' +  uniqueFormatsData[i] + '</dd>');
+				keyList.append('<dt style="background-color:' +  allColours[i] + '">&nbsp</dt>');
+				keyList.append('<dd>' +  uniqueFormatsData[i] + '</dd>');
 			}
+		},
+
+		showHideKey: function showHideKeyFn() {
+			showHideKeyBtn.on('click', function(e){
+				e.preventDefault();
+				if (keyList.hasClass('active')) {
+					keyList.hide().removeClass('active');
+				}
+				else {
+					keyList.show().addClass('active');	
+				}
+			});
 		},
 
 		drawGraph: function drawGraph(dataObject) {

@@ -49,7 +49,7 @@
                 <div class="tabs-nav" role="navigation">
                     <ul class="tabs-nav-list" role="list">
                         <li class="list-item active">
-                            <a href="#new">New/Top picks</a>
+                            <a href="#new">Recent</a>
                         </li>
                         <li class="list-item">
                             <a href="#remixes">Remixes</a>
