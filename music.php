@@ -49,7 +49,7 @@
                 <div class="tabs-nav" role="navigation">
                     <ul class="tabs-nav-list" role="list">
                         <li class="list-item active">
-                            <a href="#new">New</a>
+                            <a href="#new">New/Top picks</a>
                         </li>
                         <li class="list-item">
                             <a href="#remixes">Remixes</a>
@@ -60,7 +60,7 @@
                     </ul>
                 </div>
                 <div class="tabs-content active" id="new">
-                    <ul class="item-list" role="list" id="music-list">
+                    <ul class="item-list" role="list">
                         <p>No data</p>
                     </ul>
                 </div>

@@ -17,11 +17,12 @@ define(['debug', 'jquery', 'hbs!/Templates/music-list-template'], function(debug
     var music = {
 
         musicData: null,
-        musicList: $('#music-list'),
+        musicListNew: $('#new [role="list"]'),
+        musicListRemixes: $('#remixes [role="list"]'),
+        musicListArchives: $('#archives [role="list"]'),
 
         /* ---------- Init -------------------------------------------------- */
         init: function loadData() {
-            debug.log('music init');
             music.getData();
         },
 
@@ -41,10 +42,35 @@ define(['debug', 'jquery', 'hbs!/Templates/music-list-template'], function(debug
         },
 
         outputData: function outputDataFn() {
-            music.musicList.empty();
-            // debug.log('music.musicData', music.musicData);
-            for (var i = 0; i < music.musicData.length; i++) {
-                music.musicList.append(musicTmpl(music.musicData[i]));
+            //new music
+            music.musicListNew.empty();
+            for (var newKey in music.musicData) {
+                var dataNew = music.musicData[newKey];
+                if (newKey === 'new') {
+                    for (var i = 0; i < dataNew.length; i++) {
+                        music.musicListNew.append(musicTmpl(dataNew[i]));
+                    }
+                }
+            }
+            //remixes music
+            music.musicListRemixes.empty();
+            for (var remixesKey in music.musicData) {
+                var dataRemixes = music.musicData[remixesKey];
+                if (remixesKey === 'remixes') {
+                    for (var i = 0; i < dataRemixes.length; i++) {
+                        music.musicListRemixes.append(musicTmpl(dataRemixes[i]));
+                    }
+                }
+            }
+            //archive music
+            music.musicListArchives.empty();
+            for (var archivesKey in music.musicData) {
+                var dataArchives = music.musicData[archivesKey];
+                if (archivesKey === 'archives') {
+                    for (var i = 0; i < dataArchives.length; i++) {
+                        music.musicListArchives.append(musicTmpl(dataArchives[i]));
+                    }
+                }
             }
         }
 
