@@ -60,55 +60,8 @@
                     </ul>
                 </div>
                 <div class="tabs-content active" id="new">
-                    <ul class="item-list" role="list">
-                        <li class="list-item">
-                            <header class="item-header">
-                                <h3 class="item-heading">{Title}</h3>
-                                <dl>
-                                    <dt>Label</dt>
-                                    <dd>{label}</dd>
-                                    <dt>Year</dt>
-                                    <dd>{year}</dd>
-                                </dl>
-                            </header>
-                            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="{url}"></iframe>
-                        </li>
-                        <li class="list-item">
-                            <header class="item-header">
-                                <h3 class="item-heading">Eye Contact</h3>
-                                <dl>
-                                    <dt>Label</dt>
-                                    <dd>Point B Music</dd>
-                                    <dt>Year</dt>
-                                    <dd>2014</dd>
-                                </dl>
-                            </header>
-                            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/125932303&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
-                        </li>
-                        <li class="list-item">
-                            <header class="item-header">
-                                <h3 class="item-heading">Second Guesses</h3>
-                                <dl>
-                                    <dt>Label</dt>
-                                    <dd>Electronic Explorations</dd>
-                                    <dt>Year</dt>
-                                    <dd>2013</dd>
-                                </dl>
-                            </header>
-                            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/55643504&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
-                        </li>
-                        <li class="list-item">
-                            <header class="item-header">
-                                <h3 class="item-heading">Golden</h3>
-                                <dl>
-                                    <dt>Label</dt>
-                                    <dd>XLR8R</dd>
-                                    <dt>Year</dt>
-                                    <dd>2013</dd>
-                                </dl>
-                            </header>
-                            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/50117102&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
-                        </li>
+                    <ul class="item-list" role="list" id="music-list">
+                        <p>No data</p>
                     </ul>
                 </div>
                 <div class="tabs-content" id="remixes">

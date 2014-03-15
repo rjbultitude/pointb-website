@@ -17,11 +17,12 @@ define(['debug', 'jquery', 'hbs!/Templates/music-list-template'], function(debug
     var music = {
 
         musicData: null,
+        musicList: $('#music-list'),
 
         /* ---------- Init -------------------------------------------------- */
         init: function loadData() {
+            debug.log('music init');
             music.getData();
-            music.outputData();
         },
 
         getData: function getDataFn() {
@@ -31,6 +32,7 @@ define(['debug', 'jquery', 'hbs!/Templates/music-list-template'], function(debug
                 dataType: 'json',
                 success: function(data) {
                     music.musicData = data;
+                    music.outputData();
                 },
                 error: function() {
                     debug.log('error');
@@ -39,7 +41,11 @@ define(['debug', 'jquery', 'hbs!/Templates/music-list-template'], function(debug
         },
 
         outputData: function outputDataFn() {
-            //document.body.innerHTML = musicTmpl({adjective: "favorite"});
+            music.musicList.empty();
+            // debug.log('music.musicData', music.musicData);
+            for (var i = 0; i < music.musicData.length; i++) {
+                music.musicList.html(musicTmpl(music.musicData[i]));
+            }
         }
 
     };
