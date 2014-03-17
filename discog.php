@@ -38,7 +38,8 @@
                         Discography
                     </h1>
                     <p class="standfirst">How times have changed.<br />
-                    The graph below illustrates the evolution of formats across Point B's catalogue.</p>
+                    The graph below illustrates the evolution of formats across Point B's catalogue.<br />
+                    Click the squares to view release details</p>
                 </div>
             </div>
         </section>

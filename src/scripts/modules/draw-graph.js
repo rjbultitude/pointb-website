@@ -135,6 +135,7 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 		},
 
 		showHideKey: function showHideKeyFn() {
+			keyList.hide();
 			showHideKeyBtn.on('click', function(e){
 				e.preventDefault();
 				if (keyList.hasClass('active')) {

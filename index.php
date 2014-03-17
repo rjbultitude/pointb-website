@@ -58,7 +58,7 @@
                 </div>
                 <div class="figure article-figure">
                     <div class="image-border">
-                        <img src="/images/artwork/Heart-of-matter_digi-cover.jpg" alt="Heart of Matter LP" />
+                        <img src="/images/artwork/Heart-of-matter.jpg" alt="Heart of Matter LP" />
                     </div>
                 </div>
                 <aside class="aside">

@@ -49,10 +49,10 @@ $browser-context: 16; // Default
 }
 
 @mixin color-grad-bg($orientation: right, $bg-color1:$color-orange, $bg-color2:$color-orange-paler, $size:100%) {
-    @include background(linear-gradient(to right $orientation, $bg-color1 20%, $bg-color2 80%));
-    @include background(linear-gradient(to right $orientation, $bg-color1 20%, $bg-color2 80%));
-    @include background(linear-gradient(to right $orientation, $bg-color1 20%, $bg-color2 80%));
-    @include background(linear-gradient(to right $orientation, $bg-color1 20%, $bg-color2 80%));
+    @include background(linear-gradient(to $orientation, $bg-color1 20%, $bg-color2 80%));
+    @include background(linear-gradient(to $orientation, $bg-color1 20%, $bg-color2 80%));
+    @include background(linear-gradient(to $orientation, $bg-color1 20%, $bg-color2 80%));
+    @include background(linear-gradient(to $orientation, $bg-color1 20%, $bg-color2 80%));
     background-color:$bg-color1;
     background-size:$size $size;
 }
