@@ -18,7 +18,8 @@ define(['debug', 'jquery'], function(debug, $) {
 
         dataPatches: null,
         results: $('.search-results'),
-        group: null,
+        currentGroup: null,
+        groups: null,
         noResults: $('.no-results'),
         checkboxes: [],
         numberCheckboxes: 0,
@@ -44,17 +45,31 @@ define(['debug', 'jquery'], function(debug, $) {
             });
         },
 
-        setGroup: function setGroupFn(patchesKey) {
+        createGroup: function createGroupFn(patchesKey) {
             filterPatches.results.append('<div class="results-group results-group-' + patchesKey + '"></div>');
-            filterPatches.group = $('.results-group-' + patchesKey + '', filterPatches.results);
+            filterPatches.currentGroup = $('.results-group-' + patchesKey + '', filterPatches.results);
+            //debug.log('filterPatches.currentGroup', filterPatches.currentGroup);
+        },
+
+        sizeGroups: function sizeGroupsFn() {
+            var mq = window.matchMedia('@media all and (max-width: 48.750em)');
+            //debug.log('filterPatches.groups.length ', filterPatches.groups.length);
+            filterPatches.groups.each(function(){
+                if (filterPatches.groups.length % 2 === 0 && mq.matches === false) {
+                    $(this).removeClass('full').addClass('half');
+                }
+                else if (filterPatches.groups.length === 1) {
+                    $(this).removeClass('half').addClass('full');
+                }
+            });
         },
 
         createHeading: function createHeadingFn(headingText) {
-             $('<h3 class="group-heading">' + headingText + '</h3>').appendTo(filterPatches.group);
+             $('<h3 class="group-heading">' + headingText + '</h3>').appendTo(filterPatches.currentGroup);
         },
 
         createList: function createListFn() {
-            filterPatches.group.append('<ul class="results-list"></ul>');
+            filterPatches.currentGroup.append('<ul class="results-list"></ul>');
         },
 
         formAction: function formActionFn() {
@@ -88,19 +103,25 @@ define(['debug', 'jquery'], function(debug, $) {
         },
 
         submitQuery: function submitQueryFn(selectValue) {
+            //filterPatches.results.empty();
             for (var dataKey in filterPatches.dataPatches) {
                 var patchesObjects = filterPatches.dataPatches[dataKey];
                 var patchesKey = dataKey;
                 
                 if (selectValue === patchesKey) {
                     //Sort out basic html
-                    filterPatches.setGroup(patchesKey);
+                    filterPatches.createGroup(patchesKey);
                     filterPatches.createHeading(patchesKey);
                     filterPatches.createList();
-                    debug.log('filterPatches.group ', filterPatches.group);
-                    filterPatches.group.each(function(){
-                        var thisGroup = $(this);
-                        var thisResultsList = thisGroup.find('ul');
+
+                    filterPatches.groups = filterPatches.results.find('.results-group');
+                    debug.log('filterPatches.groups.length ', filterPatches.groups.length);
+                    
+                    //filterPatches.groups.each(function(){
+                        //var thisGroup = $(this);
+                        //debug.log('thisGroup ', thisGroup);
+                        var thisResultsList = filterPatches.currentGroup.find('ul');
+                        debug.log('thisResultsList ', thisResultsList);
                         for (var j = 0; j < patchesObjects.length; j++) {
                             var newBlock = $('<li class="list-item"></li>').appendTo(thisResultsList);
                             var thisPatch = patchesObjects[j];
@@ -118,9 +139,10 @@ define(['debug', 'jquery'], function(debug, $) {
                                 //$('<p>' + thisPatchKey + '</p>').appendTo(newBlock);
                             }
                         }
-                    });
+                    //});
                 }
             }
+            filterPatches.sizeGroups();
         }
 
     };

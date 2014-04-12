@@ -1,3 +1,7 @@
+//set vars
+$filter-bp1: 48.750em;
+$filter-bp2: 36.875em;
+
 .section-filter {
     @include box-block(darken($color-red,$shift-amount));
     @include dotted-bg(rgba($color-red, 0.8), white, 8px);
@@ -18,26 +22,47 @@
 .search-results .group-heading {
     @extend .section-heading;
     text-transform:capitalize;
-    margin-bottom:$spacing/4;
+    margin-bottom:0;
 }
 
 .search-results .results-group {
     @include box-sizing(border-box);
     @include border-radius(0.5em);
     padding:1em;
-    width:33.3%;
+    width:31.3%;
+    margin-right:2%;
     float:left;
     background-color:rgba(darken($color-red, 25%), 0.4);
-    border-right:1px soild rgba(white, 0.5);
     margin-bottom:$spacing/2;
+
+    @media all and (max-width:$filter-bp1) {
+        width:48%;
+    }
+
+    @media all and (max-width:$filter-bp2) {
+        width:100%;
+        margin-right:0;
+    }
 }
 
 .search-results .results-group:nth-child(3n) {
-    border-right:0 none;
+    margin-right:0;
+
+    @media all and (max-width: $filter-bp1) {
+        margin-right:2%;
+    }
+
+    @media all and (max-width:$filter-bp2) {
+        margin-right:0;
+    }
 }
 
 .search-results .results-group:nth-child(4n) {
     clear:left;
+
+    @media all and (max-width: $filter-bp1) {
+        clear:none;
+    }
 }
 
 .results-list {
@@ -45,6 +70,6 @@
 }
 
 .results-list .list-item {
-    padding:$spacing/2 0;
-    border-bottom:1px solid rgba(white, 0.5);
+    padding:$spacing/4 0;
+    border-bottom:1px solid rgba(white, 0.3);
 }
