@@ -4,20 +4,152 @@
 		"selected_items":
 		[
 			[
-				"a",
-				"active"
+				"key",
+				"keyList"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"cre",
+				"createDrawGraph"
 			],
 			[
 				"ma",
-				"margin-bottom"
+				"max-width"
 			],
 			[
-				"fun",
-				"fun	Function"
+				"arch",
+				"archives"
+			],
+			[
+				"mus",
+				"musicList"
+			],
+			[
+				"musi",
+				"music"
+			],
+			[
+				"out",
+				"outputData"
+			],
+			[
+				"music",
+				"musicData"
+			],
+			[
+				"app",
+				"appendTo"
+			],
+			[
+				"re",
+				"results"
+			],
+			[
+				"sea",
+				"search-results"
+			],
+			[
+				"create",
+				"createWrapperFn"
+			],
+			[
+				"no",
+				"noResults"
+			],
+			[
+				"this",
+				"thisPatchKey"
+			],
+			[
+				"box-",
+				"box-sizing	compass"
+			],
+			[
+				"get",
+				"getSelectMenuValue"
+			],
+			[
+				"fil",
+				"filter-results"
 			],
 			[
 				"l",
-				"list"
+				"length"
+			],
+			[
+				"chec",
+				"checkboxes"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"fo",
+				"formAction"
+			],
+			[
+				"check",
+				"checkbox"
+			],
+			[
+				"dat",
+				"dataKey"
+			],
+			[
+				"da",
+				"dataKey"
+			],
+			[
+				"che",
+				"checkboxes"
+			],
+			[
+				"nu",
+				"numberCheckboxes"
+			],
+			[
+				"c",
+				"checkbox"
+			],
+			[
+				"ge",
+				"getCheckboxes"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"po",
+				"posValuePercent"
+			],
+			[
+				"h",
+				"highNumber"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"bef",
+				"beforeAfter"
+			],
+			[
+				"w",
+				"white-block"
+			],
+			[
+				"a",
+				"active"
 			],
 			[
 				"column",
@@ -64,10 +196,6 @@
 				"span	Tag"
 			],
 			[
-				"c",
-				"class	Attr"
-			],
-			[
 				"bo",
 				"border-top"
 			],
@@ -91,9 +219,25 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 247.0,
+		"height": 167.0,
 		"selected_items":
 		[
+			[
+				"jshint",
+				"JSHint"
+			],
+			[
+				"js",
+				"JSHint"
+			],
+			[
+				"jshi",
+				"JSHint"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
 			[
 				"inst",
 				"Package Control: Install Package"
@@ -101,10 +245,6 @@
 			[
 				"sass",
 				"Set Syntax: SCSS"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
 			],
 			[
 				"install",
@@ -135,7 +275,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 449.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -155,6 +295,49 @@
 	},
 	"file_history":
 	[
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/utilities/_mixins.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/draw-graph.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_discog.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/data/discog-data.json",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/index.php",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/discog.php",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/load-data.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_music.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/music.php",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/data/music-data.json",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/music.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/filter-patches.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/templates/music-list-template.hbs",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/config.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/base.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/_base.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_search-filter.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_typography.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/patches.php",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_furniture.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_news.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_header.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_biog.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/utilities/_mask.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_design-kit.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/global.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-discography/site/src/styles/scss/templates/_discog.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_buttons.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_forms.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/data/patches.json",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/utilities/_placeholders.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_nav-main.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interactions/_transitions.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/humans.txt",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_lists.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/scroll-background.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_tabs.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/utilities/_vendor.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/plugins/jquery.tabs.plugin.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_sound-toy.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/includes/header-include.php",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_tabs.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_nav.scss",
 		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/interfaces/_tabs.scss",
 		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/index.php",
 		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/utilities/_placeholders.scss",
@@ -239,24 +422,11 @@
 		"/Users/rbultitude/Documents/web-dev/Point B/styles/css/min/global.css",
 		"/Users/rbultitude/Documents/web-dev/Point B/styles/sass/templates/_furniture.scss",
 		"/Users/rbultitude/Documents/web-dev/Point B/bower_components/requirejs/require.js",
-		"/Users/rbultitude/Documents/web-dev/Point B/Gruntfile.js",
-		"/Users/rbultitude/Documents/web-dev/Point B/styles/sass/templates/_navigation.scss",
-		"/Users/rbultitude/Documents/web-dev/Point B/README.md",
-		"/Users/rbultitude/Documents/Point B/site-2014/pointb/pointb.sublime-project",
-		"/Users/rbultitude/Documents/Point B/site-2014/pointb/README.md",
-		"/Users/rbultitude/Documents/Point B/site-2014/pointb/index.html",
-		"/Users/rbultitude/Documents/web-dev/jquery-require-sample/webapp/scripts/require-jquery.js",
-		"/Users/rbultitude/Documents/Point B/site-2014/pointb/bower_components/jquery/component.json",
-		"/Users/rbultitude/Documents/R&D/d3-experiments/js/script.js",
-		"/Users/rbultitude/Documents/R&D/d3-experiments/index.html",
-		"/Users/rbultitude/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/Users/rbultitude/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
-		"/Users/rbultitude/Documents/R&D/d3-experiments/sass/_semantic-fixed-grid.scss",
-		"/Users/rbultitude/Documents/R&D/d3-experiments/d3-exp.sublime-project"
+		"/Users/rbultitude/Documents/web-dev/Point B/Gruntfile.js"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -271,6 +441,86 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"right ",
+			"$('#key-list')",
+			"dataNew",
+			"thisKey",
+			"music.musicData",
+			"newMusicList",
+			"\"",
+			"filterPatches",
+			"ReleaseImage",
+			"\"Catalogue number\"",
+			".search-results .group-heading",
+			"3",
+			"to ",
+			"[role=\"search\"]",
+			".section-filter .form-item",
+			".section-filter [role=\"search\"]",
+			"ul",
+			"\"",
+			"ul",
+			"p",
+			"div",
+			"value",
+			"option",
+			".article-heading",
+			".section-filter [role=\"search\"]",
+			"numberCheckboxes",
+			"console",
+			"isPatchesPage",
+			"fx",
+			"pads",
+			"title",
+			"pads",
+			"%;\n",
+			".section-main-header",
+			"right",
+			"$bg-color2 5%, ",
+			"$bg-color1 5%",
+			"$bg-color1 20%, ",
+			"15%",
+			"10%",
+			"right, $bg-color1",
+			"right",
+			"transparent",
+			"$bg-color1",
+			"rgba",
+			"rgba($dot-color,.2)",
+			"radial",
+			".article-heading",
+			".lesser",
+			"6",
+			".article .article-text",
+			"toys",
+			"#home .section-main-header #home-link",
+			".item-list",
+			"dd {",
+			".1",
+			".article-biog",
+			"Things",
+			"length",
+			"filterPatches",
+			".tabs-content ",
+			".tabs-nav-list",
+			"orange",
+			"blue",
+			"toys",
+			".section-filter",
+			"FX",
+			"fx",
+			"Rhythmic",
+			"rhythmic",
+			"Pads",
+			"pads",
+			"Pads",
+			"tabs-menu",
+			".tabs-nav-list .list-item a",
+			"background",
+			"tabs-nav",
+			"tabs-menu",
+			".",
+			".section .page-heading",
 			".tabs-content .item-list .list-item",
 			"opacity",
 			"last",
@@ -318,87 +568,7 @@
 			"showHideMainNav",
 			"29.375em",
 			"48.375em",
-			".section-main-header li a",
-			".header:before",
-			".section-main-header [role=\"navigation\"]",
-			".article .figure",
-			"one-either-side",
-			".section .page-heading",
-			"exampleModule",
-			"article",
-			"fx",
-			"rhythm",
-			"pad",
-			".section-main-header [role=\"navigation\"]",
-			".section-main-header .logo",
-			".section-main-header li a",
-			".section .standfirst",
-			"teal",
-			"section",
-			"page-head",
-			"teal",
-			".section-main-header",
-			"%orange-block",
-			".section-main-header li a",
-			"$color-blue-dark",
-			".section-main-header li a",
-			"0.5",
-			"12px",
-			"#home .page-heading",
-			"text-texture",
-			"texture_81.jpg",
-			"$url",
-			".article-heading",
-			"/img/knockout.png",
-			"transition",
-			"16px",
-			"8px",
-			";\n",
-			"$color-blue",
-			"$color-orange",
-			".sm-links-list .list-item .icon",
-			".2",
-			"$dot-color",
-			"0.5",
-			"2em",
-			"37.500em",
-			"600px",
-			"[role=\"navigation\"] li a",
-			"transistion",
-			"../css",
-			"icon_Peabody",
-			"[role=\"navigation\"] ul",
-			"article",
-			"http-equiv",
-			"id=\"Layer_1\" ",
-			"div",
-			"{\n",
-			"fb",
-			"1em",
-			"html",
-			"9%",
-			"news",
-			"after",
-			"255",
-			"keyframes",
-			"15%",
-			"255,255,255",
-			" 15",
-			"$dot-color",
-			"thereAndBack",
-			"animate",
-			"$color-teal",
-			"thereAndBack",
-			"black",
-			"16",
-			"15",
-			"0",
-			"$start-color",
-			"$start",
-			"linear",
-			"inner-wrapper",
-			".section-main-header .logo",
-			"[role=\"navigation\"] li"
+			".section-main-header li a"
 		],
 		"highlight": true,
 		"in_selection": false,

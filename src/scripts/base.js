@@ -15,7 +15,7 @@ define(['jquery'], function($) {
 
     var base = {
 
-        debug: false,
+        debug: true,
         ltIe9: $('html.lt-ie9').size(),
         animationSpeed: 1000,
         animationEasing: 'easeOutCirc',
