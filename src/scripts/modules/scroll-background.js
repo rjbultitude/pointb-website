@@ -17,7 +17,9 @@ define(['debug'], function(debug) {
     var scrollBackground = {
 
         posValue: 0,
+        negValue: 0,
         posValuePercent: '',
+        negValuePercent: '',
         highNumber: 1000,
 
         /* ---------- Init -------------------------------------------------- */
@@ -25,7 +27,10 @@ define(['debug'], function(debug) {
             $(window).scroll(function(){
                 scrollBackground.posValue = scrollBackground.posValue + 1;
                 scrollBackground.posValuePercent = scrollBackground.posValue + '%';
-                $('.header').css({'background-position': scrollBackground.posValuePercent});
+                $('.header, .article-biog').css({'background-position': scrollBackground.posValuePercent});
+                scrollBackground.negValue = scrollBackground.negValue - 1;
+                scrollBackground.negValuePercent = scrollBackground.negValue + '%';
+                $('.article-news, .section-filter').css({'background-position': scrollBackground.negValuePercent});
             });
         }
 

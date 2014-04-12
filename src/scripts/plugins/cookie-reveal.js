@@ -11,7 +11,7 @@ define(['jquery', 'base'], function($, base){
 
                 var $container = $(this);
                 var $content = $container.find('.body-content');
-                var $trigger = $container.find('.reveal-button');
+                var $trigger = $container.find('.btn-reveal');
                 var $html_snippet = undefined;
                 var $html_cookies_container = undefined;
                 var start = undefined;
@@ -27,8 +27,8 @@ define(['jquery', 'base'], function($, base){
                 });
 
                 function check(){
-                    if(get('cookie_status') === "") {
-                        console.log("open");
+                    if(get('cookie_status') === '') {
+                        console.log('open');
                         $content.slideDown(base.animationSpeed, base.animationEasing, function() {
                             $container.removeClass('closed').addClass('open');
                         });
@@ -51,7 +51,7 @@ define(['jquery', 'base'], function($, base){
                  */
                 function revealButton() {
                     $($trigger).on('click', function(e) {
-                        console.log("im clicked");  
+                        console.log('im clicked');  
                         e.preventDefault();
                         if ($container.hasClass('open')) {
                             $content.slideUp(base.animationSpeed, base.animationEasing, function(){
@@ -83,7 +83,7 @@ define(['jquery', 'base'], function($, base){
                 }
 
                 function loadHTMLSnippets(f) {
-                 "use strict";
+                 'use strict';
 
                         if (base.htmlSnippetsURL === undefined) {
 
@@ -114,17 +114,17 @@ define(['jquery', 'base'], function($, base){
 
                     if (name) {
                         if (document.cookie.length > 0) {
-                            start = document.cookie.indexOf(name + "=");
+                            start = document.cookie.indexOf(name + '=');
                             if (start !== -1) {
                                 start = start + name.length + 1;
-                                end = document.cookie.indexOf(";", start);
+                                end = document.cookie.indexOf(';', start);
                                 if (end === -1) {
                                     end = document.cookie.length;
                                 }
                                 return unescape(document.cookie.substring(start, end));
                             }
                         }
-                        return "";
+                        return '';
                     } else {
                         $.error('Cookie name undefined');
                     }
@@ -150,7 +150,7 @@ define(['jquery', 'base'], function($, base){
                             settings.hours = 1;
                         }
                         expire.setTime(today.getTime() + 3600000 * settings.hours);
-                        document.cookie = settings.name + "=" + escape(settings.value) + ";expires=" + expire.toGMTString() + ";path=/";
+                        document.cookie = settings.name + '=' + escape(settings.value) + ';expires=' + expire.toGMTString() + ";path=/";
                     } else {
                         $.error('Cookie name undefined');
                         return false;

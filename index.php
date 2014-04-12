@@ -25,6 +25,8 @@
 </head>
 
 <body id="home">
+    <!-- div class="cookie-reveal">
+    </div -->
     <a href="#main" class="nav-skip">Skip to content</a>
     <?php include("includes/header-include.php"); ?>
     <!-- start main -->
