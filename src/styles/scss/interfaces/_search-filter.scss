@@ -45,5 +45,6 @@
 }
 
 .results-list .list-item {
-    border-bottom:1px soild rgba(white, 0.5);
+    padding:$spacing/2 0;
+    border-bottom:1px solid rgba(white, 0.5);
 }

@@ -97,25 +97,28 @@ define(['debug', 'jquery'], function(debug, $) {
                     filterPatches.setGroup(patchesKey);
                     filterPatches.createHeading(patchesKey);
                     filterPatches.createList();
-                    var resultsList = filterPatches.results.find('ul');
-                    
-                    for (var j = 0; j < patchesObjects.length; j++) {
-                        var newBlock = $('<li class="list-item"></li>').appendTo(resultsList);
-                        var thisPatch = patchesObjects[j];
-                        
-                        for (var thisPatchKey in thisPatch) {
-                            if (thisPatchKey === 'link') {
-                                $('<a href="' + thisPatch[thisPatchKey] + '">Click here</a>').appendTo(newBlock);
-                            } 
-                            else if (thisPatchKey === 'title') {
-                                $('<h4 class="heading">' + thisPatch[thisPatchKey] + '</h4>').appendTo(newBlock);
+                    debug.log('filterPatches.group ', filterPatches.group);
+                    filterPatches.group.each(function(){
+                        var thisGroup = $(this);
+                        var thisResultsList = thisGroup.find('ul');
+                        for (var j = 0; j < patchesObjects.length; j++) {
+                            var newBlock = $('<li class="list-item"></li>').appendTo(thisResultsList);
+                            var thisPatch = patchesObjects[j];
+                            
+                            for (var thisPatchKey in thisPatch) {
+                                if (thisPatchKey === 'link') {
+                                    $('<a href="' + thisPatch[thisPatchKey] + '">Click here</a>').appendTo(newBlock);
+                                } 
+                                else if (thisPatchKey === 'title') {
+                                    $('<h4 class="heading">' + thisPatch[thisPatchKey] + '</h4>').appendTo(newBlock);
+                                }
+                                else {
+                                    $('<p>' + thisPatch[thisPatchKey] + '</p>').appendTo(newBlock);
+                                }
+                                //$('<p>' + thisPatchKey + '</p>').appendTo(newBlock);
                             }
-                            else {
-                                $('<p>' + thisPatch[thisPatchKey] + '</p>').appendTo(newBlock);
-                            }
-                            //$('<p>' + thisPatchKey + '</p>').appendTo(newBlock);
                         }
-                    }
+                    });
                 }
             }
         }
