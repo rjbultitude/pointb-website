@@ -81,7 +81,7 @@
                     </div>
                 </form>
                 <div class="search-results">
-                    <h3 class="heading no-results">No results</h3>
+                    <h3 class="heading no-results">No search results.<br />Are you sure you searched?</h3>
                 </div>
             </div>
         </section>

@@ -44,6 +44,9 @@ button[role="button"] {
         padding-left:2em;
         color:white;
     }
+    &:visited {
+        color:white;
+    }
 }
 
 .btn-cta + .btn-cta {

@@ -23,12 +23,20 @@
     vertical-align: bottom;
     @include inline-block;
     position:relative;
+
+    @media all and (max-width: 35em) {
+        width:50%;
+    }
 }
 
 .tabs-nav-list li {
     @include inline-block;
     position:relative;
     //margin-right: 0.125em; //removed due to spacing bug
+    @media all and (max-width: 35em) {
+        display: block;
+        width:100%;
+    }
 }
 
 .tabs-nav-list li a {
@@ -40,6 +48,11 @@
     @include border-top-radius($form-border);
     @include standard-transistion();
     @include box-block($color-red, 0.8, false);
+
+    @media all and (max-width: 35em) {
+        width:100%;
+        @include border-top-radius(0);
+    }
 }
 
 .tabs-nav-list li.active a,

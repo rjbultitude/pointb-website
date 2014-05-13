@@ -36,6 +36,7 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 	var yaxis = null;
 	var svg = null;
 	var keyList = $('#key-list');
+	var keyListWrapper = $('.wrapper-key');
 	var showHideKeyBtn = $('.section-infographic .btn-showHide ');
 
 	var createDrawGraph = {
@@ -135,14 +136,15 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 		},
 
 		showHideKey: function showHideKeyFn() {
-			keyList.hide();
 			showHideKeyBtn.on('click', function(e){
 				e.preventDefault();
-				if (keyList.hasClass('active')) {
-					keyList.hide().removeClass('active');
+				if (keyListWrapper.hasClass('active')) {
+					keyListWrapper.removeClass('active');
+					$(this).text('Show key');
 				}
 				else {
-					keyList.show().addClass('active');	
+					keyListWrapper.addClass('active');
+					$(this).text('Hide key');
 				}
 			});
 		},
@@ -166,6 +168,8 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 				$('.release-title').text(d.Title);
 				$('.release-label').text(d.Label);
 				$('.release-cat').text(d['Catalogue number']);
+				$('.release-format').text(d.Format);
+				$('.release-year').text(d.Year);
 				$('.release-image').attr('src', d.ReleaseImage);
 			})
 			.on('mouseenter', function(d) {

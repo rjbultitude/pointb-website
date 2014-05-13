@@ -128,7 +128,7 @@ define(['debug', 'jquery'], function(debug, $) {
                             
                             for (var thisPatchKey in thisPatch) {
                                 if (thisPatchKey === 'link') {
-                                    $('<a href="' + thisPatch[thisPatchKey] + '">Click here</a>').appendTo(newBlock);
+                                    $('<a href="' + thisPatch[thisPatchKey] + '">Download Patch(zip)</a>').appendTo(newBlock);
                                 } 
                                 else if (thisPatchKey === 'title') {
                                     $('<h4 class="heading">' + thisPatch[thisPatchKey] + '</h4>').appendTo(newBlock);

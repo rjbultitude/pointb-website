@@ -48,17 +48,23 @@
         <!-- start content -->
         <div id="main" class="section section-infographic" role="main">
             <div class="wrapper-inner">
-                <a href="#key-list" class="btn-showHide"><span class="instruction">Show</span> key</a>
-                <div id="key-list">
-                    <h3 class="sub-heading">Key:</h3>
+                <div class="wrapper-key">
+                    <a href="#key-list" class="btn-showHide"><span class="instruction">Show</span> key</a>
+                    <div class="wrapper-keylist">
+                        <div id="key-list">
+                            <h3 class="sub-heading">Key:</h3>
+                        </div>
+                    </div>
                 </div>
                 <div id="data-output">
                 </div>
                 <div class="sub-section sub-section-release-details">
                     <dl class="release-details-list">
-                        <dt class="">Title:</dt><dd class="release-title"></dd>
+                        <dt class="visuallyhidden">Title:</dt><dd class="release-title heading-dd"></dd>
                         <dt class="">Label:</dt><dd class="release-label"></dd>
                         <dt class="">Cat No.:</dt><dd class="release-cat"></dd>
+                        <dt class="">Format:</dt><dd class="release-format"></dd>
+                        <dt class="">Year:</dt><dd class="release-year"></dd>
                     </dl>
                     <figure class="figure release-figure">
                         <img class="release-image" src="" alt="" />

@@ -26,6 +26,12 @@
     @include transition-property(bottom);
 }
 
+@mixin standard-transition-left {
+    @include transition-timing-function(ceaser($easeOutQuint));
+    @include transition-duration(2s);
+    @include transition-property(left);
+}
+
 @mixin standard-transition-padding {
     @include transition-timing-function(ceaser($easeOutQuint));
     @include transition-duration(2s);

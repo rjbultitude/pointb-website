@@ -37,7 +37,7 @@ body {
 .article-heading {
     @extend %heading;
     font-size: 4.2em;
-    line-height:0.775em;
+    line-height:0.9em;
     margin-bottom: 0.5em;
     text-align:center;
     @include image_mask;

@@ -9,9 +9,9 @@ $filter-bp2: 36.875em;
 }
 
 .section-filter [role="search"] {
-    padding:$spacing 0;
     @include column-spread(2,20,2);
     text-align:center;
+    padding:$spacing 0 $spacing/2;
 }
 
 .search-results {
@@ -19,16 +19,26 @@ $filter-bp2: 36.875em;
     margin-bottom:$spacing;
 }
 
+.no-results {
+    display: inline-block;
+    text-align: center;
+    min-height: 10em;
+    width: 100%;
+    font-size: 1.75em;
+}
+
 .search-results .group-heading {
     @extend .section-heading;
+    @include border-top-radius(0.5em);
     text-transform:capitalize;
     margin-bottom:0;
+    padding:0.350em 1em;
+    background-color: rgba(darken($color-red, 25%), 0.8);
 }
 
 .search-results .results-group {
     @include box-sizing(border-box);
     @include border-radius(0.5em);
-    padding:1em;
     width:31.3%;
     margin-right:2%;
     float:left;
@@ -67,9 +77,31 @@ $filter-bp2: 36.875em;
 
 .results-list {
     display:block;
+    padding:1em;
 }
 
 .results-list .list-item {
     padding:$spacing/4 0;
     border-bottom:1px solid rgba(white, 0.3);
+}
+
+.results-list .list-item:last-child {
+    border:0;
+}
+
+.results-list .list-item:first-child {
+    padding-top: 0;
+}
+
+.results-list .list-item .heading {
+    margin-bottom: 0.5em;
+}
+
+.results-list .list-item a {
+    color:white;
+    font-weight: normal;
+}
+
+.results-list .list-item a:hover {
+    color:$color-orange;
 }

@@ -8,4 +8,8 @@
 
 #music .header {
 	padding-bottom:7.5em;
+
+	@media all and (max-width: 35em) {
+		padding-bottom: 8.5em;
+	}
 }

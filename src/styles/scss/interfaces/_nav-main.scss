@@ -23,6 +23,7 @@ $nav-main-bp2: 33.500em;
 
     @media all and (max-width:$nav-main-bp1) {
         width:100%;
+        height: 3.9em;
     }
 
     @media all and (max-width:$nav-main-bp2) {
@@ -47,6 +48,9 @@ $nav-main-bp2: 33.500em;
 }
 
 .section-main-header .btn-nav {
+    font-size: 2em;
+    height: 1.5em;
+    line-height: 1.6em;
     @media all and (max-width:$nav-main-bp2) {
         @include inline-block();
         @include standard-transition-opacity;
@@ -79,4 +83,12 @@ $nav-main-bp2: 33.500em;
     //border-top-width:0.3em;
     //padding-bottom:6.5em; //was 0.3 + 0.5
     padding:3.5em 0 5.5em 0;
+
+    @media all and (max-width:$nav-main-bp1) {
+        padding:1.5em 0 5.5em 0;
+    }
+
+    @media all and (max-width:$nav-main-bp1) {
+        padding:1.5em 0 0 0;
+    }
 }

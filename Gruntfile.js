@@ -72,17 +72,6 @@ module.exports = function(grunt) {
             }
         },
 
-        uglify: {
-            options: {
-                mangle: false
-            },
-            my_target: {
-                files: {
-                    'dist/scripts/output.min.js': ['src/input.js']
-                }
-            }
-        },
-
         modernizr: {
             'devFile': 'src/scripts/modernizr.js',
             'outputFile': 'dist/scripts/modernizr.js',
@@ -122,7 +111,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-modernizr');
     grunt.loadNpmTasks('grunt-webfont');
 
