@@ -20,8 +20,8 @@
     <meta name="google-site-verification" content="0zm1k2TOLDxHRYlEtOU84nj_ysoh_p4thF07qYnJRp4">
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
-    <script src="/src/scripts/modernizr.js"></script>
-    <link href="/src/styles/css/global.css" media="screen" rel="stylesheet">
+    <script src="/dist/scripts/modernizr.js"></script>
+    <link href="/dist/styles/css/global.css" media="screen" rel="stylesheet">
 </head>
 
 <body id="home">
@@ -36,8 +36,7 @@
         <section class="section header">
             <div class="wrapper-inner">
                 <div class="content">
-                    <h1 class="page-heading">The music <span class="special-character">&amp;</span> software<br /> of Point.B</h1>
-                    <p class="standfirst">Music, sound design and Reason patches</p>
+                    <h1 class="page-heading">Music, sound design <span class="special-character">&amp;</span> software</h1>
                     <div class="sound-toy-content">
 
                     </div>
@@ -95,7 +94,9 @@
                         <img src="/images/rb.jpg" alt="" />
                     </div>
                 </div>
-                <aside class="aside"><p>After absorbing the waves of dubstep and post-garage that washed up on the shores of South London his sound has matured into something that is both somehow uplifting and melancholy.</p>
+                <aside class="aside">
+                    <p>After absorbing the waves of dubstep and post-garage that washed up on the shores of South London his sound has matured into something that is both somehow uplifting and melancholy.</p>
+                    <p>Other projects include <a href="https://soundcloud.com/frond" target="_blank">Frond</a>, a home for his more experimental/ethereal sounds and <a href="https://soundcloud.com/planesmusic" target="_blank">Planes</a>, his beats and downtempo alias.
                 </aside>
             </div>
         </article>
@@ -105,7 +106,7 @@
     <!-- end main -->
     <?php include("includes/footer-include.php"); ?>
 
-    <script data-main="/src/scripts/config" src="/src/scripts/libs/require.js"></script>
+    <script data-main="/dist/scripts/config" src="/dist/scripts/libs/require.js"></script>
 
     <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

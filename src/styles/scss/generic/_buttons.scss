@@ -39,7 +39,8 @@ button[role="button"] {
     background-color:$color-blue;
     color:white;
     @include standard-transition-padding;
-    &:hover {
+    &:hover,
+    &:focus {
         @include standard-transition-padding;
         padding-left:2em;
         color:white;

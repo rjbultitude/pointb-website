@@ -1,19 +1,19 @@
 require.config({
     paths: {
-        jquery: '/src/scripts/libs/jquery',
-        d3: '/src/scripts/libs/d3',
-        requirejs: '/src/scripts/libs/require',
+        jquery: 'libs/jquery',
+        d3: 'libs/d3',
+        requirejs: 'libs/require',
         hbs: 'libs/require-handlebars-plugin/hbs',
-        debug: '/src/scripts/modules/debug',
-        mobileNav: '/src/scripts/modules/mobile-nav',
-        filterPatches: '/src/scripts/modules/filter-patches',
-        scrollBackground: '/src/scripts/modules/scroll-background',
-        loadData: '/src/scripts/modules/load-data',
-        structureData: '/src/scripts/modules/structure-data',
-        createDrawGraph: '/src/scripts/modules/draw-graph',
-        music: '/src/scripts/modules/music',
-        tabsPlugin: '/src/scripts/plugins/jquery.tabs.plugin',
-        easing: '/src/scripts/libs/jquery.easing.1.3'
+        debug: 'modules/debug',
+        mobileNav: 'modules/mobile-nav',
+        filterPatches: 'modules/filter-patches',
+        scrollBackground: 'modules/scroll-background',
+        loadData: 'modules/load-data',
+        structureData: 'modules/structure-data',
+        createDrawGraph: 'modules/draw-graph',
+        music: 'modules/music',
+        tabsPlugin: 'plugins/jquery.tabs.plugin',
+        easing: 'libs/jquery.easing.1.3'
     },
     shim: {
         d3: {

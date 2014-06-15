@@ -49,6 +49,7 @@ define(['debug', 'jquery'], function(debug, $) {
             filterPatches.results.append('<div class="results-group results-group-' + patchesKey + '"></div>');
             filterPatches.currentGroup = $('.results-group-' + patchesKey + '', filterPatches.results);
             //debug.log('filterPatches.currentGroup', filterPatches.currentGroup);
+            console.log('filterPatches.results', filterPatches.results);
         },
 
         sizeGroups: function sizeGroupsFn() {
@@ -103,7 +104,6 @@ define(['debug', 'jquery'], function(debug, $) {
         },
 
         submitQuery: function submitQueryFn(selectValue) {
-            //filterPatches.results.empty();
             for (var dataKey in filterPatches.dataPatches) {
                 var patchesObjects = filterPatches.dataPatches[dataKey];
                 var patchesKey = dataKey;

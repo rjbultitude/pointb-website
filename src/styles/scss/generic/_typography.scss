@@ -24,7 +24,7 @@ body {
     text-align:center;
     @include image_mask;
 
-    @media all and (max-width:28em) {
+    @media all and (max-width:34.625em) {
         font-size:2.50em;
     }
 }

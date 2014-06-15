@@ -58,20 +58,24 @@
                         <option value="abstract">Abstract</option>
                     </select> -->
                     <div class="form-item">
-                        <label for="pads">Pads and textures</label>
-                        <input id="pads" type="checkbox">
-                    </div>
-                    <div class="form-item">
-                        <label for="rhythms">Rhythmic</label>
-                        <input id="rhythms" type="checkbox">
-                    </div>
-                    <div class="form-item">
-                        <label for="fx">FX</label>
+                        <label for="fx">fx</label>
                         <input id="fx" type="checkbox">
                     </div>
                     <div class="form-item">
-                        <label for="abstract">Abstract</label>
-                        <input id="abstract" type="checkbox">
+                        <label for="generative">Generative</label>
+                        <input id="generative" type="checkbox">
+                    </div>
+                    <div class="form-item">
+                        <label for="pads">Pads</label>
+                        <input id="pads" type="checkbox">
+                    </div>
+                    <div class="form-item">
+                        <label for="synths">Synths</label>
+                        <input id="synths" type="checkbox">
+                    </div>
+                    <div class="form-item">
+                        <label for="utility">Utility</label>
+                        <input id="utility" type="checkbox">
                     </div>
                     <div class="form-item">
                         <button role="button">

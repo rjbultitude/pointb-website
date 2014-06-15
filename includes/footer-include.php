@@ -3,7 +3,7 @@
 		<button class="btn-open">Connect</button>
 		<nav role="navigation">
 			<ul class="sm-links-list">
-				<li class="list-item google-plus">
+				<!-- <li class="list-item soundcloud">
 					<a href="https://soundcloud.com/point-b" target="_blank">
 						<span class="text">SoundCloud</span>
 						<span class="icon">
@@ -41,7 +41,7 @@
 							</svg>
 						</span>
 					</a>
-				</li>
+				</li> -->
 				<li class="list-item medium">
 					<a href="https://medium.com/@pointbmusic" target="_blank">
 						<span class="text">Medium</span>

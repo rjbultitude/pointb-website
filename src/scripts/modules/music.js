@@ -11,7 +11,7 @@
 
 var requireLocalized = requireLocalized || {};
 
-define(['debug', 'jquery', 'hbs!/Templates/music-list-template'], function(debug, $, musicTmpl) {
+define(['debug', 'jquery', 'hbs!/templates/music-list-template'], function(debug, $, musicTmpl) {
     'use strict';
 
     var music = {

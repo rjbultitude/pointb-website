@@ -9,5 +9,5 @@ img {
 
 .image-border {
 	padding:$spacing/4;
-	@include animate(thereAndBack, 10s, ceaser($easeInCirc), infinite, normal);
+	background-color: rgba(white, 0.5);
 }

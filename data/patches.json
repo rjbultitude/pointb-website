@@ -1,54 +1,59 @@
 {
 	"pads": [{
-		"title": "smoothpad",
-		"link": "/patches/smoothpad",
-		"description": "description goes here"
+		"title": "90s Gate Filter",
+		"link": "/patches/pads/90sGateFilter.cmb",
+		"description": "Rhythmic pad with controllable rate"
 	}, {
-		"title": "roughpad",
-		"link": "/patches/roughpad",
-		"description": "description goes here"
-	}, {
-		"title": "wildpad",
-		"link": "/patches/wildpad",
-		"description": "description goes here"
+		"title": "modulatedPad",
+		"link": "/patches/pads/modulatedPad.cmb",
+		"description": "Rich pad with controllable phase"
 	}],
-	"rhythms": [{
-		"title": "smoothrhythm",
-		"link": "/patches/smoothrhythm",
-		"description": "description goes here"
+	"synths": [{
+		"title": "Digital Grater",
+		"link": "/patches/synths/digitalGrater.cmb",
+		"description": "Harsh wide synth with controllable tuning"
 	}, {
-		"title": "roughrhythm",
-		"link": "/patches/roughrhythm",
-		"description": "description goes here"
+		"title": "Pulsar Waves",
+		"link": "/patches/synths/pulsarWaves.cmb",
+		"description": "Synth constructed from the Pulsar LFO rack extension"
 	}, {
-		"title": "wildrhythm",
-		"link": "/patches/wildrhythm",
-		"description": "description goes here"
+		"title": "Sine Crusher",
+		"link": "/patches/synths/sineCrusher.cmb",
+		"description": "Unstable sine waves synth"
 	}],
 	"fx": [{
-		"title": "smoothfx",
-		"link": "/patches/smoothfx",
-		"description": "description goes here"
+		"title": "Vibrating Matter",
+		"link": "/patches/fx/vibratingMatter.cmb",
+		"description": "A continuous and highly malleable pitch wobble sound"
 	}, {
-		"title": "roughfx",
-		"link": "/patches/roughfx",
-		"description": "description goes here"
-	}, {
-		"title": "wildfx",
-		"link": "/patches/wildfx",
-		"description": "description goes here"
+		"title": "Violent Swinger",
+		"link": "/patches/fx/violentSwinger.cmb",
+		"description": "FM modulation using the Thor Shaper sine wave"
 	}],
-	"abstract": [{
-		"title": "smoothabstract",
-		"link": "/patches/smoothabstract",
-		"description": "description goes here"
+	"generative": [{
+		"title": "Classic Drone",
+		"link": "/patches/generative/classicDrone.cmb",
+		"description": "Continuous harmonic drones"
 	}, {
-		"title": "roughabstract",
-		"link": "/patches/roughabstract",
-		"description": "description goes here"
-	}, {
-		"title": "wildabstract",
-		"link": "/patches/wildabstract",
-		"description": "description goes here"
+		"title": "Rhythmic Razor",
+		"link": "/patches/generative/rhythmicRazor.cmb",
+		"description": "Randomly triggerd drums with glitch effect"
+	}],
+	"utility": [{
+		"title": "Continuous CV Note",
+		"link": "/patches/utility/continuousCVNote.cmb",
+		"description": "Single, continuous note triggered by CV"
+		}, {
+		"title": "Crossfader",
+		"link": "/patches/utility/crossfader.cmb",
+		"description": "Example of simple crossfader arrangement"
+		}, {
+		"title": "Random Drums",
+		"link": "/patches/utility/randomDrums.cmb",
+		"description": "Randomly triggered Kong drum hits"
+		}, {
+		"title": "Random Notes",
+		"link": "/patches/utility/randomNotes.cmb",
+		"description": "Randomly triggered notes within 1 octave"
 	}]
 }

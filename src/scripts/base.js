@@ -15,11 +15,10 @@ define(['jquery'], function($) {
 
     var base = {
 
-        debug: true,
+        debug: false,
         ltIe9: $('html.lt-ie9').size(),
         animationSpeed: 1000,
         animationEasing: 'easeOutCirc',
-        htmlSnippetsURL: 'src/scripts/snippets.html',
         htmlSnippets: '',
 
         init: function() {
