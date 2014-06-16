@@ -38,7 +38,9 @@ require(['jquery', 'debug', 'base', 'mobileNav', 'filterPatches', 'scrollBackgro
     /* ---------- App modules ----------------------------------------------- */
     mobileNav.init();
     scrollBackground.init();
+
     if (base.isPatchesPage()) {
+        debug.log('patches');
         filterPatches.init();
     }
 
@@ -56,10 +58,5 @@ require(['jquery', 'debug', 'base', 'mobileNav', 'filterPatches', 'scrollBackgro
     if (base.isTabs()) {
         debug.log('tabs');
         $('.tabs').JQueryTabsPlugin();
-    }
-
-    /* ---------- Utilities ------------------------------------------------- */
-    if (!base.ltIe9) {
-        //load something that is for IE9 or greater
     }
 });

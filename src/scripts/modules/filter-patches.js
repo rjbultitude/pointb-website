@@ -11,13 +11,14 @@
 
 var requireLocalized = requireLocalized || {};
 
-define(['debug', 'jquery'], function(debug, $) {
+define(['debug', 'jquery', 'hbs!/templates/patches-filter-template'], function(debug, $, patchesTmpl) {
     'use strict';
 
     var filterPatches = {
 
         dataPatches: null,
         results: $('.search-results'),
+        formContainer: $('.form-container'),
         currentGroup: null,
         groups: null,
         noResults: $('.no-results'),
@@ -26,7 +27,8 @@ define(['debug', 'jquery'], function(debug, $) {
 
 
         /* ---------- Init -------------------------------------------------- */
-        init: function loadData() {
+        init: function initFn() {
+            console.log('init');
             filterPatches.getData();
             filterPatches.formAction();
         },
@@ -38,11 +40,19 @@ define(['debug', 'jquery'], function(debug, $) {
                 dataType: 'json',
                 success: function(data) {
                     filterPatches.dataPatches = data;
+                    filterPatches.createLabels();
                 },
                 error: function() {
                     debug.log('error');
                 }
             });
+        },
+
+        createLabels: function createLabelsFn() {
+            console.log('filterPatches.dataPatches', filterPatches.dataPatches)
+            for (var patchKey in filterPatches.dataPatches) {
+                filterPatches.formContainer.append(patchesTmpl(patchKey));
+            }
         },
 
         createGroup: function createGroupFn(patchesKey) {

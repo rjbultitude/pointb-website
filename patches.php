@@ -20,8 +20,8 @@
     <meta name="google-site-verification" content="0zm1k2TOLDxHRYlEtOU84nj_ysoh_p4thF07qYnJRp4">
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
-    <script src="/src/scripts/modernizr.js"></script>
-    <link href="src/styles/css/global.css" media="screen" rel="stylesheet">
+    <script src="/dist/scripts/modernizr.js"></script>
+    <link href="/dist/styles/css/global.css" media="screen" rel="stylesheet">
 </head>
 
 <body id="patches">
@@ -57,25 +57,8 @@
                         <option value="fx">FX</option>
                         <option value="abstract">Abstract</option>
                     </select> -->
-                    <div class="form-item">
-                        <label for="fx">fx</label>
-                        <input id="fx" type="checkbox">
-                    </div>
-                    <div class="form-item">
-                        <label for="generative">Generative</label>
-                        <input id="generative" type="checkbox">
-                    </div>
-                    <div class="form-item">
-                        <label for="pads">Pads</label>
-                        <input id="pads" type="checkbox">
-                    </div>
-                    <div class="form-item">
-                        <label for="synths">Synths</label>
-                        <input id="synths" type="checkbox">
-                    </div>
-                    <div class="form-item">
-                        <label for="utility">Utility</label>
-                        <input id="utility" type="checkbox">
+                    <div class="form-container">
+                        
                     </div>
                     <div class="form-item">
                         <button role="button">
@@ -95,7 +78,7 @@
     <!-- end main -->
     <?php include("includes/footer-include.php"); ?>
 
-    <script data-main="/src/scripts/config" src="/src/scripts/libs/require.js"></script>
+    <script data-main="/dist/scripts/config" src="/dist/scripts/libs/require.js"></script>
 
     <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
