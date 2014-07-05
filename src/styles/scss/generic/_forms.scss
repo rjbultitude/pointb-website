@@ -39,9 +39,13 @@ label + input {
 }
 
 .form-item:last-child {
-  display:block;
-  text-align:center;
-  margin-top:$spacing/4;
+  // display:block;
+  // text-align:center;
+  // margin-top:$spacing/4;
+}
+
+.form-container {
+  padding-bottom: 0.5em;
 }
 
 /* -------------------------------------------------------------------------------- */

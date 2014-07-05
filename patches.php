@@ -1,3 +1,6 @@
+<?php
+$mode = 'dist';
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
@@ -20,8 +23,8 @@
     <meta name="google-site-verification" content="0zm1k2TOLDxHRYlEtOU84nj_ysoh_p4thF07qYnJRp4">
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
-    <script src="/dist/scripts/modernizr.js"></script>
-    <link href="/dist/styles/css/global.css" media="screen" rel="stylesheet">
+    <script src="/<?php echo $mode; ?>/scripts/modernizr.js"></script>
+    <link href="/<?php echo $mode; ?>/styles/css/global.css" media="screen" rel="stylesheet">
 </head>
 
 <body id="patches">
@@ -78,7 +81,7 @@
     <!-- end main -->
     <?php include("includes/footer-include.php"); ?>
 
-    <script data-main="/dist/scripts/config" src="/dist/scripts/libs/require.js"></script>
+    <script data-main="/<?php echo $mode; ?>/scripts/config" src="/<?php echo $mode; ?>/scripts/libs/require.js"></script>
 
     <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

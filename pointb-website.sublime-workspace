@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"dat",
+				"dataPatches"
+			],
+			[
+				"creat",
+				"createFormEls"
+			],
+			[
+				"con",
+				"continuous"
+			],
+			[
+				"Cont",
+				"continuous"
+			],
+			[
 				"ma",
 				"margin-bottom: "
 			],
@@ -144,10 +160,6 @@
 				"checkbox"
 			],
 			[
-				"dat",
-				"dataKey"
-			],
-			[
 				"da",
 				"dataKey"
 			],
@@ -251,30 +263,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "data/patches.json",
-			"settings":
-			{
-				"buffer_size": 1305,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "patches.php",
-			"settings":
-			{
-				"buffer_size": 4921,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/rbultitude/Documents/Processing/andreas-gysin-workshop/Andreas sketches/sketch_4b_matrix/sketch_4b_matrix.pde",
-			"settings":
-			{
-				"buffer_size": 523,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -355,10 +343,19 @@
 	},
 	"file_history":
 	[
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_discog.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/filter-patches.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/base.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/config.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/data/patches.json",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/debug.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/patches.php",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/music.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/templates/patches-filter-template.hbs",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/templates/music-list-template.hbs",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/draw-graph.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/includes/header-include.php",
+		"/Users/rbultitude/Documents/Processing/andreas-gysin-workshop/Andreas sketches/sketch_4b_matrix/sketch_4b_matrix.pde",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_discog.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/music.php",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/dist/scripts/config.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/Gruntfile.js",
@@ -373,17 +370,12 @@
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/utilities/_mixins.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interactions/_animations.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_buttons.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/includes/header-include.php",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_nav.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_search-filter.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_nav-main.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_tabs.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_music.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/patches.php",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/filter-patches.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_furniture.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/data/patches.json",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/draw-graph.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/data/discog-data.json",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interactions/_transitions.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_lists.scss",
@@ -391,7 +383,6 @@
 		"/Users/rbultitude/Documents/web-dev/pointb-website/package.json",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/data/music-data.json",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/load-data.js",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/templates/music-list-template.hbs",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_news.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_biog.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/utilities/_mask.scss",
@@ -479,10 +470,7 @@
 		"/Users/rbultitude/Documents/web-dev/css-animate-height/bower.json",
 		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/scripts/config.js",
 		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/bower_components/toxiclibsjs/README.md",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/bower.json",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/pointb.sublime-project",
-		"/Users/rbultitude/Documents/web-dev/Point B website/.git/config",
-		"/Users/rbultitude/Documents/web-dev/kinetic/package.json"
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/bower.json"
 	],
 	"find":
 	{
@@ -502,6 +490,31 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$)",
+			"},\n",
+			"debug.log",
+			"http://pointb.dev/patches.php",
+			"newKey",
+			"music.musicData",
+			"/src",
+			"createGroup",
+			"submitQuery",
+			"getCheckboxValues",
+			"formAction",
+			"createGroup",
+			"results-group",
+			"sizeGroups",
+			"filterPatches.groups",
+			"groups",
+			"var groups",
+			"groups",
+			"Synths",
+			"synths",
+			"Abstract",
+			"abstract",
+			"fx",
+			"rhythms",
+			"pads",
 			"#data-output",
 			"snippets",
 			"/src/scripts/",
@@ -604,32 +617,7 @@
 			"toys",
 			".section-filter",
 			"FX",
-			"fx",
-			"Rhythmic",
-			"rhythmic",
-			"Pads",
-			"pads",
-			"Pads",
-			"tabs-menu",
-			".tabs-nav-list .list-item a",
-			"background",
-			"tabs-nav",
-			"tabs-menu",
-			".",
-			".section .page-heading",
-			".tabs-content .item-list .list-item",
-			"opacity",
-			"last",
-			"[role=main] > article:last-of-type",
-			".section-main-header",
-			"li ",
-			"li",
-			"#home .section-main-header li #home-link",
-			"$color-blue-dark",
-			"$color-white",
-			"$color-teal",
-			"$color-beige",
-			".section-main-header"
+			"fx"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -651,96 +639,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "data/patches.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1305,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "patches.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4921,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 682.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/rbultitude/Documents/Processing/andreas-gysin-workshop/Andreas sketches/sketch_4b_matrix/sketch_4b_matrix.pde",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 523,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Processing/Syntax/Processing.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

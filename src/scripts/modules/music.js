@@ -48,7 +48,9 @@ define(['debug', 'jquery', 'hbs!/templates/music-list-template'], function(debug
                 var dataNew = music.musicData[newKey];
                 if (newKey === 'new') {
                     for (var i = 0; i < dataNew.length; i++) {
-                        music.musicListNew.append(musicTmpl(dataNew[i]));
+                        var newTrack = dataNew[i];
+                        debug.log(newTrack);
+                        music.musicListNew.append(musicTmpl(newTrack));
                     }
                 }
             }
@@ -58,7 +60,8 @@ define(['debug', 'jquery', 'hbs!/templates/music-list-template'], function(debug
                 var dataRemixes = music.musicData[remixesKey];
                 if (remixesKey === 'remixes') {
                     for (var i = 0; i < dataRemixes.length; i++) {
-                        music.musicListRemixes.append(musicTmpl(dataRemixes[i]));
+                        var remixesTrack = dataRemixes[i];
+                        music.musicListRemixes.append(musicTmpl(remixesTrack));
                     }
                 }
             }
@@ -68,7 +71,8 @@ define(['debug', 'jquery', 'hbs!/templates/music-list-template'], function(debug
                 var dataArchives = music.musicData[archivesKey];
                 if (archivesKey === 'archives') {
                     for (var i = 0; i < dataArchives.length; i++) {
-                        music.musicListArchives.append(musicTmpl(dataArchives[i]));
+                        var archiveTrack = dataArchives[i];
+                        music.musicListArchives.append(musicTmpl(archiveTrack));
                     }
                 }
             }
