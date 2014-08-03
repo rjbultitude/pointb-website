@@ -63,16 +63,50 @@
                 </div>
                 <aside class="aside">
                     <a href="http://boomkat.com/cds/983995-point-b-heart-of-matter" target="_blank" class="btn-cta">
+                        <span class="icon">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 63 62.8" enable-background="new 0 0 63 62.8" xml:space="preserve">
+                                <circle fill="#FFFFFF" cx="31.5" cy="31.5" r="31.5"/>
+                                <g>
+                                    <polyline fill="none" stroke="#C74F3E" stroke-width="4" stroke-miterlimit="10" points="51.2,17 43,36.4 20.1,36.4 13.2,24.4 
+                                        37,24.4     "/>
+                                    <circle fill="#C74F3E" cx="19.7" cy="46.4" r="4.7"/>
+                                    <circle fill="#C74F3E" cx="41.7" cy="46.4" r="4.7"/>
+                                </g>
+                            </svg>
+                        </span>
                         <span class="text">Buy it on CD</span>
-                        <span class="icon"></span>
                     </a>
                     <a href="http://boomkat.com/downloads/991285-point-b-heart-of-matter" target="_blank" class="btn-cta">
+                        <span class="icon">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 63 62.8" enable-background="new 0 0 63 62.8" xml:space="preserve">
+                                <circle fill="#FFFFFF" cx="31.5" cy="31.5" r="31.5"/>
+                                <g>
+                                    <polyline fill="none" stroke="#C74F3E" stroke-width="4" stroke-miterlimit="10" points="51.2,17 43,36.4 20.1,36.4 13.2,24.4 
+                                        37,24.4     "/>
+                                    <circle fill="#C74F3E" cx="19.7" cy="46.4" r="4.7"/>
+                                    <circle fill="#C74F3E" cx="41.7" cy="46.4" r="4.7"/>
+                                </g>
+                            </svg>
+                        </span>
                         <span class="text">Buy it as MP3/FLAC</span>
-                        <span class="icon"></span>
                     </a>
                     <a href="http://open.spotify.com/album/26OIshaG2X3CLr3gL2IgEz" target="_blank" class="btn-cta">
+                        <span class="icon">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 62.8 63" enable-background="new 0 0 62.8 63" xml:space="preserve">
+                            <circle fill="#FFFFFF" cx="31.3" cy="31.5" r="31.5"/>
+                            <g>
+                                <path fill="none" stroke="#C74F3E" stroke-width="4" stroke-miterlimit="10" d="M12.2,28.9c0-10.5,8.5-19,19-19s19,8.5,19,19"/>
+                                <path fill="#C74F3E" d="M12.2,43.8L12.2,43.8c-1.9,0-3.4-1.5-3.4-3.4v-6.2c0-1.9,1.5-3.4,3.4-3.4h0c1.9,0,3.4,1.5,3.4,3.4v6.2
+                                    C15.5,42.2,14,43.8,12.2,43.8z"/>
+                                <path fill="#C74F3E" d="M50.1,43.8L50.1,43.8c-1.9,0-3.4-1.5-3.4-3.4v-6.2c0-1.9,1.5-3.4,3.4-3.4h0c1.9,0,3.4,1.5,3.4,3.4v6.2
+                                    C53.5,42.2,52,43.8,50.1,43.8z"/>
+                            </g>
+                            </svg>
+                        </span>
                         <span class="text">Listen on Spotify</span>
-                        <span class="icon"></span>
                     </a>
                 </aside>
             </div>

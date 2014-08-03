@@ -27,10 +27,21 @@ legend {
 label {
     @include inline-block;
     font-size:1.125em;
+    background-color: $color-red-dark;
+    padding: em(5) em(20);
+    @include standard-transition-bg-color(1s);
+
+    &:hover,
+    &.active {
+      background-color: $color-orange;
+      cursor: pointer;
+      @include standard-transition-bg-color(1s);
+    }
 }
 
 label + input {
-  margin-left:0.1em;
+  //margin-left:0.1em;
+  @include el-off-screen;
 }
 
 .form-item {
@@ -38,67 +49,10 @@ label + input {
   margin-right:$spacing/4;
 }
 
-.form-item:last-child {
-  // display:block;
-  // text-align:center;
-  // margin-top:$spacing/4;
-}
-
 .form-container {
-  padding-bottom: 0.5em;
+  padding-bottom: 1.25em;
 }
 
-/* -------------------------------------------------------------------------------- */
-/* ---------- Checkboxes ---------------------------------------------------------- */
-/* -------------------------------------------------------------------------------- */
-.squaredTwo {
-  width: 1.375em;
-  height: 1.375em;
-  position: relative;
-  background: #fcfff4;
-  @include background( linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%) );
-  @include box-shadow( inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5) );
-  label {
-    width: 0.95em;
-    height: 0.95em;
-    margin:0;
-    cursor: pointer;
-    position:relative;
-    //position: absolute;
-    //z-index:2;
-    //left: 0.250em;
-    //top: 0.250em;
-    padding:0.250em;
-    @include background( linear-gradient(top, #222 0%, #45484d 100%) );
-    @include box-shadow( inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1) );
-    &:after {
-      content: '';
-      width: 0.563em;
-      height: 0.313em;
-      position: absolute;
-      z-index:3;
-      top: 0.250em;
-      left: 0.250em;
-      border: 0.188em solid #fcfff4;
-      border-top: none;
-      border-right: none;
-      background: transparent;
-      @include opacity( 0 );
-      @include transform( rotate(-45deg) );
-    }
-    &:hover::after {
-      @include opacity( 0.3 );
-    }
-  }
-}
-.squaredTwo > input[type=checkbox] {
-    position:absolute;
-    left:-999em;
-    &:checked + label:after {
-      @include opacity( 1 );
-    }
-}
-/* end .squaredTwo */
 
 /* -------------------------------------------------------------------------------- */
 /* ---------- Input --------------------------------------------------------------- */

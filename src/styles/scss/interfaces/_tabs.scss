@@ -46,7 +46,7 @@
     padding: 0.5em 0;
     font-family: $font-heading;
     @include border-top-radius($form-border);
-    @include standard-transistion();
+    @include standard-transition();
     @include box-block($color-red, 0.8, false);
 
     @media all and (max-width: 35em) {

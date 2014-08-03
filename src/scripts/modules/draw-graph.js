@@ -158,10 +158,16 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 			.data(dataObject)
 			.enter().append('g')
 			.attr('class', 'column')
-			.attr('transform', function(d) { return 'translate(' + xscale(d.year) + ',10)'; });
+			.attr('transform', function(d) { 
+				return 'translate(' + xscale(d.year) + ',10)'; 
+			});
 
-			yearColumn.selectAll('rect')
-			.data(function(d) { return d.releases; })
+			//add records
+			var rects = yearColumn.selectAll('rect');
+			debug.log('rects', rects);
+			rects.data(function(d) { 
+				return d.releases; 
+			})
 			.enter()
 			.append('rect')
 			.on('click', function(d) {
@@ -186,7 +192,7 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 			.attr('height', 0)
 			.transition()
 			.delay(0)
-			.duration(3000)
+			.duration(1000)
 			.attr('width', (w - padding*2) / numberYears)
 			.attr('y', function(d, i){
 				return releaseSize * i + padding;

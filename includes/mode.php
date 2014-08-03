@@ -1,3 +1,3 @@
 <?php
-$mode = 'dist';
+$mode = 'src';
 ?>

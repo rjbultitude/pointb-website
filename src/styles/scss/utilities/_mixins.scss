@@ -102,16 +102,15 @@ $browser-context: 16; // Default
     clear: both;
 }
 
-@mixin text_off_screen {
+@mixin text-off-screen {
     text-indent: -9999px;
     overflow: hidden;
     text-decoration: none;
     display: block;
-    // font-size: 0; //Is this necessary?
     text-align: start;
 }
 
-@mixin el_off_screen {
+@mixin el-off-screen {
     position: absolute;
     left: -9999em;
 }
@@ -120,15 +119,6 @@ $browser-context: 16; // Default
     @include column(10);
     @include push(1);
     @include pull(1);
-}
-
-/* -------------------------------------------------------------------------------- */
-/* ---------- Transitions --------------------------------------------------------- */
-/* -------------------------------------------------------------------------------- */
-
-@mixin standard-transistion {
-    @include transition-timing-function(ceaser($easeInOutCubic));
-    @include transition-duration(0.5s);
 }
 
 /* -------------------------------------------------------------------------------- */

@@ -32,19 +32,39 @@ button[role="button"] {
 }
 
 .btn-cta {
-    //@include inline-block;
     display:block;
     font-weight:normal;
-    padding:0.5em 1em;
-    background-color:$color-blue;
+    padding:0 1em;
     color:white;
-    @include standard-transition-padding;
+    vertical-align: middle;
+
+    .icon {
+        width: em(45);
+        height: em(45);
+        margin-right: em(10);
+        @include inline-block;
+        @include standard-transition-transform;
+    }
+
+    .text {
+        @include inline-block;
+        @include standard-transition-padding;
+    }
+
     &:hover,
     &:focus {
-        @include standard-transition-padding;
-        padding-left:2em;
-        color:white;
+
+        .icon {
+            @include standard-transition-transform;
+            @include transform(rotate(360deg));
+        }
+
+        .text {
+            @include standard-transition-padding;
+            padding-left:em(10);
+        }
     }
+
     &:visited {
         color:white;
     }

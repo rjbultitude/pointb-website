@@ -2,38 +2,44 @@
 // ---------- transitions --------------------------------------------------- */
 // -------------------------------------------------------------------------- */
 
-@mixin standard-transition {
+@mixin standard-transition($duration: 2s) {
     @include transition-timing-function(ceaser($easeOutQuint));
-    @include transition-duration(2s);
+    @include transition-duration($duration);
     @include transition-property(all);
 }
 
-@mixin standard-transition-bg-color {
+@mixin standard-transition-bg-color($duration: 2s) {
     @include transition-timing-function(ceaser($easeOutQuint));
-    @include transition-duration(2s);
+    @include transition-duration($duration);
     @include transition-property(background-color,color);
 }
 
-@mixin standard-transition-opacity {
+@mixin standard-transition-opacity($duration: 2s) {
     @include transition-timing-function(ceaser($easeOutQuint));
-    @include transition-duration(2s);
+    @include transition-duration($duration);
     @include transition-property(opacity);
 }
 
-@mixin standard-transition-bottom {
+@mixin standard-transition-bottom($duration: 2s) {
     @include transition-timing-function(ceaser($easeOutQuint));
-    @include transition-duration(2s);
+    @include transition-duration($duration);
     @include transition-property(bottom);
 }
 
-@mixin standard-transition-left {
+@mixin standard-transition-left($duration: 2s) {
     @include transition-timing-function(ceaser($easeOutQuint));
-    @include transition-duration(2s);
+    @include transition-duration($duration);
     @include transition-property(left);
 }
 
-@mixin standard-transition-padding {
+@mixin standard-transition-padding($duration: 2s) {
     @include transition-timing-function(ceaser($easeOutQuint));
-    @include transition-duration(2s);
+    @include transition-duration($duration);
     @include transition-property(padding-left);
+}
+
+@mixin standard-transition-transform($duration: 2s) {
+    @include transition-timing-function(ceaser($easeOutQuint));
+    @include transition-duration($duration);
+    @include transition-property(transform);
 }

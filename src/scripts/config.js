@@ -63,6 +63,8 @@ define(['jquery', 'debug', 'base', 'mobileNav', 'scrollBackground', 'easing'], f
     /* ---------- Plugins --------------------------------------------------- */
     if (base.isTabs()) {
         debug.log('tabs');
-        $('.tabs').JQueryTabsPlugin();
+        require(['tabsPlugin'], function() {
+            $('.tabs').JQueryTabsPlugin();
+        });
     }
 });

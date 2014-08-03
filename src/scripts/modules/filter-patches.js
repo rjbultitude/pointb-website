@@ -53,6 +53,15 @@ define(['debug', 'jquery', 'hbs!/templates/patches-filter-template', 'hbs!/templ
             for (var patchKey in filterPatches.dataPatches) {
                 filterPatches.formContainer.append(patchesTmpl(patchKey));
             }
+            filterPatches.labelsActive();
+        },
+
+        labelsActive: function labelsActiveFn() {
+            $('.form-item label').each(function() {
+                $(this).on('click', function() {
+                    $(this).toggleClass('active');
+                });
+            });
         },
 
         createGroup: function createGroupFn(patchesKey) {
