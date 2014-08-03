@@ -29,7 +29,7 @@ require.config({
 });
 
 // Start the main app logic.
-require(['jquery', 'debug', 'base', 'mobileNav', 'filterPatches', 'scrollBackground', 'loadData', 'music', 'tabsPlugin', 'easing'], function ($, debug, base, mobileNav, filterPatches, scrollBackground, loadDataModule, music) {
+define(['jquery', 'debug', 'base', 'mobileNav', 'scrollBackground', 'easing'], function ($, debug, base, mobileNav, scrollBackground) {
     'use strict';
 
     //App inits
@@ -41,17 +41,23 @@ require(['jquery', 'debug', 'base', 'mobileNav', 'filterPatches', 'scrollBackgro
 
     if (base.isPatchesPage()) {
         debug.log('patches');
-        filterPatches.init();
+        require(['filterPatches'], function(filterPatches) {
+            filterPatches.init();
+        });
     }
 
     if (base.isDiscogPage()) {
         debug.log('discog');
-        loadDataModule.init();
+        require(['loadData'], function(loadDataModule) {
+            loadDataModule.init();
+        });
     }
 
     if (base.isMusicPage()) {
         debug.log('music');
-        music.init();
+        require(['music'], function(music) {
+            music.init();
+        });
     }
 
     /* ---------- Plugins --------------------------------------------------- */

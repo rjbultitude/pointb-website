@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"results",
+				"results"
+			],
+			[
+				"cur",
+				"currentGroupList"
+			],
+			[
+				"text",
+				"text-transform: "
+			],
+			[
 				"dat",
 				"dataPatches"
 			],
@@ -232,10 +244,6 @@
 				"include"
 			],
 			[
-				"text",
-				"text-align"
-			],
-			[
 				"di",
 				"display"
 			],
@@ -263,6 +271,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "discog.php",
+			"settings":
+			{
+				"buffer_size": 4327,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 6280,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "music.php",
+			"settings":
+			{
+				"buffer_size": 5006,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "patches.php",
+			"settings":
+			{
+				"buffer_size": 4351,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -343,45 +383,50 @@
 	},
 	"file_history":
 	[
+		"/Users/rbultitude/Documents/web-dev/jquery-require-sample/webapp-build/scripts/main.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/design-kit.php",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/filter-patches.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_search-filter.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_forms.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_search.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/templates/patches-results-template.hbs",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/music.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/data/music-data.json",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/templates/music-list-template.hbs",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/data/patches.json",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/data/discog-data.json",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/templates/patches-filter-template.hbs",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/patches.php",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/index.php",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/discog.php",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/music.php",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/base.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/config.js",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/data/patches.json",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/debug.js",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/patches.php",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/music.js",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/templates/patches-filter-template.hbs",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/templates/music-list-template.hbs",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/draw-graph.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/includes/header-include.php",
 		"/Users/rbultitude/Documents/Processing/andreas-gysin-workshop/Andreas sketches/sketch_4b_matrix/sketch_4b_matrix.pde",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_discog.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/music.php",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/dist/scripts/config.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/Gruntfile.js",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/index.php",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_header.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/_base.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_typography.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/includes/footer-include.php",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/discog.php",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_figures.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/utilities/_functions.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/utilities/_mixins.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interactions/_animations.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_buttons.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_nav.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_search-filter.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_nav-main.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_tabs.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_music.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_furniture.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/data/discog-data.json",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interactions/_transitions.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_lists.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_non-semantic.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/package.json",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/data/music-data.json",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/load-data.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_news.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_biog.scss",
@@ -389,7 +434,6 @@
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_design-kit.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/global.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-discography/site/src/styles/scss/templates/_discog.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_forms.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/utilities/_placeholders.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/humans.txt",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/scroll-background.js",
@@ -466,11 +510,7 @@
 		"/Users/rbultitude/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/scripts/globals.js",
 		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/styles/sass/generic/_typography.scss",
-		"/Users/rbultitude/Documents/web-dev/SoundJS-master/README.md",
-		"/Users/rbultitude/Documents/web-dev/css-animate-height/bower.json",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/scripts/config.js",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/bower_components/toxiclibsjs/README.md",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/bower.json"
+		"/Users/rbultitude/Documents/web-dev/SoundJS-master/README.md"
 	],
 	"find":
 	{
@@ -490,6 +530,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".form-item",
+			"append",
+			"filterPatches",
+			"patchesResTmpl",
+			"results",
+			"thisPatch",
+			"createList",
+			"thisResultsList",
+			"debug",
+			"newBlock",
+			"createLabels",
+			"patchesTmpl",
+			"dist",
+			"$var",
+			"dist",
+			".form-item:last-child",
+			".results-list .list-item .heading",
 			"$)",
 			"},\n",
 			"debug.log",
@@ -600,24 +657,7 @@
 			".article-heading",
 			".lesser",
 			"6",
-			".article .article-text",
-			"toys",
-			"#home .section-main-header #home-link",
-			".item-list",
-			"dd {",
-			".1",
-			".article-biog",
-			"Things",
-			"length",
-			"filterPatches",
-			".tabs-content ",
-			".tabs-nav-list",
-			"orange",
-			"blue",
-			"toys",
-			".section-filter",
-			"FX",
-			"fx"
+			".article .article-text"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -639,8 +679,129 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "discog.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19,
+								15
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19,
+								19
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "music.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5006,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19,
+								19
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "patches.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19,
+								19
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
