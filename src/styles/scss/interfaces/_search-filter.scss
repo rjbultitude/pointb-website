@@ -38,6 +38,8 @@ $filter-bp2: 36.875em;
 
 .search-results .results-group {
     @include box-sizing(border-box);
+    @include opacity(1);
+    @include standard-transition-opacity;
     @include border-radius(0.5em);
     width:31.3%;
     margin-right:2%;
@@ -53,6 +55,10 @@ $filter-bp2: 36.875em;
         width:100%;
         margin-right:0;
     }
+}
+
+.results-group.load {
+    @include opacity(0);
 }
 
 .search-results .results-group:nth-child(3n) {

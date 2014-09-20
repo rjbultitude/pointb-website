@@ -65,8 +65,15 @@ define(['debug', 'jquery', 'hbs!/templates/patches-filter-template', 'hbs!/templ
         },
 
         createGroup: function createGroupFn(patchesKey) {
-            filterPatches.results.append('<div class="results-group results-group-' + patchesKey + '"></div>');
+            filterPatches.results.append('<div class="results-group results-group-' + patchesKey + ' load"></div>');
+            filterPatches.removeLoad();
             filterPatches.currentGroup = $('.results-group-' + patchesKey + '', filterPatches.results);
+        },
+
+        removeLoad: function removeLoadFn() {
+            setTimeout(function(){
+                $('.results-group').removeClass('load');
+            },200);
         },
 
         sizeGroups: function sizeGroupsFn() {
