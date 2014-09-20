@@ -6,16 +6,13 @@
     display:none;
     @include standard-transition-opacity;
     @include opacity(0);
+    
     &:hover {
         //background-color: darken($color-orange, 15%);
     }
 
     .text {
         @include el_off_screen;
-    }
-
-    .icon {
-        @extend .icon_site_Icon_3Lines
     }
 }
 

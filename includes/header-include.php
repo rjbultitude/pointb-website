@@ -3,6 +3,7 @@
 	<nav id="main-nav" role="navigation">
 		<a href="main-nav" class="btn-nav">
 			<span class="text">Open navigation</span>
+			Menu
 			<span class="icon"></span>
 		</a>
 		<ul role="list">

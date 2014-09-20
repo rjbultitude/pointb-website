@@ -1,0 +1,51 @@
+.buy-links {
+	@media all and (max-width: em($bp-three-col)) {
+		float: left;
+		width: 100%;
+	}
+}
+
+.buy-links .btn-cta {
+	margin-bottom: em(10);
+	
+	@media all and (max-width: em($bp-three-col)) {
+		float: left;
+		width: 33%;
+		text-align: center;
+		@include box-sizing(border-box);
+	}
+
+	@media all and (max-width: em(400)) {
+		float: none;
+		width: 100%;
+	}
+}
+
+.buy-links .btn-cta .icon {
+	@media all and (max-width: em($bp-three-col)) {
+		text-align: center;
+		margin-bottom: em(7);
+		width: 3.8125em;
+		height: 3.8125em;
+	}
+
+	@media all and (max-width: em(400)) {
+		text-align: left;
+	}
+}
+
+.buy-links .btn-cta .text {
+	@media all and (max-width: em($bp-three-col)) {
+		width: 100%;
+	}	
+}
+
+.buy-links .btn-cta + .btn-cta {
+	@media all and (max-width: em(700)) {
+		margin-top: 0;
+	}
+
+	@media all and (max-width: em(400)) {
+		margin-top: 1em;
+	}	
+}

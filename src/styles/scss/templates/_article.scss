@@ -1,0 +1,51 @@
+/* -------------------------------------------------------------------------------- */
+/* ---------- Article -------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.article {
+    @extend %standard-box;
+}
+
+.article p {
+    line-height:1.42em;
+}
+
+.article .article-text {
+    @include column(7);
+    @include push(1);
+
+    @media all and (max-width: em($bp-three-col)) {
+        @include column-spread;
+        margin-bottom:$spacing;
+    }
+}
+
+.article-heading {
+    @include column-spread;
+}
+
+.article .figure {
+    @include column(8);
+
+    @media all and (max-width: em($bp-three-col)) {
+        @include column-spread;
+        margin-bottom:$spacing;
+    }
+}
+
+.article .aside {
+    @include column(7);
+    @include pull(1);
+
+    @media all and (max-width: em($bp-three-col)) {
+        @include column-spread;
+    }
+}
+
+.article .article-text p {
+    padding-right:5%;
+}
+
+.article .aside p {
+    padding-left:5%;
+}

@@ -46,8 +46,8 @@
 		height:auto;
 		padding:0;
 
-		&:hover .icon svg path{
-			fill:$color-red-pale;
+		&:hover .icon path{
+			fill:$color-orange;
 			@include standard-transition;
 		}
 	}

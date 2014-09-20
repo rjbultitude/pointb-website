@@ -100,11 +100,31 @@ dd:last-child {
 
 .item-list .item-heading {
     @include inline-block();
-    //font-size:1em;
     text-align:left;
     margin-right:0.5em;
+
+    @media all and (max-width: em(500)) {
+        width: 100%;
+    }
 }
 
 .item-list dl {
     float:right;
+
+    @media all and (max-width: em(500)) {
+        float: none;
+    }
+}
+
+.item-list dt,
+.item-list dd {
+    @media all and (max-width: em(500)) {
+        float: left;
+    }   
+}
+
+.item-list dt {
+    @media all and (max-width: em(500)) {
+        clear: left;
+    } 
 }

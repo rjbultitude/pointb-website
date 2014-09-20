@@ -61,7 +61,7 @@
                         <img src="/images/discography/heart-of-matter.jpg" alt="Heart of Matter LP" />
                     </div>
                 </div>
-                <aside class="aside">
+                <aside class="aside buy-links">
                     <a href="http://boomkat.com/cds/983995-point-b-heart-of-matter" target="_blank" class="btn-cta">
                         <span class="icon">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -75,7 +75,7 @@
                                 </g>
                             </svg>
                         </span>
-                        <span class="text">Buy it on CD</span>
+                        <span class="text">Buy on CD</span>
                     </a>
                     <a href="http://boomkat.com/downloads/991285-point-b-heart-of-matter" target="_blank" class="btn-cta">
                         <span class="icon">
@@ -90,7 +90,7 @@
                                 </g>
                             </svg>
                         </span>
-                        <span class="text">Buy it as MP3/FLAC</span>
+                        <span class="text">Buy digital</span>
                     </a>
                     <a href="http://open.spotify.com/album/26OIshaG2X3CLr3gL2IgEz" target="_blank" class="btn-cta">
                         <span class="icon">
@@ -106,7 +106,7 @@
                             </g>
                             </svg>
                         </span>
-                        <span class="text">Listen on Spotify</span>
+                        <span class="text">Find on Spotify</span>
                     </a>
                 </aside>
             </div>
