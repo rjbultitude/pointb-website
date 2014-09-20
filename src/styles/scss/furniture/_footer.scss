@@ -1,0 +1,50 @@
+/* -------------------------------------------------------------------------------- */
+/* ---------- Footer -------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.footer-sm {
+    background:darken($color-blue, $shift-amount*2);
+    color:white;
+    position:fixed;
+    display:block;
+    z-index:10;
+    bottom:-5.5em;
+    padding:0.750em 0;
+    @include standard-transition-bottom;
+
+    @media all and (max-width:37.500em) {
+        position:static;
+        bottom:0;
+    }
+}
+
+.footer-sm .wrapper-inner {
+    position:relative;
+    overflow:visible;
+}
+
+.footer-sm .btn-open {
+    position:absolute;
+    z-index:10;
+    display:block;
+    top:-3.25em;
+    height:3em;
+    width:7em;
+    margin-left: -3.5em;
+    background-color:black;
+    padding:0.5em;
+    right:1em;
+    color:white;
+    @include border-top-radius(0.5em);
+}
+
+.footer-sm.active,
+.footer-sm:hover {
+    bottom:0;
+}
+
+.footer-sm nav,
+.footer-sm .sub-footer,
+.footer-sm .sm-links-list {
+    @extend %flow-in-grid;
+}

@@ -150,6 +150,12 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 		},
 
 		drawGraph: function drawGraph(dataObject) {
+
+			var transition = svg.transition().duration(2000);
+    		var delay = function(d, i) { 
+    			return i * 100; 
+    		};
+
 			//remove any existing rectangles
 			svg.selectAll('rect').remove();
 
@@ -164,7 +170,7 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 
 			//add records
 			var rects = yearColumn.selectAll('rect');
-			debug.log('rects', rects);
+	
 			rects.data(function(d) { 
 				return d.releases; 
 			})
@@ -191,8 +197,8 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 			})
 			.attr('height', 0)
 			.transition()
-			.delay(0)
-			.duration(1000)
+			.delay(delay)
+			.duration(2000)
 			.attr('width', (w - padding*2) / numberYears)
 			.attr('y', function(d, i){
 				return releaseSize * i + padding;

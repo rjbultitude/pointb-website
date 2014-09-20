@@ -1,0 +1,45 @@
+/* -------------------------------------------------------------------------------- */
+/* ---------- Header -------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+.header {
+    @include box-block(darken($color-blue,$shift-amount));
+    @include dotted-bg(rgba($color-blue, 0.8), white, 14px);
+    border:0 none;
+    padding:$spacing 0;
+}
+
+#home .header .page-heading {
+	margin-bottom: 0;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ---------- Header -------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.section-main-header {
+    border-bottom:$color-nav-active solid 0.3em;
+    @include color-grad-bg();
+
+    @media all and (max-width:45em) {
+        @include color-grad-bg(bottom);
+    }
+
+}
+
+.section-main-header .wrapper-inner{
+    position:relative;
+}
+
+.section-main-header .logo {
+    @include column(6);
+    @include push(2);
+    color:white;
+    font-size:3.2em;
+    line-height:1.8em;
+    text-align:left;
+
+    @media all and (max-width:42.500em) {
+        @include column(24);
+        text-align:center;
+    }
+}

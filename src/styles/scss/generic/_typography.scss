@@ -164,9 +164,8 @@ a {
     }
     &:hover,
     &:focus {
-        color: $color-link-hover;
+        //color: $color-link-hover;
         text-decoration: none;
-        border-color: $color-link;
     }
     &:active {
         color: $color-link-hover;

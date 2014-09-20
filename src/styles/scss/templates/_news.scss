@@ -7,4 +7,8 @@
 .article-news .article-heading {
 	font-size: 5.500em;
 	line-height:0.675em;
+
+	@media all and (max-width: em(445)) {
+		font-size: 3em;
+	}
 }
