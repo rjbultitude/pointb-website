@@ -15,9 +15,16 @@ body {
     height:100%;
 }
 
+.load {
+    @include opacity(0);
+}
+
+.loaded {
+    @include opacity(1);
+    @include standard-transition-opacity;
+}
+
 .wrapper-inner {
-    //max-width: 61em; //976px
-    //max-width: 58em;
     max-width:83%;
     margin:0 auto;
     @include clearfix;

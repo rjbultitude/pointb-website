@@ -29,11 +29,6 @@ body {
     }
 }
 
-.special-character {
-    //display:block;
-    //margin:0 auto;
-}
-
 .article-heading {
     @extend %heading;
     font-size: 4.2em;
@@ -41,9 +36,6 @@ body {
     margin-bottom: 0.5em;
     text-align:center;
     @include image_mask;
-    //background-image:url(/images/decoration/knockout.png);
-    //@include background-clip(text);
-    //color:rgba(black, 0.5);
 }
 
 .legend,

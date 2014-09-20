@@ -88,6 +88,13 @@ define(['jquery'], function($) {
             };
         },
 
+        /* ---------- fade in loader ----------------------------------------- */
+        removeLoad: function removeLoadFn() {
+            setTimeout(function(){
+                $('.load').removeClass('load').addClass('loaded');
+            },200);
+        },
+
         /* ---------- Utility for converting hex to rgb --------------------- */
         colorLuminance: function(hex, lum) {
 

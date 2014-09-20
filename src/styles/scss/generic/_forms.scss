@@ -58,7 +58,7 @@ input[type="checkbox"]:checked + label {
       @include standard-transition-bg-color(1s);
 }
 
-input[type="checkbox"] + label:focues:before,
+input[type="checkbox"] + label:focus:before,
 input[type="checkbox"] + label:hover:before {
     @include border-radius(50%);
 }
@@ -70,7 +70,7 @@ input[type="checkbox"]:checked + label:before {
 
 .form-item {
   @include inline-block();
-  margin-right:$spacing/8;
+  margin:0 $spacing/8 $spacing/8 0;
 }
 
 .form-container {

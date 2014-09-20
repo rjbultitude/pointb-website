@@ -18,6 +18,7 @@ $color-orange:                  #FC9A2F;
 $color-orange-pale:				#F8AC4D;
 $color-orange-paler:			lighten($color-orange-pale, 5%);
 $color-red:                     #F15944;
+$color-red-darker:				rgba(darken($color-red, 25%), 0.8);
 $color-red-pale:                #BD9999;
 $color-red-dark:				#8E372E;
 $color-blue:                    #05395E;
@@ -55,9 +56,11 @@ $shift-amount:					9%;
 // -------------------------------------------------------------------------------- 
 
 @import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,100);
 
-$font-copy:                  	"bitter", 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
-$font-heading:                  "bitter", 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
+$font-copy:                  	'bitter', 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
+$font-heading:                  'bitter', 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
+$font-light:					'Roboto Slab', serif;
 
 $font-size:                     16px;
 

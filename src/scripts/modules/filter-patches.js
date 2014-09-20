@@ -11,7 +11,7 @@
 
 var requireLocalized = requireLocalized || {};
 
-define(['debug', 'jquery', 'hbs!/templates/patches-filter-template', 'hbs!/templates/patches-results-template'], function(debug, $, patchesTmpl, patchesResTmpl) {
+define(['debug', 'jquery', 'base', 'hbs!/templates/patches-filter-template', 'hbs!/templates/patches-results-template'], function(debug, $, base, patchesTmpl, patchesResTmpl) {
     'use strict';
 
     var filterPatches = {
@@ -31,6 +31,7 @@ define(['debug', 'jquery', 'hbs!/templates/patches-filter-template', 'hbs!/templ
             console.log('init');
             filterPatches.getData();
             filterPatches.formAction();
+            base.removeLoad();
         },
 
         getData: function getDataFn() {
@@ -66,14 +67,8 @@ define(['debug', 'jquery', 'hbs!/templates/patches-filter-template', 'hbs!/templ
 
         createGroup: function createGroupFn(patchesKey) {
             filterPatches.results.append('<div class="results-group results-group-' + patchesKey + ' load"></div>');
-            filterPatches.removeLoad();
+            base.removeLoad();
             filterPatches.currentGroup = $('.results-group-' + patchesKey + '', filterPatches.results);
-        },
-
-        removeLoad: function removeLoadFn() {
-            setTimeout(function(){
-                $('.results-group').removeClass('load');
-            },200);
         },
 
         sizeGroups: function sizeGroupsFn() {
