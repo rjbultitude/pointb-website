@@ -50,14 +50,6 @@
             <div class="wrapper-inner">
                 <form class="form" role="search">
                     <h2 class="legend">Search</h2>
-                    <!-- <input id="quick-search" name="quick-search" type="text" /> -->
-                    <!-- <label for="selectCategory">Choose a category</label>
-                    <select name="select-category" id="selectCategory">
-                        <option value="pads">Pads and textures</option>
-                        <option value="rhythms">Rhythmic</option>
-                        <option value="fx">FX</option>
-                        <option value="abstract">Abstract</option>
-                    </select> -->
                     <div class="form-container">
                         
                     </div>

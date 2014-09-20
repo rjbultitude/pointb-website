@@ -24,29 +24,55 @@ legend {
     display: none;
 }
 
-label {
+input[type="checkbox"] {
+  @include el-off-screen;
+}
+
+input[type="checkbox"] + label {
     @include inline-block;
     font-size:1.125em;
     background-color: $color-red-dark;
-    padding: em(5) em(20);
+    padding: em(5) em(14);
     @include standard-transition-bg-color(1s);
+    position: relative;
+}
 
-    &:hover,
-    &.active {
+input[type="checkbox"] + label:after {
+    @extend %before-after-base;
+    left: 0;
+    top: 0;
+    width: em(2);
+}
+
+input[type="checkbox"] + label .icon {
+    width: em(10);
+    height: em(10);
+    border: 2px solid white;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    @include standard-transition;
+    margin-right: em(5);
+}
+
+input[type="checkbox"] + label:hover,
+input[type="checkbox"]:checked + label {
       background-color: $color-orange;
       cursor: pointer;
       @include standard-transition-bg-color(1s);
-    }
 }
 
-label + input {
-  //margin-left:0.1em;
-  @include el-off-screen;
+input[type="checkbox"] + label:hover .icon {
+    @include border-radius(50%);
+}
+
+input[type="checkbox"]:checked + label .icon {
+    background-color: white;
 }
 
 .form-item {
   @include inline-block();
-  margin-right:$spacing/4;
+  margin-right:$spacing/8;
 }
 
 .form-container {

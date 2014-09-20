@@ -53,7 +53,7 @@ define(['debug', 'jquery', 'hbs!/templates/patches-filter-template', 'hbs!/templ
             for (var patchKey in filterPatches.dataPatches) {
                 filterPatches.formContainer.append(patchesTmpl(patchKey));
             }
-            filterPatches.labelsActive();
+            //filterPatches.labelsActive();
         },
 
         labelsActive: function labelsActiveFn() {
