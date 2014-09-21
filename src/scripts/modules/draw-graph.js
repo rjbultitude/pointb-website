@@ -12,7 +12,7 @@
 
 var requireLocalized = requireLocalized || {};
 
-define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3, base, structureData) {
+define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3, base) {
 	'use strict';
 
 	//do i need unique years?
@@ -151,32 +151,45 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 
 		drawGraph: function drawGraph(dataObject) {
 
-			var transition = svg.transition().duration(2000);
-    		var delay = function(d, i) { 
-    			return i * 100; 
-    		};
-
 			//remove any existing rectangles
 			svg.selectAll('rect').remove();
 
 			//create columns
 			var yearColumn = svg.selectAll('.year')
 			.data(dataObject)
-			.enter().append('g')
+			.enter()
+			.append('g')
 			.attr('class', 'column')
 			.attr('transform', function(d) { 
 				return 'translate(' + xscale(d.year) + ',10)'; 
 			});
+			//console.log('yearColumn', yearColumn);
+
+			var toggleClass = function() {
+    
+    			return function() {
+    				if (d3.select(this).attr('class') === 'inactive') {
+    					$(this).siblings().attr('class', 'inactive');
+						$(this).parent().siblings('g').children('rect').attr('class', 'inactive');
+        				d3.select(this).attr('class', 'active');
+        			}
+					else {
+						d3.select(this).attr('class', 'inactive');	
+					}
+    			};
+			};
 
 			//add records
 			var rects = yearColumn.selectAll('rect');
 	
 			rects.data(function(d) { 
-				return d.releases; 
+				//console.log('d.releases', d.releases);
+				return d.releases;
 			})
 			.enter()
 			.append('rect')
-			.on('click', function(d) {
+			.attr('class', 'inactive')
+			.on('click.uContent', function(d) {
 				$('.release-title').text(d.Title);
 				$('.release-label').text(d.Label);
 				$('.release-cat').text(d['Catalogue number']);
@@ -184,32 +197,45 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 				$('.release-year').text(d.Year);
 				$('.release-image').attr('src', d.ReleaseImage);
 			})
+			.on('click.cClass', toggleClass())
 			.on('mouseenter', function(d) {
 				var rect = d3.select(this);
 				var thisColour = colorFormat(d.Format);
 				rect.style('fill', base.colorLuminance(thisColour, 0.5));
+				
+				d3.select('.tooltip')
+					.style('opacity', '1')
+					.style('left', (d3.event.pageX - 100) + 'px')
+					.style('top', (d3.event.pageY - 368) + 'px');
+				d3.select('.tooltip').text(d.Format);
 			})
 			.on('mouseleave', function(d) {
 				var rect = d3.select(this);
 				rect.style('fill', function(d){
 					return colorFormat(d.Format);
-				})
+				});
+				d3.select('.tooltip').style('opacity', '0');
 			})
 			.attr('height', 0)
+			.attr('width', 0)
 			.transition()
-			.delay(delay)
-			.duration(2000)
-			.attr('width', (w - padding*2) / numberYears)
+			.delay(function(d, i) {
+				return i * 500;
+			})
+			.duration(1000)
+			.ease('quad')
+    		.attr('width', (w - padding*2) / numberYears)
+			.attr('height', function() {
+				return releaseSize;
+			})
 			.attr('y', function(d, i){
 				return releaseSize * i + padding;
-			})
-			.attr('height', function(d) {
-				return releaseSize;
 			})
 			.style('fill', function(d){
 				return colorFormat(d.Format);
 			});
 		},
+
 
 		init: function initFn() {
 			createDrawGraph.getData();

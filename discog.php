@@ -49,15 +49,9 @@
         <!-- start content -->
         <div id="main" class="section section-infographic" role="main">
             <div class="wrapper-inner">
-                <div class="wrapper-key">
-                    <a href="#key-list" class="btn-showHide"><span class="instruction">Show</span> key</a>
-                    <div class="wrapper-keylist">
-                        <div id="key-list">
-                            <h3 class="sub-heading">Key:</h3>
-                        </div>
-                    </div>
-                </div>
                 <div id="data-output">
+
+                    <p class="tooltip"></p>
                 </div>
                 <div class="sub-section sub-section-release-details">
                     <dl class="release-details-list">
