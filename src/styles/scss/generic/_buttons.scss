@@ -75,3 +75,9 @@ button[role="button"] {
 .btn-cta:visited {
     color:white;
 }
+
+.no-csstransitions .btn-cta:hover,
+.no-csstransitions .btn-cta:focus {
+    color: $color-orange;
+    padding-left: 0;
+}

@@ -53,8 +53,6 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 			createDrawGraph.createKey();
 			createDrawGraph.showHideKey();
 
-			debug.log('discogData', discogData);
-
 			return uniqueFormats;
 		},
 
@@ -238,6 +236,8 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 
 
 		init: function initFn() {
+			createDrawGraph.createModal();
+			console.log('load');
 			createDrawGraph.getData();
 		}
 	};

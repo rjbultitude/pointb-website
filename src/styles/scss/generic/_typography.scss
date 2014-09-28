@@ -101,8 +101,8 @@ p {
     margin: 0 0 1em 0;
 }
 
-p:last-of-type {
-    //margin-bottom: 0;
+p a:hover {
+    color: white;
 }
 
 .article p:last-child,

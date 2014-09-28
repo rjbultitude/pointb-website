@@ -1,11 +1,14 @@
 require.config({
     paths: {
+        //libs
         jquery: 'libs/jquery',
         d3: 'libs/d3',
         requirejs: 'libs/require',
         hbs: 'libs/require-handlebars-plugin/hbs',
         sketch: 'libs/sketch',
         easing: 'libs/jquery.easing.1.3',
+
+        //modules
         debug: 'modules/debug',
         mobileNav: 'modules/mobile-nav',
         filterPatches: 'modules/filter-patches',
@@ -15,13 +18,18 @@ require.config({
         createDrawGraph: 'modules/draw-graph',
         music: 'modules/music',
         canvasHeader: 'modules/canvas-header',
+        
+        //plugins
         tabsPlugin: 'plugins/jquery.tabs.plugin',
+        modalPlugin: 'plugins/jquery.modal',
     },
+
     shim: {
         d3: {
             exports: 'd3'
         }
     },
+    
     hbs: { // optional
         helpers: true,            // default: true
         i18n: false,              // default: false
@@ -55,8 +63,9 @@ define(['jquery', 'debug', 'base', 'mobileNav', 'scrollBackground', 'easing'], f
 
     if (base.isDiscogPage()) {
         debug.log('discog');
-        require(['loadData'], function(loadDataModule) {
+        require(['loadData', 'modalPlugin'], function(loadDataModule) {
             loadDataModule.init();
+            $('.sub-section-release-details').JQueryModalPlugin({'contentType':'custom'});
         });
     }
 

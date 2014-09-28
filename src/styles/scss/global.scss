@@ -15,6 +15,7 @@
 @import "utilities/_mixins.scss";
 @import "utilities/_placeholders.scss";
 @import "utilities/_mask.scss";
+@import "utilities/_lists.scss";
 
 /* -------------------------------------------------------------------------------- */
 /* ---------- Compass ------------------------------------------------------------- */
@@ -87,6 +88,7 @@
 @import "modules/_infographic.scss";
 @import "modules/_tooltip.scss";
 @import "modules/_canvas-header.scss";
+@import "modules/_modal.scss";
 
 /* -------------------------------------------------------------------------------- */
 /* ---------- Dev ----------------------------------------------------------------- */
