@@ -1,56 +1,21 @@
 .sm-links-list {
-	@include clearfix;
+	@include inline-block;
+	text-align: center;
 	height:auto;
 }
 
-.sm-links-list .list-item:first-child {
-	@include push(8);
 
-	@media all and (max-width:37.5000em) {
-		@include push(4);
-	}
-
-	@media all and (max-width:20.0000em) {
-		@include push(0);
-	}
+.sm-links-list .list-item {
+	@include inline-block;
+	width: 4em;
+	margin-right: 0.5em;
 }
 
 .sm-links-list .list-item:last-child {
-	@include pull(8);
-
-	@media all and (max-width:37.5000em) {
-		@include pull(4);
-	}
-
-	@media all and (max-width:20.0000em) {
-		@include pull(0);
-	}
+	margin-right: 0;
 }
 
 .sm-links-list .list-item {
-	@include column(2);
-
-	@media all and (max-width:37.5000em) {
-		@include column(4);
-	}
-
-	@media all and (max-width:20.0000em) {
-		@include column(6);
-	}
-}
-
-.sm-links-list .list-item {
-
-	a {
-		width:100%;
-		height:auto;
-		padding:0;
-
-		&:hover .icon path{
-			fill:$color-orange;
-			@include standard-transition;
-		}
-	}
 
 	.icon {
 		width:100%;
@@ -68,5 +33,16 @@
 
 	.text {
 		@include el_off_screen;
+	}
+}
+
+.sm-link {
+	width:100%;
+	height:auto;
+	padding:0;
+
+	&:hover .icon path{
+		fill:$color-orange;
+		@include standard-transition;
 	}
 }

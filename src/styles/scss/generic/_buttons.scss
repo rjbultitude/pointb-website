@@ -37,35 +37,41 @@ button[role="button"] {
     padding:0 1em;
     color:white;
     vertical-align: middle;
+}
+
+.btn-cta .icon {
+    width: em(45);
+    height: em(45);
+    margin-right: em(10);
+    @include inline-block;
+    @include standard-transition-transform;
+}
+
+.btn-cta .text {
+    @include inline-block;
+    @include standard-transition-padding;
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
 
     .icon {
-        width: em(45);
-        height: em(45);
-        margin-right: em(10);
-        @include inline-block;
         @include standard-transition-transform;
+        @include transform(rotate(360deg));
     }
 
     .text {
-        @include inline-block;
         @include standard-transition-padding;
+        padding-left:em(10);
     }
 
-    &:hover,
-    &:focus {
-
-        .icon {
-            @include standard-transition-transform;
-            @include transform(rotate(360deg));
-        }
-
+    @media all and (max-width: em($bp-three-col)) {
         .text {
-            @include standard-transition-padding;
-            padding-left:em(10);
+            padding-left: 0;
         }
     }
+}
 
-    &:visited {
-        color:white;
-    }
+.btn-cta:visited {
+    color:white;
 }

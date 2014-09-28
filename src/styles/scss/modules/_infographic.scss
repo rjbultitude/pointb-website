@@ -1,0 +1,82 @@
+
+/* -------------------------------------------------------------------------------- */
+/* ---------- Release Details ----------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.sub-section-release-details {
+	@include column-spread(5,14,5);
+	border-top:1px solid rgba(255, 255, 255, 0.5);
+	padding-top:$spacing/4;
+	min-height:10em;
+}
+
+.sub-section-release-details .release-details-list {
+	width:60%;
+	float:left;
+}
+
+.sub-section-release-details .figure {
+	width:35%;
+	float:right;
+	box-sizing: border-box;
+	padding: em(4);
+	background-color: white;
+}
+
+.sub-section-release-details .figure img {
+	width:100%;
+	height:auto;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ---------- Graph -------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+#data-output {
+	text-align: center;
+	position: relative;
+	padding: 0 em(20);
+
+	@media all and (max-width:61.125em) {
+		overflow-x: scroll;
+	}
+}
+
+.axis .domain {
+  fill: none;
+  stroke: none;
+  shape-rendering: crispEdges;
+}
+
+.infobox {
+    color:black;
+    font-size: 1.2em;
+}
+
+.column {
+	min-height: 10em;
+	background: white;
+}
+
+.column rect {
+	stroke: white;
+	cursor:pointer;
+}
+
+.column rect.active {
+	fill:white !important;
+}
+
+.release-details-list {
+	float:left;
+	width:60%;
+}
+
+.release-figure {
+	float:right;
+	width:200px;
+}
+
+.release-figure .release-image {
+	max-width:100%;
+	height:auto;
+}

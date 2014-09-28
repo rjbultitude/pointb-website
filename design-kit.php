@@ -55,7 +55,7 @@
 
     </div>
     <!-- end main -->
-    <?php include("includes/footer-include.php"); ?>
+    <?php include("includes/section-sm-include.php"); ?>
     
 </div>
 

@@ -1,5 +1,5 @@
 /**
- * Example module module
+ * Scroll bg
  *
  * $author       Richard Bultitude
  * $email        richard.bultitude@google.com

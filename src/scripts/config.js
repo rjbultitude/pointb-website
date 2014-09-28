@@ -4,6 +4,8 @@ require.config({
         d3: 'libs/d3',
         requirejs: 'libs/require',
         hbs: 'libs/require-handlebars-plugin/hbs',
+        sketch: 'libs/sketch',
+        easing: 'libs/jquery.easing.1.3',
         debug: 'modules/debug',
         mobileNav: 'modules/mobile-nav',
         filterPatches: 'modules/filter-patches',
@@ -12,8 +14,8 @@ require.config({
         structureData: 'modules/structure-data',
         createDrawGraph: 'modules/draw-graph',
         music: 'modules/music',
+        canvasHeader: 'modules/canvas-header',
         tabsPlugin: 'plugins/jquery.tabs.plugin',
-        easing: 'libs/jquery.easing.1.3'
     },
     shim: {
         d3: {
@@ -38,6 +40,11 @@ define(['jquery', 'debug', 'base', 'mobileNav', 'scrollBackground', 'easing'], f
     /* ---------- App modules ----------------------------------------------- */
     mobileNav.init();
     scrollBackground.init();
+
+    if (base.isHomePage()) {
+        debug.log('home');
+        //require(['canvasHeader']);
+    }
 
     if (base.isPatchesPage()) {
         debug.log('patches');

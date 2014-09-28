@@ -10,6 +10,10 @@
     line-height:1.42em;
 }
 
+.article:last-child {
+    padding-bottom: 4.5em;
+}
+
 .article .article-text {
     @include column(7);
     @include push(1);
@@ -44,8 +48,16 @@
 
 .article .article-text p {
     padding-right:5%;
+
+    @media all and (max-width: em($bp-three-col)) {
+        text-align: center;
+    }
 }
 
 .article .aside p {
     padding-left:5%;
+
+    @media all and (max-width: em($bp-three-col)) {
+        text-align: center;
+    }
 }

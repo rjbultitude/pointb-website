@@ -1,5 +1,5 @@
 /**
- * Example module module
+ * Load chart data
  *
  * $author       Zone dev
  * $email        frontend@thisiszone.com

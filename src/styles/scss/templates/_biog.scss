@@ -4,3 +4,14 @@
     @include dotted-bg(rgba($color-blue, 0.8), white);
     position:relative;
 }
+
+.article-biog .article-heading {
+	@media all and (max-width: em(780)) {
+		@include column-spread(6,12,6);
+	}
+
+	@media all and (max-width: em(780)) {
+		@include column-spread(2,20,2);
+		font-size: 3.2em;
+	}
+}

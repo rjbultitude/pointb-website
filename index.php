@@ -32,13 +32,10 @@
     <div id="main" class="section" role="main">
 
         <!-- start main header -->
-        <section class="section header">
+        <section class="section header" id="header">
             <div class="wrapper-inner">
                 <div class="content">
                     <h1 class="page-heading">Music, sound design <span class="special-character">&amp;</span> software</h1>
-                    <div class="sound-toy-content">
-
-                    </div>
                 </div>
             </div>
         </section>
@@ -137,7 +134,7 @@
 
     </div>
     <!-- end main -->
-    <?php include("includes/footer-include.php"); ?>
+    <?php include("includes/section-sm-include.php"); ?>
 
     <script data-main="/<?php echo $mode; ?>/scripts/config" src="/<?php echo $mode; ?>/scripts/libs/require.js"></script>
 

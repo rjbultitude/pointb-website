@@ -1,10 +1,10 @@
-<footer class="footer-sm section">
+<section class="section-sm section">
 	<div class="wrapper-inner">
 		<button class="btn-open">Connect</button>
 		<nav role="navigation">
 			<ul class="sm-links-list">
 				<li class="list-item soundcloud">
-					<a href="https://soundcloud.com/point-b" target="_blank">
+					<a class="sm-link" href="https://soundcloud.com/point-b" target="_blank">
 						<span class="text">SoundCloud</span>
 						<span class="icon">
 							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 705.7 703.1" enable-background="new 0 0 705.7 703.1" xml:space="preserve">
@@ -39,7 +39,7 @@
 					</a>
 				</li>
 				<li class="list-item medium">
-					<a href="https://medium.com/@pointbmusic" target="_blank">
+					<a class="sm-link" href="https://medium.com/@pointbmusic" target="_blank">
 						<span class="text">Medium</span>
 						<span class="icon">
 							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 176.9 176.4" enable-background="new 0 0 176.9 176.4" xml:space="preserve">
@@ -51,7 +51,7 @@
 					</a>
 				</li>
 				<li class="list-item twitter">
-					<a href="https://twitter.com/pointbmusic" target="_blank">
+					<a class="sm-link" href="https://twitter.com/pointbmusic" target="_blank">
 						<span class="text">Twitter</span>
 						<span class="icon">
 							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -69,7 +69,7 @@
 					</a>
 				</li>
 				<li class="list-item fb">
-					<a href="https://www.facebook.com/pointbmusic" target="_blank">
+					<a class="sm-link" href="https://www.facebook.com/pointbmusic" target="_blank">
 						<span class="text">Facebook</span>
 						<span class="icon">
 							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -98,4 +98,4 @@
 			</ul>
 		</nav>
 	</div>
-</footer>
+</section>

@@ -3,7 +3,7 @@
 $nav-main-bp1: 48.375em;
 $nav-main-bp2: 33.500em;
 
-.section-main-header [role="navigation"] {
+.section-main-header .nav-main {
     @include column(14);
     @include pull(2);
     text-align:right;
@@ -15,7 +15,7 @@ $nav-main-bp2: 33.500em;
     }
 }
 
-.section-main-header [role="navigation"] [role="list"] {
+.section-main-header .nav-main-list {
     @include inline-block;
     height:3.5em;
     overflow:hidden;
@@ -23,7 +23,7 @@ $nav-main-bp2: 33.500em;
 
     @media all and (max-width:$nav-main-bp1) {
         width:100%;
-        height: 3.9em;
+        height: 3.7em;
     }
 
     @media all and (max-width:$nav-main-bp2) {
@@ -31,17 +31,17 @@ $nav-main-bp2: 33.500em;
     }
 }
 
-.section-main-header [role="navigation"] [role="list"].open {
+.section-main-header .nav-main-list.open {
     display:inline;
 }
 
-.section-main-header [role="navigation"] .list-item {
+.section-main-header .nav-main .list-item {
     margin:0;
 }
 
-.section-main-header [role="navigation"] .list-item,
-.section-main-header [role="navigation"] a {
-    @media all and (max-width:$nav-main-bp2) {
+.section-main-header .nav-main .list-item,
+.section-main-header .nav-main .nav-link {
+    @media all and (max-width: $nav-main-bp2) {
         display:block;
         width:100%;
     }
@@ -51,22 +51,33 @@ $nav-main-bp2: 33.500em;
     font-size: 2em;
     height: 1.5em;
     line-height: 1.6em;
-    @media all and (max-width:$nav-main-bp2) {
+
+    .icon {
+        width: 2em;
+        margin: 0 auto;
+        display: block;
+
+        path {
+            fill: white;
+        }
+    }
+
+    @media all and (max-width: $nav-main-bp2) {
         @include inline-block();
         @include standard-transition-opacity;
         @include opacity(1);
     }
 }
 
-.section-main-header li a {
+.section-main-header .nav-link {
     background: darken($color-orange,1%);
     border-top: lighten($color-orange,$shift-amount) solid 0.2em;
-    height:2.2em;
-    padding:3.5em 0 0 0;
-    color:white;
+    height: 2.2em;
+    padding: 3.5em 0 0 0;
+    color: white;
 
     @media all and (max-width:$nav-main-bp1) {
-        padding-top:1.5em;
+        padding-top: 1.5em;
     }
 }
 
@@ -77,18 +88,16 @@ $nav-main-bp2: 33.500em;
     background: $color-nav-active;
 }
 
-.section-main-header li a:hover,
-.section-main-header li a:focus {
+.section-main-header .nav-link:hover,
+.section-main-header .nav-link:focus {
     background: rgba($color-nav-active, 0.8);
-    //border-top-width:0.3em;
-    //padding-bottom:6.5em; //was 0.3 + 0.5
-    padding:3.5em 0 5.5em 0;
+    padding: 3.5em 0 5.5em 0;
 
     @media all and (max-width:$nav-main-bp1) {
         padding:1.5em 0 5.5em 0;
     }
 
-    @media all and (max-width:$nav-main-bp1) {
+    @media all and (max-width:$nav-main-bp2) {
         padding:1.5em 0 0 0;
     }
 }

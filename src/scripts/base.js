@@ -118,6 +118,14 @@ define(['jquery'], function($) {
         },
 
         /* ---------- Feature Identification -------------------------------- */
+        isHomePage: function isHomePageFn() {
+            if ($('#home').length > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        },
+
         isPatchesPage: function isPatchesPageFn() {
             if ($('#patches').length > 0) {
                 return true;

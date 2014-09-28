@@ -71,7 +71,7 @@
 
     </div>
     <!-- end main -->
-    <?php include("includes/footer-include.php"); ?>
+    <?php include("includes/section-sm-include.php"); ?>
 
     <script data-main="/<?php echo $mode; ?>/scripts/config" src="/<?php echo $mode; ?>/scripts/libs/require.js"></script>
 

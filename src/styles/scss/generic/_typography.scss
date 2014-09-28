@@ -20,6 +20,7 @@ body {
 .page-heading {
     @extend %heading;
     font-size: 3.500em;
+    line-height: 1.125em;
     margin: 0 auto 0.533em;
     text-align:center;
     @include image_mask;

@@ -1,0 +1,7 @@
+.tooltip {
+	padding: em(4);
+	background-color: white;
+	position: absolute;
+	color: $color-link;
+	@include opacity(0);
+}

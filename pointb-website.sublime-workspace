@@ -4,20 +4,88 @@
 		"selected_items":
 		[
 			[
-				"se",
-				"selectAll"
+				"rem",
+				"removeClass"
+			],
+			[
+				"to",
+				"toggleClass"
+			],
+			[
+				"in",
+				"inactive"
+			],
+			[
+				"cl",
+				"class"
+			],
+			[
+				"c",
+				"click"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"box",
+				"box-sizing: "
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"yea",
+				"yearColumn"
+			],
+			[
+				"tr",
+				"transform"
+			],
+			[
+				"tool",
+				"tooltipInit"
+			],
+			[
+				"ma",
+				"margin-bottom: "
 			],
 			[
 				"pad",
 				"padding: "
 			],
 			[
-				"bac",
-				"background-color: "
+				"mar",
+				"margin-top: "
 			],
 			[
-				"ma",
-				"margin-right: "
+				"remov",
+				"removeLoad"
+			],
+			[
+				"tex",
+				"text-align: "
+			],
+			[
+				"re",
+				"removeClass"
+			],
+			[
+				"r",
+				"results-group"
+			],
+			[
+				"bor",
+				"border-right: "
+			],
+			[
+				"se",
+				"selectAll"
+			],
+			[
+				"bac",
+				"background-color: "
 			],
 			[
 				"results",
@@ -68,10 +136,6 @@
 				"border-top-radius	compass"
 			],
 			[
-				"mar",
-				"margin-bottom: "
-			],
-			[
 				"fon",
 				"font-weight: "
 			],
@@ -90,10 +154,6 @@
 			[
 				"key",
 				"keyList"
-			],
-			[
-				"cl",
-				"click"
 			],
 			[
 				"cre",
@@ -122,10 +182,6 @@
 			[
 				"app",
 				"appendTo"
-			],
-			[
-				"re",
-				"results"
 			],
 			[
 				"sea",
@@ -188,10 +244,6 @@
 				"numberCheckboxes"
 			],
 			[
-				"c",
-				"checkbox"
-			],
-			[
 				"ge",
 				"getCheckboxes"
 			],
@@ -236,10 +288,6 @@
 				"media"
 			],
 			[
-				"r",
-				"rotate3d	compass"
-			],
-			[
 				"light",
 				"lighten	sass_function"
 			],
@@ -260,10 +308,6 @@
 				"border-top"
 			],
 			[
-				"tex",
-				"text-align"
-			],
-			[
 				"color",
 				"color-teal"
 			],
@@ -275,27 +319,27 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/scripts/modules/draw-graph.js",
-			"settings":
-			{
-				"buffer_size": 5816,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 167.0,
+		"height": 367.0,
 		"selected_items":
 		[
 			[
-				"jshint",
-				"JSHint"
+				"js",
+				"JSHint: Set Plugin Options"
 			],
 			[
-				"js",
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"jshint",
 				"JSHint"
 			],
 			[
@@ -316,10 +360,6 @@
 			],
 			[
 				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"in",
 				"Package Control: Install Package"
 			],
 			[
@@ -361,61 +401,84 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/rbultitude/Documents/web-dev/pointb-website",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles"
+	],
 	"file_history":
 	[
-		"/Users/rbultitude/Documents/web-dev/pointb-website/discog.php",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/includes/mode.php",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/music.js",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_forms.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/filter-patches.js",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interactions/_transitions.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/templates/patches-filter-template.hbs",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/utilities/_mixins.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/draw-graph.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/modules/_infographic.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string/test/test_underscore/vendor/jquery.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/modules/_tooltip.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/_base.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/utilities/_semantic-fluid-grid.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/utilities/_mixins.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/includes/mode.php",
+		"/Users/rbultitude/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/global.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_discog.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/discog.php",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/modules/_discog-key.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/modules/_sm-links.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/index.php",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/modules/_buy-links.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_buttons.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/includes/header-include.php",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_article.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_nav.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/furniture/_furniture.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_forms.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_lists.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/filter-patches.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/base.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_search-filter.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_search.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/patches.php",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/templates/patches-results-template.hbs",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_typography.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/templates/patches-filter-template.hbs",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/_site-icons.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/includes/footer-include.php",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/furniture/_footer.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/furniture/_header.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/furniture/_accessibility-controls.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_furniture.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/furniture/footer.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_sm-links.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_news.scss",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/music.js",
+		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interactions/_transitions.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/config.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/plugins/jquery.tabs.plugin.js",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_buttons.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_nav.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_tabs.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/global.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/index.php",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/css/utilities/functions.css",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/utilities/_functions.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/images/icons/icon-listen.svg",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/images/icons/icon-buy.svg",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/base.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/music.php",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/load-data.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/structure-data.js",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/patches.php",
 		"/Users/rbultitude/Documents/web-dev/jquery-require-sample/webapp-build/scripts/main.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/design-kit.php",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_search-filter.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_search.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/templates/patches-results-template.hbs",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/data/music-data.json",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/templates/music-list-template.hbs",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/data/patches.json",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/data/discog-data.json",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/debug.js",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/scripts/modules/draw-graph.js",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/includes/header-include.php",
 		"/Users/rbultitude/Documents/Processing/andreas-gysin-workshop/Andreas sketches/sketch_4b_matrix/sketch_4b_matrix.pde",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_discog.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/dist/scripts/config.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/Gruntfile.js",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_header.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_typography.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/includes/footer-include.php",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_figures.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interactions/_animations.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/interfaces/_nav-main.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_music.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_furniture.scss",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_lists.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/generic/_non-semantic.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/package.json",
-		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_news.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_biog.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/utilities/_mask.scss",
 		"/Users/rbultitude/Documents/web-dev/pointb-website/src/styles/scss/templates/_design-kit.scss",
@@ -474,23 +537,7 @@
 		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/README.md",
 		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/generic/_nav.scss",
 		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/images/icons/Icon_Circle.svg",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/_site-icons.scss",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/generic/_tabs.scss",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/utilities/_design-kit.scss",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/generic/_figures.scss",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/_vendor.scss",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/css/global.css",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/e62d80a58d8f3316d26b3f79690abc50d6f2ee92/_furniture.scssc",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/c181f3d5e7ff47b0a38e6b6bebcbb52e2b3f388e/_tabs.scssc",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/c181f3d5e7ff47b0a38e6b6bebcbb52e2b3f388e/_reveal-module.scssc",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/af5ed829716b0e4d8bc6c562676b947eaa7bb851/_tabs.scssc",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/64a9d04f028faa1d0891525f5aaa9c6d27820ab2/_tabs.scssc",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/64a9d04f028faa1d0891525f5aaa9c6d27820ab2/_reveal-module.scssc",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/.sass-cache/492d1eeb45a4b650e1d351925c3e58d6a3cf019b/_furniture.scssc",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/templates/_navigation.scss",
-		"/Users/rbultitude/Documents/web-dev/Point B website/.gitignore",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/generic/_images.scss",
-		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/generic/_figure.scss"
+		"/Users/rbultitude/Documents/web-dev/Point B website/pointb/src/styles/scss/_site-icons.scss"
 	],
 	"find":
 	{
@@ -501,6 +548,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/rbultitude/Documents/web-dev/pointb-website/",
 			"/Users/rbultitude/Documents/web-dev/pointb-website/src",
 			""
 		]
@@ -510,6 +558,50 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"'",
+			"$(this).siblings()",
+			".column rect.active",
+			"fill",
+			"toggleColor",
+			"white",
+			"currentColor",
+			"\"",
+			"click",
+			".sub-section-release-details .figure",
+			".sub-section-release-details .release-details-list",
+			"#data-output",
+			"cons",
+			"releases",
+			"yearColumn",
+			"\"",
+			"delay",
+			"}",
+			"drawGraph",
+			"div",
+			"wrapper-key",
+			".sm-links-list .list-item",
+			"700",
+			"$bp-article",
+			".article-figure",
+			"icon_site_Icon_3Lines",
+			".article .article-text",
+			".item-list dl",
+			"noRes",
+			".search-results .results-group",
+			".load",
+			"noRes",
+			"\"",
+			".results-group",
+			"results-group",
+			"10",
+			"\"Peabody-icons\"",
+			"filterPatches",
+			".form-item",
+			"50",
+			"#footer",
+			"#footer ",
+			"templates",
+			".article-news .article-heading",
 			"svg",
 			"yearColumn",
 			"rect",
@@ -593,51 +685,7 @@
 			".results-list",
 			"#footer .btn-open",
 			".section-filter [role=\"search\"]",
-			".search-results",
-			"button[role=\"button\"]",
-			"this",
-			"keyListWrapper",
-			"keyList",
-			"key-list",
-			".section-infographic .btn-showHide",
-			"btn-showHide",
-			"right ",
-			"$('#key-list')",
-			"dataNew",
-			"thisKey",
-			"music.musicData",
-			"newMusicList",
-			"\"",
-			"filterPatches",
-			"ReleaseImage",
-			"\"Catalogue number\"",
-			".search-results .group-heading",
-			"3",
-			"to ",
-			"[role=\"search\"]",
-			".section-filter .form-item",
-			".section-filter [role=\"search\"]",
-			"ul",
-			"\"",
-			"ul",
-			"p",
-			"div",
-			"value",
-			"option",
-			".article-heading",
-			".section-filter [role=\"search\"]",
-			"numberCheckboxes",
-			"console",
-			"isPatchesPage",
-			"fx",
-			"pads",
-			"title",
-			"pads",
-			"%;\n",
-			".section-main-header",
-			"right",
-			"$bg-color2 5%, ",
-			"$bg-color1 5%"
+			".search-results"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -659,38 +707,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/scripts/modules/draw-graph.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5816,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4664,
-								4664
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2315.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -736,7 +754,7 @@
 	"project": "pointb-website.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -763,6 +781,7 @@
 		],
 		"width": 0.0
 	},
+	"selected_group": 0,
 	"settings":
 	{
 	},
