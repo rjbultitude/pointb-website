@@ -63,9 +63,8 @@ define(['jquery', 'debug', 'base', 'mobileNav', 'scrollBackground', 'easing'], f
 
     if (base.isDiscogPage()) {
         debug.log('discog');
-        require(['loadData', 'modalPlugin'], function(loadDataModule) {
+        require(['loadData'], function(loadDataModule) {
             loadDataModule.init();
-            $('.sub-section-release-details').JQueryModalPlugin({'contentType':'custom'});
         });
     }
 

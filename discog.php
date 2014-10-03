@@ -54,6 +54,9 @@
                     <p class="tooltip"></p>
                 </div>
                 <div class="sub-section sub-section-release-details">
+                    <figure class="figure release-figure">
+                        <img class="release-image" src="" alt="" />
+                    </figure>
                     <dl class="release-details-list">
                         <dt class="visuallyhidden">Title:</dt><dd class="release-title heading-dd"></dd>
                         <dt class="">Label:</dt><dd class="release-label"></dd>
@@ -61,9 +64,6 @@
                         <dt class="">Format:</dt><dd class="release-format"></dd>
                         <dt class="">Year:</dt><dd class="release-year"></dd>
                     </dl>
-                    <figure class="figure release-figure">
-                        <img class="release-image" src="" alt="" />
-                    </figure>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@
 
 var requireLocalized = requireLocalized || {};
 
-define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3, base) {
+define(['debug', 'jquery', 'd3', 'base', 'structureData', 'modalPlugin'], function(debug, $, d3, base) {
 	'use strict';
 
 	//do i need unique years?
@@ -160,6 +160,9 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 			.attr('class', 'column')
 			.attr('transform', function(d) { 
 				return 'translate(' + xscale(d.year) + ',10)'; 
+			})
+			.each(function(d, i) {
+				createDrawGraph.columnCount = i;
 			});
 			//console.log('yearColumn', yearColumn);
 
@@ -172,7 +175,7 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
         				d3.select(this).attr('class', 'active');
         			}
 					else {
-						d3.select(this).attr('class', 'inactive');	
+						d3.select(this).attr('class', 'inactive');
 					}
     			};
 			};
@@ -232,12 +235,19 @@ define(['debug', 'jquery', 'd3', 'base', 'structureData'], function(debug, $, d3
 			.style('fill', function(d){
 				return colorFormat(d.Format);
 			});
+			
+			createDrawGraph.initModal();
 		},
 
+		initModal: function initModalFn() {
+			$('.sub-section-release-details').JQueryModalPlugin({
+				'contentType':'custom',
+				'triggerButton' : '.column rect'
+			});
+		},
 
 		init: function initFn() {
 			createDrawGraph.createModal();
-			console.log('load');
 			createDrawGraph.getData();
 		}
 	};

@@ -7,10 +7,13 @@
 // * $copyright    Copyright (c) 2014, thisiszone.com. All rights reserved.
 // * $version      1.2
 // *
-// * $notes       There are three modes:
+// * $notes       There are five modes:
 //                video (which uses an iframe),
-//                image &
+//                image,
+//                default,
+//                alert,       
 //                custom
+//
 //                Three positions are available:
 //                top, center and off
 //                resetPlay is on by default,
@@ -27,25 +30,51 @@ define(['jquery'], function() {
 
             //Settings
             var settings = $.extend({
-                contentType: 'custom',
-                position: 'scroll',
-                resetPlay: true,
+                contentType : 'default',
+                position : 'scroll',
+                resetPlay : true,
+                triggerButton : null
             }, options);
 
-            return this.each(function() {
+            return this.each(function(index) {
+                //init
                 var thisModal = $(this);
-                var modalContent = null || thisModal.children();
-                var wrapper = $('div').addClass('modal').appendTo('body');
-                console.log('wrapper', wrapper);
-                //var content = wrapper.find('.modal-content', thisModal);
-                var overlay = $('div').addClass('overlay').appendTo('body');
+                var thisModalNew = thisModal.clone();
+                //new elements
+                var thisModalWrap = null;
+                var overlay = null;
                 var btn = null;
-                var btnClose = wrapper.find('.close');
+                var btnClose = null;
                 var contentClass = '';
                 var contentInnerClass = '';
+                //position
                 var modalPos = 0;
                 var scrollPos = 0;
                 var modalHeight = 0;
+
+                function createEls() {
+                    //create & populate modal
+                    $('<div class="modal"></div>').appendTo('body');
+                    thisModalWrap = $('.modal');
+
+                    //create close button
+                    $('<a class="close"><span class="text">close</text><span class="icon"></span></a>').appendTo(thisModalWrap);
+                    btnClose = $('.close', thisModalWrap);
+                    
+                    //create overlay
+                    overlay = $('<div class="overlay"></div>');
+                    overlay.appendTo('body');
+
+                    //remove original html
+                    thisModal.remove();
+
+                    populate();
+                }
+
+                function populate() {
+                    thisModalNew.appendTo(thisModalWrap);
+                    thisModalWrap.addClass(contentClass);
+                }
 
                 function contentTypeSetting() {
                     //Conditions for modes
@@ -56,7 +85,7 @@ define(['jquery'], function() {
                         contentInnerClass = 'video-content';
                     } else if (settings.contentType === 'custom') {
                         //modalContent is set to children or overridden;
-                        btn = $('.btn-custom');
+                        btn = '.btn' || settings.triggerButton;
                         contentClass = 'modal-custom';
                         contentInnerClass = 'custom-content';
                     } else if (settings.contentType === 'image') {
@@ -68,34 +97,29 @@ define(['jquery'], function() {
                         btn = $('.btn-alert');
                         contentClass = 'modal-alert';
                         contentInnerClass = 'alert-content';
+                    } else if (settings.contentType === 'default') {
+                        btn = $('.btn-modal');
+                        contentClass = 'modal-default';
+                        contentInnerClass = '';
                     }
 
-                    console.log('settings.contentType', settings.contentType);
-
-                    populate();
+                    //populate();
                 }
 
                 function positionSetting() {
                     if (settings.postion === 'top') {
                         scrollPos = $(window).scrollTop();
                         modalPos = scrollPos;
-                        wrapper.css({'top': modalPos});
+                        thisModalWrap.css({'top': modalPos});
                     }
                     else if (settings.postion === 'center') {
-                        modalHeight = wrapper.height();
+                        modalHeight = thisModalWrap.height();
                         modalPos = scrollPos + modalHeight/2;
-                        wrapper.css({'top': modalPos});
+                        thisModalWrap.css({'top': modalPos});
                     }
                     else if (settings.postion === 'off') {
                         //do nothing
                     }
-                }
-
-                function populate() {
-                    thisModal.empty();
-                    modalContent.appendTo(wrapper);
-                    wrapper.addClass(contentClass);
-                    //content.addClass(contentInnerClass);
                 }
 
                 function setTabindex(tabindex) {
@@ -110,7 +134,7 @@ define(['jquery'], function() {
                 }
 
                 function hideModal() {
-                    wrapper.fadeOut('slow', function() {
+                    thisModalWrap.fadeOut('slow', function() {
                         overlay.fadeOut('slow', function() {
                             $(this).hide();
                         });
@@ -122,16 +146,23 @@ define(['jquery'], function() {
                 }
 
                 function showHideOnClick() {
-                    $(btn).on('click', function(e) {
+                    var _triggerButton = null;
+                    if (settings.triggerButton !== null) {
+                        _triggerButton = settings.triggerButton;
+                    }
+                    else {
+                        _triggerButton = btn;
+                    }
+                    $(_triggerButton).on('click.modal', function(e) {
                         if (settings.contentType !== 'alert') {
                             e.preventDefault();
                         }
 
-                        if (wrapper.hasClass('active')) {
+                        if (thisModalWrap.hasClass('active')) {
                             hideModal();
                         } else {
                             overlay.fadeIn('slow', function() {
-                                wrapper.fadeIn().addClass('active');
+                                thisModalWrap.fadeIn().addClass('active');
                                 positionSetting();
 
                                 setTabindex(true);
@@ -142,7 +173,7 @@ define(['jquery'], function() {
                 }
 
                 function closeModalButton() {
-                    wrapper.on('click', function(e) {
+                    thisModalWrap.on('click', function(e) {
                         e.preventDefault();
                         hideModal();
                     });
@@ -173,6 +204,7 @@ define(['jquery'], function() {
                 $('document').ready(function() {
                     //Init functions
                     contentTypeSetting();
+                    createEls();
                     showHideOnClick();
                     closeModalButton();
                     closeModalOverlay();

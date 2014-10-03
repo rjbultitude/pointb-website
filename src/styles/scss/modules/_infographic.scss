@@ -3,29 +3,40 @@
 /* ---------- Release Details ----------------------------------------------------- */
 /* -------------------------------------------------------------------------------- */
 
-.sub-section-release-details {
-	@include column-spread(5,14,5);
-	border-top:1px solid rgba(255, 255, 255, 0.5);
-	padding-top:$spacing/4;
-	min-height:10em;
-}
-
 .sub-section-release-details .release-details-list {
-	width:60%;
-	float:left;
+	width: 100%;
 }
 
 .sub-section-release-details .figure {
-	width:35%;
-	float:right;
 	box-sizing: border-box;
-	padding: em(4);
 	background-color: white;
 }
 
 .sub-section-release-details .figure img {
 	width:100%;
 	height:auto;
+}
+
+.sub-section-release-details .heading-dd {
+	width: 100%;
+	border-bottom: 1px solid $color-grey-light;
+	font-size: em(34);
+	line-height: 1em;
+	padding: 0.3em 0;
+	margin-bottom: 0.3em;
+	color: $color-blue;
+}
+
+.sub-section-release-details dt {
+	width: 20%;
+	text-align: left;
+	margin-right: 5%;
+}
+
+.sub-section-release-details dd {
+	width: 75%;
+	text-align: left;
+	margin-right: 0;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -69,11 +80,6 @@
 .release-details-list {
 	float:left;
 	width:60%;
-}
-
-.release-figure {
-	float:right;
-	width:200px;
 }
 
 .release-figure .release-image {
