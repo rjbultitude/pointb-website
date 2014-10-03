@@ -4,7 +4,7 @@
 
 .modal {
     display: none;
-    width: 50%;
+    width: 46%;
     margin: 0 25%;
     position: absolute;
     z-index: index($elements, modal);
@@ -13,7 +13,7 @@
     top: 5%;
     left: 0;
     text-align: center;
-    padding: em(12);
+    padding: 2%;
     @include box-shadow(rgba($color-blue, 0.3) 0 0 5px);
 
     .close {
@@ -31,9 +31,19 @@
         @include border-top-radius(em(5));
 
         .text {
+            display: block;
             color: white;
             font-size: 1em;
+            line-height: 0.75em;
             font-family: $font-light;
+
+            @media all and (max-width: 50em) {
+                font-size: em(16);
+            }
+
+            @media all and (max-width: 50em) {
+                font-size: em(14);
+            }
         }
     }
 
@@ -42,7 +52,13 @@
     }
 
     @media all and (max-width: 60em) {
-        width: 90%;
+        width: 60%;
+        margin: 0 18%;
+    }
+
+    @media all and (max-width: 40em) {
+        width: 86%;
+        margin: 0 5%;
     }
 }
 
