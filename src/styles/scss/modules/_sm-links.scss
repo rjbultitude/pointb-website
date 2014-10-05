@@ -4,11 +4,14 @@
 	height:auto;
 }
 
-
 .sm-links-list .list-item {
 	@include inline-block;
 	width: 4em;
 	margin-right: 0.5em;
+
+	@media all and (max-width: em(430)) {
+		width: 3em;
+	}
 }
 
 .sm-links-list .list-item:last-child {

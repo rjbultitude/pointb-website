@@ -51,7 +51,7 @@
                 </h2>
                 <div class="article-text">
                     <p>After many months of hard work and sonic endeavour the 4th Point B album is complete. It embodies a welcome shift in outlook: away from the dark and melancholy and on towards a brighter and more dynamic aspect</p>
-                    <p>Available on CD/MP3/FLAC</p>
+                    <p class="aux-info">Available on CD/MP3/FLAC</p>
                 </div>
                 <div class="figure article-figure">
                     <div class="image-border">
@@ -126,7 +126,7 @@
                 </div>
                 <aside class="aside">
                     <p>After absorbing the waves of dubstep and post-garage that washed up on the shores of South London his sound has matured into something that is both somehow uplifting and melancholy.</p>
-                    <p>Other projects include <a href="https://soundcloud.com/frond" target="_blank">Frond</a>, a home for his more experimental/ethereal sounds and <a href="https://soundcloud.com/planesmusic" target="_blank">Planes</a>, his beats and downtempo alias.
+                    <p>Other projects include <a href="https://soundcloud.com/frond" target="_blank">Frond</a>, a home for his more experimental and ethereal sounds and <a href="https://soundcloud.com/planesmusic" target="_blank">Planes</a>, his beats and downtempo alias.
                 </aside>
             </div>
         </article>

@@ -6,7 +6,6 @@
 }
 
 .buy-links .btn-cta {
-	margin-bottom: em(10);
 	
 	@media all and (max-width: em($bp-three-col)) {
 		float: left;
@@ -42,11 +41,13 @@
 }
 
 .buy-links .btn-cta + .btn-cta {
-	@media all and (max-width: em(700)) {
+	margin-top: 1.75em;
+
+	@media all and (max-width: em(960)) {
 		margin-top: 0;
 	}
 
 	@media all and (max-width: em(400)) {
-		margin-top: 1em;
-	}	
+		margin-top: 1.75em;
+	}
 }

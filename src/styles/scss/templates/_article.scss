@@ -20,7 +20,7 @@
 
     @media all and (max-width: em($bp-three-col)) {
         @include column-spread;
-        margin-bottom:$spacing;
+        margin-bottom: 2em;
     }
 }
 
@@ -33,7 +33,7 @@
 
     @media all and (max-width: em($bp-three-col)) {
         @include column-spread;
-        margin-bottom:$spacing;
+        margin-bottom: 2em;
     }
 }
 

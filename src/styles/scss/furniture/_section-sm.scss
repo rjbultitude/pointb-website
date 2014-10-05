@@ -37,6 +37,10 @@
     right: 1em;
     color: white;
     @include border-top-radius(0.5em);
+
+    @media all and (max-width:37.500em) {
+        right: 0.1em;
+    }
 }
 
 .section-sm.active,

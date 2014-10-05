@@ -47,7 +47,7 @@
         <!-- end main header -->
 
         <!-- start content -->
-        <div id="main" class="section section-infographic" role="main">
+        <section class="section section-infographic">
             <div class="wrapper-inner">
                 <div id="data-output">
 
@@ -66,7 +66,7 @@
                     </dl>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- end content -->
 
     </div>
