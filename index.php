@@ -113,7 +113,7 @@
         <!-- start biog -->
         <article class="article article-biog biog-short">
             <div class="wrapper-inner">
-                <h2 class="article-heading">A little about .B</h2>
+                <h2 class="article-heading">Something about .B</h2>
                 <div class="article-text">
                     <p>Point B has been producing deep, melodic, electronic music for over a decade. By sewing together ideas ranging from 70s sci-fi films to traditional 
                     middle eastern music he has woven a unique sonic fabric.</p>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="figure article-figure">
                     <div class="image-border">
-                        <img src="/images/rb.jpg" alt="" />
+                        <img src="/images/rb-11years.jpg" alt="Richard Bultitude" />
                     </div>
                 </div>
                 <aside class="aside">

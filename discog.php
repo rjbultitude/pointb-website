@@ -4,7 +4,7 @@
 <!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html class="" lang="eng"> <!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta name="description" content="point B. Deep urban rhythms for club and home">
@@ -49,13 +49,13 @@
         <!-- start content -->
         <section class="section section-infographic">
             <div class="wrapper-inner">
+                <h2 class="heading-section">Discography infographic</h2>
                 <div id="data-output">
-
                     <p class="tooltip"></p>
                 </div>
                 <div class="sub-section sub-section-release-details">
                     <figure class="figure release-figure">
-                        <img class="release-image" src="" alt="" />
+                        <img class="release-image" src="/images/discography/heart-of-matter" alt="Point B - Heart of matter" />
                     </figure>
                     <dl class="release-details-list">
                         <dt class="visuallyhidden">Title:</dt><dd class="release-title heading-dd"></dd>

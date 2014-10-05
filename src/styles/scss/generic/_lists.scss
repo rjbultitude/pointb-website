@@ -1,22 +1,6 @@
-// --------------------------------------------------------------------------------
-// ---------- Lists ---------------------------------------------------------------
-// --------------------------------------------------------------------------------
-
-ul.disc {
-    margin-left: 0.5em;
-}
-
-ul.disc li {
-    list-style: disc outside;
-    padding-left:0.5em;
-    margin-bottom: $spacing / 2;
-}
-
-
-ul.item-list li {
-    margin-bottom: $spacing/2;
-}
-
+/* -------------------------------------------------------------------------------- */
+/* ---------- Lists --------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
 ol,
 ol li {
     list-style: decimal outside;
@@ -79,29 +63,31 @@ dd:last-child {
     @include inline-block;
 }
 
-//Item List
+/* -------------------------------------------------------------------------------- */
+/* ---------- Item list ----------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
 
 .item-list li {
-    display:block;
-    text-align:left;
-    border-bottom:1px solid rgba(white,0.5);
-    padding-bottom:2em;
-    margin-bottom:2em;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid rgba(white,0.5);
+    padding-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .item-list li:last-child {
-    border-bottom:0 none;
+    border-bottom: 0 none;
 }
 
 .item-list .item-header {
-    margin-bottom:0.75em;
-    text-align:left;
+    margin-bottom: 0.75em;
+    text-align: left;
 }
 
 .item-list .item-heading {
     @include inline-block();
-    text-align:left;
-    margin-right:0.5em;
+    text-align: left;
+    margin-right: 0.5em;
 
     @media all and (max-width: em(500)) {
         width: 100%;
@@ -109,7 +95,7 @@ dd:last-child {
 }
 
 .item-list dl {
-    float:right;
+    float: right;
 
     @media all and (max-width: em(500)) {
         float: none;

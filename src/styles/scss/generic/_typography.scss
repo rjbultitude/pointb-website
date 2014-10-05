@@ -20,14 +20,14 @@ body {
 .page-heading {
     @extend %heading;
     font-size: 3.500em;
-    line-height: 1.15em;
+    line-height: 1.35em;
     margin: 0 auto 0.533em;
-    text-align:center;
+    text-align: center;
     @include image_mask;
 
     @media all and (max-width:34.625em) {
-        font-size:2.50em;
-        line-height: 1em;
+        font-size: 2.50em;
+        line-height: 1.25em;
     }
 }
 
@@ -57,8 +57,9 @@ body {
 }
 
 .lesser {
-    font-size:0.35em;
-    display:block;
+    font-size: 0.35em;
+    line-height: 0.75em;
+    display: block;
 }
 
 .small {

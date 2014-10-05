@@ -1,4 +1,5 @@
 <section class="section-sm section">
+	<h3 class="heading-section">Follow me on these networks</h3>
 	<div class="wrapper-inner">
 		<button class="btn-open">Connect</button>
 		<nav role="navigation">

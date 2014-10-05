@@ -4,7 +4,7 @@
 <!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html class="" lang="eng"> <!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta name="description" content="point B. Deep urban rhythms for club and home">
@@ -62,7 +62,7 @@
                 </div>
                 <div class="tabs-content active" id="new">
                     <ul class="item-list" role="list">
-                        <p>No data</p>
+                        <li>No data</li>
                     </ul>
                 </div>
                 <div class="tabs-content" id="remixes">

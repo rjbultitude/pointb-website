@@ -13,6 +13,10 @@
     padding: 0.750em 0;
     @include standard-transition-bottom;
 
+    .heading-section {
+        @include el-off-screen;
+    }
+
     @media all and (max-width:37.500em) {
         position: static;
         bottom: 0;

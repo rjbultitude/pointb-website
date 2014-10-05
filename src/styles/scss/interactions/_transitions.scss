@@ -2,44 +2,51 @@
 // ---------- transitions --------------------------------------------------- */
 // -------------------------------------------------------------------------- */
 
-@mixin standard-transition($duration: 2s) {
+@mixin standard-transition($duration: 2s, $delay: 0) {
     @include transition-timing-function(ceaser($easeOutQuint));
     @include transition-duration($duration);
+    @include transition-delay($delay);
     @include transition-property(all);
 }
 
-@mixin standard-transition-bg-color($duration: 2s) {
+@mixin standard-transition-bg-color($duration: 2s, $delay: 0) {
     @include transition-timing-function(ceaser($easeOutQuint));
     @include transition-duration($duration);
+    @include transition-delay($delay);
     @include transition-property(background-color,color);
 }
 
-@mixin standard-transition-opacity($duration: 2s) {
+@mixin standard-transition-opacity($duration: 2s, $delay: 0) {
     @include transition-timing-function(ceaser($easeOutQuint));
     @include transition-duration($duration);
+    @include transition-delay($delay);
     @include transition-property(opacity);
 }
 
-@mixin standard-transition-bottom($duration: 2s) {
+@mixin standard-transition-bottom($duration: 2s, $delay: 0) {
     @include transition-timing-function(ceaser($easeOutQuint));
     @include transition-duration($duration);
+    @include transition-delay($delay);
     @include transition-property(bottom);
 }
 
-@mixin standard-transition-left($duration: 2s) {
+@mixin standard-transition-left($duration: 2s, $delay: 0) {
     @include transition-timing-function(ceaser($easeOutQuint));
     @include transition-duration($duration);
+    @include transition-delay($delay);
     @include transition-property(left);
 }
 
-@mixin standard-transition-padding($duration: 2s) {
+@mixin standard-transition-padding($duration: 2s, $delay: 0) {
     @include transition-timing-function(ceaser($easeOutQuint));
     @include transition-duration($duration);
+    @include transition-delay($delay);
     @include transition-property(padding-left);
 }
 
-@mixin standard-transition-transform($duration: 2s) {
+@mixin standard-transition-transform($duration: 2s, $delay: 0) {
     @include transition-timing-function(ceaser($easeOutQuint));
     @include transition-duration($duration);
+    @include transition-delay($delay);
     @include transition-property(transform);
 }

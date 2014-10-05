@@ -25,7 +25,10 @@ define(['debug', 'jquery'], function(debug, $) {
 	            if (mobileNav.$nav.is(':visible') || mobileNav.$nav.hasClass('open')) {
 	                mobileNav.$nav.removeClass('open');
 	            } else {
-	                mobileNav.$nav.addClass('open');
+	            	mobileNav.$nav.addClass('load');
+	                setTimeout(function() {
+	                	mobileNav.$nav.addClass('open').removeClass('load');
+	                },50);
 	            }
 	        });
 	    }

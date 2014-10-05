@@ -1,11 +1,12 @@
 .section-infographic {
 	@include box-block($color-red, 1, true);
-	padding: $spacing/2 0;
+	padding: $spacing/2 0 4em;
 	position: relative;
 
-    @media all and (max-width:37.500em) {
-        padding-bottom: 4em;
-    }
+	.heading-section,
+	.sub-section-release-details {
+		@include el-off-screen;
+	}
 }
 
 .section-infographic dt, 

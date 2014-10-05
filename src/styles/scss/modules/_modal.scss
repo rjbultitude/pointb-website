@@ -19,8 +19,11 @@
     .close {
         position: absolute;
         display: block;
-        bottom: 0.3em;
-        right: 0.3em;
+        bottom: 1em;
+        right: 1em;
+        font-family: $font-light;
+        font-size: 1em;
+        line-height: 1em;
         z-index: index($elements, controls);
         padding: em(5) em(7);
         display: block;
@@ -30,20 +33,15 @@
         border:0 none;
         @include border-top-radius(em(5));
 
+        @media all and (max-width: 50em) {
+            right: 0.7em;
+            bottom: 0.7em;
+            font-size: 0.75em;
+        }
+
         .text {
             display: block;
             color: white;
-            font-size: 1em;
-            line-height: 0.75em;
-            font-family: $font-light;
-
-            @media all and (max-width: 50em) {
-                font-size: em(16);
-            }
-
-            @media all and (max-width: 50em) {
-                font-size: em(14);
-            }
         }
     }
 

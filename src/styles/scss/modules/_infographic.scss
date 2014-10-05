@@ -65,6 +65,10 @@
 	position: relative;
 	padding: 0 em(20);
 
+	svg {
+		margin: 0 auto;
+	}
+
 	@media all and (max-width:61.125em) {
 		overflow-x: scroll;
 	}
