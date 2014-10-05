@@ -11,7 +11,7 @@
 
 var requireLocalized = requireLocalized || {};
 
-define(['debug', 'jquery'], function(debug, $) {
+define(['jquery'], function($) {
     'use strict';
 
     var mobileNav = {

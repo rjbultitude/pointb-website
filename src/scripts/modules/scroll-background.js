@@ -11,7 +11,7 @@
 
 var requireLocalized = requireLocalized || {};
 
-define(['debug'], function(debug) {
+define(function() {
     'use strict';
 
     var scrollBackground = {

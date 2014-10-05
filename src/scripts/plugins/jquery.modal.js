@@ -107,7 +107,7 @@ define(['jquery'], function() {
                 }
 
                 function positionSetting() {
-                    if (settings.postion === 'top') {
+                    if (settings.position === 'scroll') {
                         scrollPos = $(window).scrollTop();
                         modalPos = scrollPos;
                         thisModalWrap.css({'top': modalPos});

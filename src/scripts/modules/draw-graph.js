@@ -12,7 +12,7 @@
 
 var requireLocalized = requireLocalized || {};
 
-define(['debug', 'jquery', 'd3', 'base', 'structureData', 'modalPlugin'], function(debug, $, d3, base) {
+define(['jquery', 'd3', 'base', 'structureData', 'modalPlugin'], function($, d3, base) {
 	'use strict';
 
 	//do i need unique years?
