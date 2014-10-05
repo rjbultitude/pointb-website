@@ -11,7 +11,7 @@
 
 var requireLocalized = requireLocalized || {};
 
-define(['debug', 'jquery', 'base', 'hbs!/templates/patches-filter-template', 'hbs!/templates/patches-results-template'], function(debug, $, base, patchesTmpl, patchesResTmpl) {
+define(['jquery', 'base', 'hbs!/templates/patches-filter-template', 'hbs!/templates/patches-results-template'], function($, base, patchesTmpl, patchesResTmpl) {
     'use strict';
 
     var filterPatches = {
@@ -28,7 +28,6 @@ define(['debug', 'jquery', 'base', 'hbs!/templates/patches-filter-template', 'hb
 
         /* ---------- Init -------------------------------------------------- */
         init: function initFn() {
-            console.log('init');
             filterPatches.getData();
             filterPatches.formAction();
             base.removeLoad();
@@ -44,13 +43,12 @@ define(['debug', 'jquery', 'base', 'hbs!/templates/patches-filter-template', 'hb
                     filterPatches.createLabels();
                 },
                 error: function() {
-                    debug.log('error');
+                    console.log('error');
                 }
             });
         },
 
         createLabels: function createLabelsFn() {
-            console.log('filterPatches.dataPatches', filterPatches.dataPatches)
             for (var patchKey in filterPatches.dataPatches) {
                 filterPatches.formContainer.append(patchesTmpl(patchKey));
             }
@@ -138,7 +136,6 @@ define(['debug', 'jquery', 'base', 'hbs!/templates/patches-filter-template', 'hb
                     
                     var thisResultsList = filterPatches.currentGroup.find('ul');
 
-                    //debug.log('patchesObjects.length',patchesObjects.length);
                     for (var j = 0; j < patchesObjects.length; j++) {
                         var thisPatch = patchesObjects[j];
                         currentList.append(patchesResTmpl(thisPatch));

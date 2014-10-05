@@ -1,4 +1,4 @@
-require.config({
+ require.config({
     paths: {
         //libs
         jquery: 'libs/jquery',
@@ -9,7 +9,6 @@ require.config({
         easing: 'libs/jquery.easing.1.3',
 
         //modules
-        debug: 'modules/debug',
         mobileNav: 'modules/mobile-nav',
         filterPatches: 'modules/filter-patches',
         scrollBackground: 'modules/scroll-background',
@@ -39,7 +38,7 @@ require.config({
 });
 
 // Start the main app logic.
-define(['jquery', 'debug', 'base', 'mobileNav', 'scrollBackground', 'easing'], function ($, debug, base, mobileNav, scrollBackground) {
+define(['jquery', 'base', 'mobileNav', 'scrollBackground', 'easing'], function ($, base, mobileNav, scrollBackground) {
     'use strict';
 
     //App inits
@@ -50,26 +49,22 @@ define(['jquery', 'debug', 'base', 'mobileNav', 'scrollBackground', 'easing'], f
     scrollBackground.init();
 
     if (base.isHomePage()) {
-        debug.log('home');
         //require(['canvasHeader']);
     }
 
     if (base.isPatchesPage()) {
-        debug.log('patches');
         require(['filterPatches'], function(filterPatches) {
             filterPatches.init();
         });
     }
 
     if (base.isDiscogPage()) {
-        debug.log('discog');
         require(['loadData'], function(loadDataModule) {
             loadDataModule.init();
         });
     }
 
     if (base.isMusicPage()) {
-        debug.log('music');
         require(['music'], function(music) {
             music.init();
         });
@@ -77,7 +72,6 @@ define(['jquery', 'debug', 'base', 'mobileNav', 'scrollBackground', 'easing'], f
 
     /* ---------- Plugins --------------------------------------------------- */
     if (base.isTabs()) {
-        debug.log('tabs');
         require(['tabsPlugin'], function() {
             $('.tabs').JQueryTabsPlugin();
         });

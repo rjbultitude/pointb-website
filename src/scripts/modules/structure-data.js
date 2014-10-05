@@ -12,7 +12,7 @@
 
 var requireLocalized = requireLocalized || {};
 
-define(['debug', 'loadData', 'createDrawGraph'], function(debug, loadDataModule, createDrawGraph) {
+define(['loadData', 'createDrawGraph'], function(loadDataModule, createDrawGraph) {
 	'use strict';
 
 	var structureData = {
@@ -30,7 +30,6 @@ define(['debug', 'loadData', 'createDrawGraph'], function(debug, loadDataModule,
 				}
 			}
 			uniqueYears.sort();
-			//debug.log('uniqueYears', uniqueYears);
 
 			//Create object for each year and add to newData
 			for (var j=0; j < uniqueYears.length; j++) {

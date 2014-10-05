@@ -11,7 +11,7 @@
 
 var requireLocalized = requireLocalized || {};
 
-define(['debug', 'jquery', 'hbs!/templates/music-list-template'], function(debug, $, musicTmpl) {
+define(['jquery', 'hbs!/templates/music-list-template'], function($, musicTmpl) {
     'use strict';
 
     var music = {
@@ -36,7 +36,7 @@ define(['debug', 'jquery', 'hbs!/templates/music-list-template'], function(debug
                     music.outputData();
                 },
                 error: function() {
-                    debug.log('error');
+                    console.log('error');
                 }
             });
         },
@@ -49,7 +49,6 @@ define(['debug', 'jquery', 'hbs!/templates/music-list-template'], function(debug
                 if (newKey === 'new') {
                     for (var i = 0; i < dataNew.length; i++) {
                         var newTrack = dataNew[i];
-                        debug.log(newTrack);
                         music.musicListNew.append(musicTmpl(newTrack));
                     }
                 }

@@ -5,13 +5,13 @@
  * $email        rbultitude@thisiszone.com
  * $url          http://www.thisiszone.com/
  * $copyright    Copyright (c) 2014, thisiszone.com. All rights reserved.
- * $version      1.0
+ * $version      1.3
  *
  * $notes        
  */
 
 
-define(['jquery', 'debug'], function($, debug){
+define(['jquery'], function($){
     'use strict';
 
     (function ($) {
@@ -66,7 +66,6 @@ define(['jquery', 'debug'], function($, debug){
                         var thisLink = $(this);
                         var thisHref = thisLink.attr('href');
                         var thatLink = $(navclassSelector + ' [href="' + thisHref + '"]');
-                        //debug.log('that link', thatLink);
                         thatLink.trigger('click');
                     });
                 }
@@ -77,7 +76,6 @@ define(['jquery', 'debug'], function($, debug){
                         var tabContent = $(hash + '');
                         var tabBtn = $('a[href="' + hash + '"]', nav);
                         var tabListItem = tabBtn.parent('li');
-                        //debug.log(tabContent);
                         //active relevant tab content
                         tabContent.addClass('active');
                         tabContent.siblings().removeClass('active');
