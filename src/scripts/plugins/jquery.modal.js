@@ -33,8 +33,14 @@ define(['jquery'], function() {
                 contentType : 'default',
                 position : 'scroll',
                 resetPlay : true,
-                triggerButton : null
+                triggerButton : null,
+                relatedButton : false,
+                preventD : true
             }, options);
+
+            //create overlay
+            var overlay = $('<div class="overlay"></div>');
+            overlay.appendTo('body');
 
             return this.each(function(index) {
                 //init
@@ -42,9 +48,10 @@ define(['jquery'], function() {
                 var thisModalNew = thisModal.clone();
                 //new elements
                 var thisModalWrap = null;
-                var overlay = null;
                 var btn = null;
                 var btnClose = null;
+                var modalVideo = null;
+                var modalImage = null;
                 var contentClass = '';
                 var contentInnerClass = '';
                 //position
@@ -54,16 +61,12 @@ define(['jquery'], function() {
 
                 function createEls() {
                     //create & populate modal
-                    $('<div class="modal"></div>').appendTo('body');
-                    thisModalWrap = $('.modal');
+                    thisModalWrap = $('<div class="modal"></div>').appendTo('body');
+                    thisModalWrap.addClass('modal-' + index);
 
                     //create close button
-                    $('<a class="close"><span class="text">close</text><span class="icon"></span></a>').appendTo(thisModalWrap);
+                    $('<a class="close"><span class="text">close</span><span class="icon"></span></a>').appendTo(thisModalWrap);
                     btnClose = $('.close', thisModalWrap);
-                    
-                    //create overlay
-                    overlay = $('<div class="overlay"></div>');
-                    overlay.appendTo('body');
 
                     //remove original html
                     thisModal.remove();
@@ -79,7 +82,7 @@ define(['jquery'], function() {
                 function contentTypeSetting() {
                     //Conditions for modes
                     if (settings.contentType === 'video') {
-                        modalContent = thisModal.find('iframe');
+                        modalVideo = thisModal.find('iframe');
                         btn = $('.btn-video');
                         contentClass = 'modal-video';
                         contentInnerClass = 'video-content';
@@ -89,7 +92,7 @@ define(['jquery'], function() {
                         contentClass = 'modal-custom';
                         contentInnerClass = 'custom-content';
                     } else if (settings.contentType === 'image') {
-                        modalContent = thisModal.find('img');
+                        modalImage = thisModal.find('img');
                         btn = $('.btn-image');
                         contentClass = 'modal-image';
                         contentInnerClass = 'image-content';
@@ -147,14 +150,19 @@ define(['jquery'], function() {
 
                 function showHideOnClick() {
                     var _triggerButton = null;
-                    if (settings.triggerButton !== null) {
+                    if (settings.triggerButton !== null && settings.relatedButton === false) {
                         _triggerButton = settings.triggerButton;
+                    }
+                    else if (settings.triggerButton === null && settings.relatedButton === true) {
+                        _triggerButton = thisModal.siblings('.btn');
+                        console.log('_triggerButton', _triggerButton);
                     }
                     else {
                         _triggerButton = btn;
                     }
                     $(_triggerButton).on('click.modal', function(e) {
-                        if (settings.contentType !== 'alert') {
+                        if (settings.preventD) {
+                            console.log('preventD');
                             e.preventDefault();
                         }
 
@@ -170,6 +178,7 @@ define(['jquery'], function() {
                             });
                         }
                     });
+                    createEls();
                 }
 
                 function closeModalButton() {
@@ -197,14 +206,13 @@ define(['jquery'], function() {
 
                 function stopVideo() {
                     if (settings.contentType === 'video' && settings.resetPlay) {
-                        modalContent.attr('src', modalContent.attr('src'));
+                        modalVideo.attr('src', modalVideo.attr('src'));
                     }
                 }
 
                 $('document').ready(function() {
                     //Init functions
                     contentTypeSetting();
-                    createEls();
                     showHideOnClick();
                     closeModalButton();
                     closeModalOverlay();

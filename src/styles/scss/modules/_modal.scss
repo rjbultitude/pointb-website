@@ -5,7 +5,7 @@
 .modal {
     display: none;
     width: 46%;
-    margin: 0 25%;
+    margin: em(16) 25%;
     position: absolute;
     z-index: index($elements, modal);
     background-color: white;
@@ -51,12 +51,12 @@
 
     @media all and (max-width: 60em) {
         width: 60%;
-        margin: 0 18%;
+        margin: em(16) 18%;
     }
 
     @media all and (max-width: 40em) {
         width: 86%;
-        margin: 0 5%;
+        margin: em(8) 5%;
     }
 }
 
