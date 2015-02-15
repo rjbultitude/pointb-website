@@ -17,7 +17,7 @@
     <meta property="og:email" content="info@point-b.co.uk" />
     <meta property="og:description" content="point B. Deep urban rhythms for club and home">
 
-    <title>Point B | deep urban rhythms</title>
+    <title>Point B | Discog</title>
     <meta name="google-site-verification" content="0zm1k2TOLDxHRYlEtOU84nj_ysoh_p4thF07qYnJRp4">
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />

@@ -1,9 +1,8 @@
-# Zone Boilerplate #
+# Point B website #
 
 ## Folder Structure
 
     |--boilerplate
-        |-- bower_components (not in repo)
         |-- node_modules (not in repo)
         |-- scripts
         |-- styles
@@ -14,9 +13,7 @@
         |-- references.md
 
 
-`|-- bower_components` contains all javascript library dependencies (e.g. jQuery).
-
-`|-- node_modules` all modules required for Grunt (this is added when setting up)
+`|-- node_modules` all modules required for Grunt
 
 `|-- scripts` contains our javascript files for this project.
 
@@ -43,12 +40,6 @@ Note: Please view README.md files within each folder for more info
     npm install
 
 This will install all the node modules you require.
-
-*Run (in this directory):*
-
-    bower install
-
-This will install all the required library dependencies.
 
 *To begin working on the project run:*
 
