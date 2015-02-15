@@ -55,7 +55,7 @@
                 </div>
                 <div class="sub-section sub-section-release-details">
                     <figure class="figure release-figure">
-                        <img class="release-image" src="/images/discography/heart-of-matter" alt="Point B - Heart of matter" />
+                        <img class="release-image" src="/images/discography/heart-of-matter.jpg" alt="Point B - Heart of matter" />
                     </figure>
                     <dl class="release-details-list">
                         <dt class="visuallyhidden">Title:</dt><dd class="release-title heading-dd"></dd>

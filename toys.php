@@ -25,7 +25,7 @@
     <link href="/<?php echo $mode; ?>/styles/css/global.css" media="screen" rel="stylesheet">
 </head>
 
-<body id="toys">
+<body id="toys" data-page="toys">
     <a href="#main" class="nav-skip">Skip to content</a>
     <?php include("includes/header-include.php"); ?>
     <!-- start main -->
@@ -44,8 +44,7 @@
         </section>
         <!-- end main header -->
 
-        <section class="section toy">
-            <canvas id="toy1"></canvas>
+        <section class="section toy" id="toy1">
         </section>
 
     </div>

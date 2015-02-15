@@ -7,6 +7,7 @@
         hbs: 'libs/require-handlebars-plugin/hbs',
         sketch: 'libs/sketch',
         easing: 'libs/jquery.easing.1.3',
+        pfive: 'libs/p5',
 
         //modules
         mobileNav: 'modules/mobile-nav',
@@ -17,6 +18,7 @@
         createDrawGraph: 'modules/draw-graph',
         music: 'modules/music',
         canvasHeader: 'modules/canvas-header',
+        toys: 'modules/toys',
         
         //plugins
         tabsPlugin: 'plugins/jquery.tabs.plugin',
@@ -68,6 +70,10 @@ define(['jquery', 'base', 'mobileNav', 'scrollBackground', 'easing'], function (
         require(['music'], function(music) {
             music.init();
         });
+    }
+
+    if ($('[data-page="toys"]').length > 0) {
+        require(['toys']);
     }
 
     /* ---------- Plugins --------------------------------------------------- */

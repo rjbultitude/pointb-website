@@ -9,73 +9,73 @@
  * $notes        Notes
  */
 
-var requireLocalized = requireLocalized || {};
-
-define(['p5'], function() {
+define(['pfive'], function(p5) {
     'use strict';
 
-    function Star() {
+    var circles = [];
 
-        this.radius1;
-        this.radius2;
-        this.points;
+    function findPixel() {
+        return createVector(x,y);
+    }
 
-        //create shape function
-        this.createStar = function(_x, _y, starRadius1, starRadius2, starPoints) {
+    function Circle(x, y) {
+        this.x = x;
+        this.y = y;
+        this.radius = 0;
+        this.damp = random(0.002, 0.02);
+        this.dpos = createVector(0,0);
 
-            var arc = TWO_PI / (starPoints);
-            var opacity = random(0, 50);
+        this.update = function() {
+            this.dpos.x += random(-10, 10);
+            this.dpos.y += random(-10, 10);
+            this.x += (this.dpos.x - this.x) * this.damp;
+            this.y += (this.dpos.y - this.y) * this.damp;
 
-            beginShape();
-            translate(_x,_y);
-            fill(255, 255, 255, opacity);
-            noStroke();
-
-            var offsetX;
-            var offsetY;
-            var stepAngle = TWO_PI / (starPoints*2);
-
-            for ( var i = 0; i < starPoints*2; i++ ) {
-
-                var x = cos( stepAngle * i ) * starRadius1;
-                var y = sin( stepAngle * i ) * starRadius1;
-
-                var cx = cos( stepAngle * i ) * starRadius2;
-                var cy = sin( stepAngle * i ) * starRadius2;
-
-                if ( i%2 == 0 ) {
-                    vertex( x, y );
-                } else {
-                    vertex( cx, cy);
-                }
-            }
-            endShape(CLOSE);
+            return 'update';
         };
 
         this.paint = function() {
-            radius1 = random(30, 4);
-            radius2 = random(15, 2);
-            points = random(3, 13);
+            fill(255,255,255,random(50,150));
+            radius = random(4, 8);
+            noStroke();
+            ellipse(this.x, this.y, radius, radius);
 
-            var t = millis();
+            return 'paint';
+        };
+    }
 
-            fill(255);
-            translate(pmouseX, pmouseY);
-            rotate((t*0.0003)+TWO_PI/360);
-            this.createStar(0,0,radius1,radius2,points);
-        }
-    };
-
-    var star;
 
     function setup() {
-        createCanvas(800,600);
-        star = new Star();
-        background(0,0,0);
+        var myCanvas = createCanvas(800,600);
+        myCanvas.parent('toy1');
+
+        for (var i = 0; i < 2000; i++) {
+            var circ = new Circle(random(width), random(height));
+            circles.push(circ);
+        }
     }
 
     function draw() {
-        star.paint();
+        background(0,0,0);
+        var position = createVector(mouseX, mouseY);
+
+        var circle1 = new Circle(random(width), random(height));
+        for (var circ in circles) {
+          var d = dist(mouseX, mouseY, circ.dposx, circ.dposy);
+          if (d < 90) {
+            var m = new Vector(circ.dposx - mouseX, circ.dposy - mouseY);
+            m.normalize();
+            m.mult(-10);
+            circ.dpos.add(m);
+          }
+        }
+
+        var circlesLength = circles.length;
+
+        for (var i = 0; i < circlesLength; i++) {
+            circles[i].update();
+            circles[i].paint();
+        }
     }
 
 });
