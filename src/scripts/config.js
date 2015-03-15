@@ -1,4 +1,4 @@
- require.config({
+require.config({
     paths: {
         //libs
         jquery: 'libs/jquery',
@@ -7,7 +7,8 @@
         hbs: 'libs/require-handlebars-plugin/hbs',
         sketch: 'libs/sketch',
         easing: 'libs/jquery.easing.1.3',
-        pfive: 'libs/p5',
+        p5: 'libs/p5',
+        p5Sound: 'libs/p5.sound',
 
         //modules
         mobileNav: 'modules/mobile-nav',
@@ -18,7 +19,9 @@
         createDrawGraph: 'modules/draw-graph',
         music: 'modules/music',
         canvasHeader: 'modules/canvas-header',
-        toys: 'modules/toys',
+        toysParticles: 'modules/toys-particles',
+        toysGrid: 'modules/toys-grid',
+        toysControls: 'modules/toys-controls',
         
         //plugins
         tabsPlugin: 'plugins/jquery.tabs.plugin',
@@ -28,6 +31,10 @@
     shim: {
         d3: {
             exports: 'd3'
+        },
+        p5Sound: {
+            deps: ['p5'],
+            exports: 'p5SOUND'
         }
     },
     
@@ -73,7 +80,7 @@ define(['jquery', 'base', 'mobileNav', 'scrollBackground', 'easing'], function (
     }
 
     if ($('[data-page="toys"]').length > 0) {
-        require(['toys']);
+        require(['toysControls']);
     }
 
     /* ---------- Plugins --------------------------------------------------- */

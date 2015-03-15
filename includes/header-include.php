@@ -21,7 +21,7 @@
 			</li>
 			<li class="list-item">
 				<a class="nav-link" href="toys.php" id="toys-link">Toys</a>
-			</li
+			</li>
 			<li class="list-item">
 				<a class="nav-link" href="discog.php" id="discog-link">Discog</a>
 			</li>

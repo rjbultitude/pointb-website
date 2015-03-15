@@ -1,0 +1,12 @@
+.section-toys {
+	@include box-block($color-red, 1, true);
+	padding: $spacing/2 0 4em;
+	position: relative;
+
+	canvas {
+		margin: 0 auto;
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}

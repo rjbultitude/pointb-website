@@ -1,9 +1,8 @@
-# Zone Boilerplate #
+# Point B Website #
 
 ## Folder Structure
 
     |--boilerplate
-        |-- bower_components (not in repo)
         |-- node_modules (not in repo)
         |-- scripts
         |-- styles
@@ -12,9 +11,6 @@
         |-- index.html
         |-- package.json
         |-- references.md
-
-
-`|-- bower_components` contains all javascript library dependencies (e.g. jQuery).
 
 `|-- node_modules` all modules required for Grunt (this is added when setting up)
 
@@ -54,7 +50,6 @@ This will install all the required library dependencies.
 
     grunt
 
-
 ## Installing new packages
 
 **For new Grunt modules run:**
@@ -62,10 +57,6 @@ This will install all the required library dependencies.
 	npm install <package name> --save-dev
 
 The flag `--save-dev` will save the version number to package.json so that everyone has the same versions.
-
-**For new Bower components run:**
-
-	bower install <package>#<version> --save-dev
 
 ## To do / Ideas
 

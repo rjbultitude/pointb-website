@@ -38,19 +38,20 @@
                     <h1 class="page-heading">
                         Toys
                     </h1>
-                    <p class="standfirst">Interactive toys for your pleasure</p>
+                    <p class="standfirst">Interactive sound games</p>
                 </div>
             </div>
         </section>
         <!-- end main header -->
 
-        <section class="section toy" id="toy1">
+        <section class="section section-toys">
+            <div class="wrapper-inner" id="toy1">
+            </div>
         </section>
 
     </div>
     <!-- end main -->
     <?php include("includes/section-sm-include.php"); ?>
-
     <script data-main="/<?php echo $mode; ?>/scripts/config" src="/<?php echo $mode; ?>/scripts/libs/require.js"></script>
 
     <script type="text/javascript">
