@@ -1,0 +1,19 @@
+{
+  "name": "Point B",
+  "description": "Deep Urban Rhythms",
+  "launch_path": "/index.html",
+  "icons": {
+    "512": "/img/icon-512.png",
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "Richard Bultitude",
+    "url": "http://point-b.co.uk"
+  },
+  "default_locale": "en",
+  "chrome": { "navigation": true },
+  "type": {"web"},
+  "chrome": { "navigation": true },
+  "fullscreen": "true",
+  "orientation": "landscape-primary"
+}
