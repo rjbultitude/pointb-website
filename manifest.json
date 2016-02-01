@@ -6,6 +6,7 @@
   "description": "Deep Urban Rhythms",
   "default_locale": "en",
   "launch_path": "/index.php",
+  "start_url": "/index.php",
   "icons": [
     {
       "src": "launcher-icon-1x.png",
@@ -26,5 +27,6 @@
   "type": {"web"},
   "chrome": { "navigation": true },
   "fullscreen": "true",
+  "display": "standalone",
   "orientation": "landscape-primary"
 }
