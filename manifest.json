@@ -1,32 +1,47 @@
+/*
+
+    Web app manifest JSON
+    Supported in Chrome 38+
+    For more information see
+    https://developers.google.com/web/updates/2014/11/Support-for-installable-web-apps-with-webapp-manifest-in-chrome-38-for-Android?hl=en
+*/
+
 {
-  "name": "Point B",
   "short_name": "Point B",
-  "manifest_version": 2,
-  "version": "1.0",
-  "description": "Deep Urban Rhythms",
-  "default_locale": "en",
-  "launch_path": "/index.php",
-  "start_url": "/index.php",
+  "name": "Point B",
   "icons": [
     {
-      "src": "launcher-icon-1x.png",
+      "src": "images/launcher-icon-1x.png",
       "sizes": "48x48",
-      "type": "image/png"
+      "type": "image/png",
+      "density": 1.0
     },
     {
-      "src": "launcher-icon-1-5x.png",
+      "src": "images/launcher-icon-1-5x.png",
       "sizes": "72x72",
-      "type": "image/png"
+      "type": "image/png",
+      "density": 1.5
     },
+    {
+      "src": "images/launcher-icon-2x.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": 2.0
+    },
+    {
+      "src": "images/launcher-icon-3x.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": 3.0
+    },
+    {
+      "src": "images/launcher-icon-4x.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": 4.0
+    }
   ],
-  "developer": {
-    "name": "Richard Bultitude",
-    "url": "http://point-b.co.uk"
-  },
-  "chrome": { "navigation": true },
-  "type": {"web"},
-  "chrome": { "navigation": true },
-  "fullscreen": "true",
+  "start_url": "index.php",
   "display": "standalone",
-  "orientation": "landscape-primary"
+  "orientation": "landscape"
 }

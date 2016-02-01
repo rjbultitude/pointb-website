@@ -18,6 +18,7 @@
     <meta property="og:description" content="point B. Deep urban rhythms for club and home">
 
     <title>Point B | Patches</title>
+    <link rel="manifest" href="/manifest.json">
     <meta name="google-site-verification" content="0zm1k2TOLDxHRYlEtOU84nj_ysoh_p4thF07qYnJRp4">
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
