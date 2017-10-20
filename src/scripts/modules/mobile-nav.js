@@ -9,8 +9,6 @@
  * $notes        Notes
  */
 
-var requireLocalized = requireLocalized || {};
-
 define(['jquery'], function($) {
     'use strict';
 
