@@ -1,0 +1,27 @@
+/*
+
+    Web app manifest JSON
+    For Firefox & Firefox OS | Support unknown
+    For more information see
+    https://developer.mozilla.org/en-US/Apps/Build/Manifest
+    Requirements for generic Open Web Apps
+
+*/
+{
+  "name": "Point B",
+  "description": "Deep Urban Rhythms",
+  "launch_path": "/index.php",
+  "icons": {
+    "512": "images/launcher-icon-1x.png",
+    "128": "images/launcher-icon-1x.png",
+  },
+  "developer": {
+    "name": "Richard Bultitude",
+    "url": "http://point-b.co.uk"
+  },
+  "default_locale": "en",
+  "chrome": { "navigation": true },
+  "type": {"web"},
+  "fullscreen": "true",
+  "orientation": "landscape-primary"
+}

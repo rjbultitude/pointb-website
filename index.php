@@ -18,6 +18,7 @@
     <meta property="og:description" content="point B. Deep urban rhythms for club and home">
 
     <title>Point B | deep urban rhythms</title>
+    <link rel="manifest" href="/manifest.json">
     <meta name="google-site-verification" content="0zm1k2TOLDxHRYlEtOU84nj_ysoh_p4thF07qYnJRp4">
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
@@ -146,7 +147,15 @@
         try {
             var pageTracker = _gat._getTracker("UA-5628156-1");
             pageTracker._trackPageview();
-        } catch(err) {}</script>
+        } catch(err) {}
+    </script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,de,en,es,fr', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,    multilanguagePage: true}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
